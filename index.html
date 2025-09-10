@@ -20,7 +20,7 @@ th{background:#fafafa;position:sticky;top:0}
 .pager button{padding:6px 10px;border:1px solid #ddd;background:#fff;border-radius:8px;cursor:pointer}
 .pager button[disabled]{opacity:.4;cursor:not-allowed}
 .empty{padding:24px;color:#666}
-@media(max-width:720px){ th:nth-child(4),td:nth-child(4){display:none} }
+@media(max-width:720px){ th:nth-child(4),td:nth-child(4){display:none} } /* 手機隱藏索書號 */
 </style>
 </head>
 <body>
@@ -67,7 +67,7 @@ const info = document.getElementById('info');
 
 function fillLocations(){
   const set = new Set(RAW.map(r=>r.location).filter(Boolean));
-  locEl.innerHTML = '<option value=\"\">全部館藏地</option>' +
+  locEl.innerHTML = '<option value="">全部館藏地</option>' +
     [...set].sort().map(v=>`<option>${v}</option>`).join('');
 }
 
