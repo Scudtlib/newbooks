@@ -56,7 +56,65 @@ th{background:#fafafa;position:sticky;top:0}
 const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
 let RAW = [];
 const state = { page:1, size:10, q:"", loc:"" };
-/* ... 事件綁定與 render/過濾函式不變 ... */
+
+const qEl = document.getElementById('q');
+const sizeEl = document.getElementById('pageSize');
+const locEl = document.getElementById('loc');
+const tbody = document.querySelector('#tbl tbody');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+const info = document.getElementById('info');
+
+function fillLocations(){
+  const set = new Set(RAW.map(r=>r.location).filter(Boolean));
+  locEl.innerHTML = '<option value="">全部館藏地</option>' +
+    [...set].sort().map(v=>`<option>${v}</option>`).join('');
+}
+
+function applyFilter(){
+  const q = state.q.trim().toLowerCase();
+  return RAW.filter(r=>{
+    if(state.loc && r.location!==state.loc) return false;
+    if(!q) return true;
+    const hay = (r.title+' '+r.authorYear+' '+r.callno).toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+function render(){
+  const rows = applyFilter();
+  const total = rows.length;
+  const pages = Math.max(1, Math.ceil(total/state.size));
+  if(state.page>pages) state.page = pages;
+  const start = (state.page-1)*state.size;
+  const pageRows = rows.slice(start, start+state.size);
+
+  if(pageRows.length===0){
+    tbody.innerHTML = `<tr><td class="empty" colspan="4">目前沒有資料</td></tr>`;
+  }else{
+    tbody.innerHTML = pageRows.map(r=>`
+      <tr>
+        <td><img class="thumb" src="${r.cover}" onerror="this.style.visibility='hidden'"/></td>
+        <td class="title">
+          <a href="${r.link||'#'}" target="_blank" rel="noopener">${r.title||'(無題名)'}</a>
+          <div class="meta">${r.authorYear||''}</div>
+        </td>
+        <td>${r.location||''}</td>
+        <td>${r.callno||''}</td>
+      </tr>`).join('');
+  }
+
+  info.textContent = total ? `第 ${start+1}-${Math.min(start+state.size,total)} 筆，共 ${total} 筆` : '';
+  prev.disabled = state.page<=1;
+  next.disabled = state.page>=pages;
+}
+
+qEl.addEventListener('input', ()=>{ state.q=qEl.value; state.page=1; render(); });
+sizeEl.addEventListener('change', ()=>{ state.size=+sizeEl.value; state.page=1; render(); });
+locEl.addEventListener('change', ()=>{ state.loc=locEl.value; state.page=1; render(); });
+prev.addEventListener('click', ()=>{ if(state.page>1){ state.page--; render(); }});
+next.addEventListener('click', ()=>{ state.page++; render(); });
+
 async function load(){
   try{
     const r = await fetch(API, { cache:'no-store' });
@@ -74,4 +132,3 @@ load();
 </script>
 </body>
 </html>
-
