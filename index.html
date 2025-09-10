@@ -5,79 +5,106 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>新進館藏</title>
 <style>
-  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC","Microsoft JhengHei",sans-serif;margin:24px}
-  h1{font-size:20px;margin:0 0 12px}
+  /* 更好看的字體與整體大小 */
+  :root{
+    --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+               "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+    --text: #222;
+    --muted:#666;
+    --border:#e6e6e6;
+    --brand:#0b57d0;
+  }
+  html,body{font-family:var(--font-ui); color:var(--text); background:#fff}
+  /* 版心置中收窄 */
+  .page{max-width: 1080px; margin: 24px auto; padding: 0 16px}
+  h1{font-size:18px; font-weight:600; margin:0 0 12px}
 
-  /* 工具列靠右 */
-  .toolbar{display:flex;gap:12px;align-items:center;justify-content:flex-end;margin:0 0 8px;flex-wrap:wrap}
-  .toolbar input,.toolbar select{padding:8px;border:1px solid #ddd;border-radius:8px}
+  /* 工具列靠右、收窄 */
+  .toolbar{display:flex; gap:10px; align-items:center; justify-content:flex-end; margin:0 0 8px; flex-wrap:wrap}
+  .toolbar input,.toolbar select{
+    padding:6px 8px; border:1px solid var(--border); border-radius:8px; font-size:14px
+  }
 
-  table{width:100%;border-collapse:collapse}
-  th,td{border-bottom:1px solid #eee;padding:8px 8px;vertical-align:top}
-  th{background:#fafafa;position:sticky;top:0;z-index:1}
+  /* 表格：收窄、固定布局避免抖動 */
+  table{width:100%; border-collapse:collapse; table-layout:fixed}
+  th,td{border-bottom:1px solid var(--border); padding:8px 8px; vertical-align:top; font-size:14px}
+  th{background:#fafafa; font-weight:600}
 
-  /* 題名單行省略、更緊湊 */
-  .title{line-height:1.2}
+  /* 欄寬：題名較寬，其餘收窄 */
+  th.col-title, td.col-title{width: auto}
+  th.col-loc,   td.col-loc  {width: 180px}
+  th.col-call,  td.col-call {width: 140px}
+  th.col-date,  td.col-date {width: 120px}
+
+  /* 題名：可換行、最多兩行，自動省略 */
   .title a{
-    color:#0b57d0;text-decoration:none;font-size:14px;
-    display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-    max-width:100%;
+    color:var(--brand); text-decoration:none;
+    display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;
+    overflow:hidden; line-height:1.35; font-size:15px; font-weight:500;
+    word-break:break-word; /* 中文/英文皆可換行 */
   }
   .title a:hover{text-decoration:underline}
-  .meta{color:#666;font-size:12px;margin-top:2px}
+  .meta{color:var(--muted); font-size:12px; margin-top:2px}
 
-  /* 分頁控制（上下各一組） */
-  .pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin:8px 0}
-  .pager button{padding:6px 10px;border:1px solid #ddd;background:#fff;border-radius:8px;cursor:pointer}
-  .pager button[disabled]{opacity:.4;cursor:not-allowed}
+  /* 分頁控制（上下都有）、靠右 */
+  .pager{display:flex; gap:8px; align-items:center; justify-content:flex-end; margin:8px 0}
+  .pager button{padding:6px 10px; border:1px solid var(--border); background:#fff; border-radius:8px; cursor:pointer; font-size:13px}
+  .pager button[disabled]{opacity:.4; cursor:not-allowed}
 
-  @media(max-width:720px){
-    th:nth-child(3),td:nth-child(3){display:none} /* 手機隱藏索書號 */
+  @media(max-width: 860px){
+    th.col-loc, td.col-loc {width: 160px}
+    th.col-call,td.col-call{width: 120px}
+  }
+  @media(max-width: 720px){
+    th.col-call,td.col-call{display:none}      /* 手機隱藏索書號 */
+    th.col-loc, td.col-loc {width: 160px}
   }
 </style>
 </head>
 <body>
-<h1>新進館藏</h1>
+<div class="page">
+  <h1>新進館藏</h1>
 
-<!-- 上方工具列（靠右） -->
-<div class="toolbar">
-  <label>每頁
-    <select id="pageSize"><option>10</option><option>20</option><option>50</option></select> 筆
-  </label>
-  <input id="q" placeholder="關鍵字搜尋（題名／索書號／上架日期）"/>
-  <select id="loc"><option value="">全部館藏地</option></select>
-</div>
+  <!-- 上方工具列 -->
+  <div class="toolbar">
+    <label style="white-space:nowrap">每頁
+      <select id="pageSize"><option>10</option><option selected>20</option><option>50</option></select> 筆
+    </label>
+    <input id="q" placeholder="關鍵字搜尋（題名／索書號／上架日期）"/>
+    <select id="loc"><option value="">全部館藏地</option></select>
+  </div>
 
-<!-- 上方分頁 -->
-<div class="pager">
-  <button id="prevTop">上一頁</button>
-  <span id="infoTop"></span>
-  <button id="nextTop">下一頁</button>
-</div>
+  <!-- 上方分頁 -->
+  <div class="pager">
+    <button id="prevTop">上一頁</button>
+    <span id="infoTop"></span>
+    <button id="nextTop">下一頁</button>
+  </div>
 
-<table id="tbl">
-  <thead>
+  <table id="tbl">
+    <thead>
     <tr>
-      <th>題名</th>
-      <th style="width:180px;">館藏地</th>
-      <th style="width:160px;">索書號</th>
-      <th style="width:120px;">上架日期</th>
+      <th class="col-title">題名</th>
+      <th class="col-loc">館藏地</th>
+      <th class="col-call">索書號</th>
+      <th class="col-date">上架日期</th>
     </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+    </thead>
+    <tbody></tbody>
+  </table>
 
-<!-- 下方分頁 -->
-<div class="pager">
-  <button id="prevBot">上一頁</button>
-  <span id="infoBot"></span>
-  <button id="nextBot">下一頁</button>
+  <!-- 下方分頁 -->
+  <div class="pager">
+    <button id="prevBot">上一頁</button>
+    <span id="infoBot"></span>
+    <button id="nextBot">下一頁</button>
+  </div>
 </div>
 
 <script>
 const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
 let RAW = [];
-const state = { page:1, size:10, q:"", loc:"" };
+const state = { page:1, size:20, q:"", loc:"" };
 
 const qEl = document.getElementById('q');
 const sizeEl = document.getElementById('pageSize');
@@ -87,7 +114,6 @@ const tbody = document.querySelector('#tbl tbody');
 const prevTop = document.getElementById('prevTop');
 const nextTop = document.getElementById('nextTop');
 const infoTop = document.getElementById('infoTop');
-
 const prevBot = document.getElementById('prevBot');
 const nextBot = document.getElementById('nextBot');
 const infoBot = document.getElementById('infoBot');
@@ -107,7 +133,7 @@ async function load(){
 
 function fillLocations(){
   const set = new Set(RAW.map(x => x.location).filter(Boolean));
-  locEl.innerHTML = '<option value="">全部館藏地</option>' + [...set].map(v => `<option>${v}</option>`).join('');
+  locEl.innerHTML = '<option value="">全部館藏地</option>' + [...set].map(v => `<option>${escapeHtml(v)}</option>`).join('');
 }
 
 function applyFilter(){
@@ -115,7 +141,7 @@ function applyFilter(){
   return RAW.filter(r=>{
     if(state.loc && r.location!==state.loc) return false;
     if(!q) return true;
-    const hay = (r.title+' '+r.callno+' '+r.authorYear).toLowerCase();
+    const hay = (r.title+' '+r.callno+' '+r.date).toLowerCase();
     return hay.includes(q);
   });
 }
@@ -130,16 +156,16 @@ function render(){
 
   tbody.innerHTML = pageRows.map(r=>`
     <tr>
-      <td class="title">
-        <a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a>
+      <td class="col-title title">
+        <a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.title||'(無題名)')}</a>
       </td>
-      <td>${escapeHtml(r.location||'')}</td>
-      <td>${escapeHtml(r.callno||'')}</td>
-      <td>${escapeHtml(r.authorYear||'')}</td>
+      <td class="col-loc">${escapeHtml(r.location||'')}</td>
+      <td class="col-call">${escapeHtml(r.callno||'')}</td>
+      <td class="col-date">${escapeHtml(r.date||'')}</td>
     </tr>
   `).join('');
 
-  const infoText = total? `第 ${start+1}-${Math.min(start+state.size,total)} 筆，共 ${total} 筆` : '目前沒有資料';
+  const infoText = total? `第 ${total? start+1:0}-${Math.min(start+state.size,total)} 筆，共 ${total} 筆` : '目前沒有資料';
   infoTop.textContent = infoText;
   infoBot.textContent = infoText;
 
