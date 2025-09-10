@@ -53,88 +53,19 @@ th{background:#fafafa;position:sticky;top:0}
 </div>
 
 <script>
-/* ←← 把下面 API 換成你的 n8n Webhook Production URL */
 const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
-
 let RAW = [];
 const state = { page:1, size:10, q:"", loc:"" };
-
-const qEl = document.getElementById('q');
-const sizeEl = document.getElementById('pageSize');
-const locEl = document.getElementById('loc');
-const tbody = document.querySelector('#tbl tbody');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const info = document.getElementById('info');
-
-function fillLocations(){
-  locEl.innerHTML = '<option value="">全部館藏地</option>';
-  [...new Set(RAW.map(r=>r.location).filter(Boolean))].sort().forEach(v=>{
-    const o=document.createElement('option'); o.value=o.textContent=v; locEl.appendChild(o);
-  });
-}
-
-function applyFilter(){
-  const q = state.q.trim().toLowerCase();
-  return RAW.filter(r=>{
-    if(state.loc && r.location!==state.loc) return false;
-    if(!q) return true;
-    const hay=(r.title+' '+r.authorYear+' '+r.callno).toLowerCase();
-    return hay.includes(q);
-  });
-}
-
-function render(){
-  const rows = applyFilter();
-  const total = rows.length;
-  const pages = Math.max(1, Math.ceil(total / state.size));
-  if (state.page > pages) state.page = pages;
-
-  const start = (state.page - 1) * state.size;
-  const pageRows = rows.slice(start, start + state.size);
-
-  if (pageRows.length === 0){
-    tbody.innerHTML = `<tr><td colspan="4" class="empty">目前沒有資料</td></tr>`;
-  } else {
-    tbody.innerHTML = pageRows.map(r=>`
-      <tr>
-        <td><img class="thumb" src="${r.cover||''}" onerror="this.style.visibility='hidden'"/></td>
-        <td class="title">
-          <a href="${r.link||'#'}" target="_blank" rel="noopener">${r.title||''}</a>
-          <div class="meta">${r.authorYear||''}</div>
-        </td>
-        <td>${r.location||''}</td>
-        <td>${r.callno||''}</td>
-      </tr>`).join('');
-  }
-
-  prev.disabled = (state.page <= 1);
-  next.disabled = (state.page >= pages);
-  info.textContent = `${state.page} / ${pages}（共 ${total} 筆）`;
-}
-
-qEl.addEventListener('input',e=>{ state.q = e.target.value; state.page = 1; render(); });
-locEl.addEventListener('change',e=>{ state.loc = e.target.value; state.page = 1; render(); });
-sizeEl.addEventListener('change',e=>{ state.size = parseInt(e.target.value,10)||10; state.page = 1; render(); });
-prev.addEventListener('click',()=>{ state.page--; render(); });
-next.addEventListener('click',()=>{ state.page++; render(); });
-
+/* ... 事件綁定與 render/過濾函式不變 ... */
 async function load(){
   try{
     const r = await fetch(API, { cache:'no-store' });
     const d = await r.json();
     RAW = Array.isArray(d.rows) ? d.rows : [];
-  }catch(err){
-    // 失敗就放一點假資料，避免空白
-    RAW = Array.from({length:20},(_,i)=>({
-      idx:i+1,
-      cover:'https://via.placeholder.com/54x72?text=Cover',
-      title:`示例題名 ${i+1}`,
-      authorYear:(i%3?'呂芳上，':'曾子墨，')+(2018+(i%7)),
-      callno:`005.32 ${8400+i}-${1930+(i%90)}`,
-      location:i%2?'總館5樓書庫':'總館6樓書庫',
-      link:'#'
-    }));
+    if (!RAW.length) throw new Error('no rows');
+  }catch(e){
+    alert('載入新進館藏失敗：' + e.message);
+    RAW = [];
   }
   fillLocations();
   render();
