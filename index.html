@@ -5,59 +5,63 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>新進館藏</title>
 <style>
-  /* 更好看的字體與整體大小 */
   :root{
     --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-               "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
-    --text: #222;
-    --muted:#666;
-    --border:#e6e6e6;
+               "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+    --text:#222; --muted:#666; --border:#d9d9d9; --bg:#fff; --head:#f7f7f7;
     --brand:#0b57d0;
   }
-  html,body{font-family:var(--font-ui); color:var(--text); background:#fff}
-  /* 版心置中收窄 */
-  .page{max-width: 1080px; margin: 24px auto; padding: 0 16px}
-  h1{font-size:18px; font-weight:600; margin:0 0 12px}
+  html,body{font-family:var(--font-ui); color:var(--text); background:var(--bg)}
+  .page{max-width: 1100px; margin: 24px auto; padding: 0 16px}
+  h1{font-size:20px; margin:0 0 14px; font-weight:700}
 
-  /* 工具列靠右、收窄 */
-  .toolbar{display:flex; gap:10px; align-items:center; justify-content:flex-end; margin:0 0 8px; flex-wrap:wrap}
-  .toolbar input,.toolbar select{
-    padding:6px 8px; border:1px solid var(--border); border-radius:8px; font-size:14px
+  /* 控制列（統計＋頁碼＋搜尋） */
+  .controlbar{display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap:12px; margin:6px 0 10px}
+  .control-left{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:14px}
+  .control-center{display:flex; gap:6px; justify-content:center; align-items:center; flex-wrap:wrap}
+  .control-right{display:flex; gap:8px; justify-content:flex-end; align-items:center; flex-wrap:wrap}
+  .controlbar select, .controlbar input{
+    padding:6px 8px; border:1px solid var(--border); border-radius:6px; font-size:14px; background:#fff;
   }
+  .pager a, .pager button{
+    min-width:34px; height:32px; padding:0 8px; border:1px solid var(--border); background:#fff; border-radius:6px;
+    display:inline-flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px;
+  }
+  .pager .current{ background:#e9eefc; border-color:#d0daf7; color:#174ea6; font-weight:600; }
+  .pager .disabled{ opacity:.45; pointer-events:none; }
 
-  /* 表格：收窄、固定布局避免抖動 */
-  table{width:100%; border-collapse:collapse; table-layout:fixed}
-  th,td{border-bottom:1px solid var(--border); padding:8px 8px; vertical-align:top; font-size:14px}
-  th{background:#fafafa; font-weight:600}
+  table{width:100%; border-collapse:separate; border-spacing:0; table-layout:fixed}
+  th,td{border-bottom:1px solid var(--border); padding:10px 10px; vertical-align:top; font-size:14px}
+  th{background:var(--head); font-weight:700}
+  th:first-child, td:first-child{border-left:1px solid var(--border); border-top-left-radius:6px}
+  th:last-child, td:last-child{border-right:1px solid var(--border); border-top-right-radius:6px}
+  tbody tr:last-child td{border-bottom:1px solid var(--border)}
 
-  /* 欄寬：題名較寬，其餘收窄 */
-  th.col-title, td.col-title{width: auto}
-  th.col-loc,   td.col-loc  {width: 180px}
-  th.col-call,  td.col-call {width: 140px}
-  th.col-date,  td.col-date {width: 120px}
+  /* 欄寬設定（序號固定窄） */
+  th.col-idx, td.col-idx { width:56px; text-align:center; }
+  th.col-title, td.col-title{ width:auto; }
+  th.col-loc,  td.col-loc { width:180px; }
+  th.col-call, td.col-call{ width:160px; }
+  th.col-date, td.col-date{ width:120px; }
 
-  /* 題名：可換行、最多兩行，自動省略 */
   .title a{
     color:var(--brand); text-decoration:none;
-    display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;
-    overflow:hidden; line-height:1.35; font-size:15px; font-weight:500;
-    word-break:break-word; /* 中文/英文皆可換行 */
+    display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; line-height:1.35; font-size:15px;
+    word-break:break-word;
   }
   .title a:hover{text-decoration:underline}
-  .meta{color:var(--muted); font-size:12px; margin-top:2px}
+  .muted{color:var(--muted); font-size:12px; margin-top:2px}
 
-  /* 分頁控制（上下都有）、靠右 */
-  .pager{display:flex; gap:8px; align-items:center; justify-content:flex-end; margin:8px 0}
-  .pager button{padding:6px 10px; border:1px solid var(--border); background:#fff; border-radius:8px; cursor:pointer; font-size:13px}
-  .pager button[disabled]{opacity:.4; cursor:not-allowed}
+  /* 表頭內的館藏地下拉 */
+  .head-filter{display:flex; align-items:center; gap:6px}
+  .head-filter select{padding:6px 6px; border:1px solid var(--border); border-radius:6px; font-size:13px}
+
+  /* 下控制列（同上） */
+  .controlbar.bottom{margin-top:10px}
 
   @media(max-width: 860px){
-    th.col-loc, td.col-loc {width: 160px}
-    th.col-call,td.col-call{width: 120px}
-  }
-  @media(max-width: 720px){
-    th.col-call,td.col-call{display:none}      /* 手機隱藏索書號 */
-    th.col-loc, td.col-loc {width: 160px}
+    th.col-loc, td.col-loc{width:160px}
+    th.col-call,td.col-call{display:none}
   }
 </style>
 </head>
@@ -65,58 +69,65 @@
 <div class="page">
   <h1>新進館藏</h1>
 
-  <!-- 上方工具列 -->
-  <div class="toolbar">
-    <label style="white-space:nowrap">每頁
-      <select id="pageSize"><option>10</option><option selected>20</option><option>50</option></select> 筆
-    </label>
-    <input id="q" placeholder="關鍵字搜尋（題名／索書號／上架日期）"/>
-    <select id="loc"><option value="">全部館藏地</option></select>
+  <!-- 上方控制列 -->
+  <div class="controlbar top">
+    <div class="control-left">
+      <span id="summary">顯示第 0 至 0 項結果，共 0 項</span>
+      <span>顯示
+        <select id="pageSize"><option>10</option><option selected>20</option><option>50</option></select>
+        項結果
+      </span>
+    </div>
+    <div class="control-center pager" id="pagerTop"></div>
+    <div class="control-right">
+      <label>搜尋：<input id="q" placeholder="題名／索書號／上架日期"></label>
+    </div>
   </div>
 
-  <!-- 上方分頁 -->
-  <div class="pager">
-    <button id="prevTop">上一頁</button>
-    <span id="infoTop"></span>
-    <button id="nextTop">下一頁</button>
-  </div>
-
-  <table id="tbl">
+  <table>
     <thead>
-    <tr>
-      <th class="col-title">題名</th>
-      <th class="col-loc">館藏地</th>
-      <th class="col-call">索書號</th>
-      <th class="col-date">上架日期</th>
-    </tr>
+      <tr>
+        <th class="col-idx">序</th>
+        <th class="col-title">題名</th>
+        <th class="col-loc">
+          <div class="head-filter">
+            <span>館藏地</span>
+            <select id="loc"><option value="">全部</option></select>
+          </div>
+        </th>
+        <th class="col-call">索書號</th>
+        <th class="col-date">上架日期</th>
+      </tr>
     </thead>
-    <tbody></tbody>
+    <tbody id="tbody"></tbody>
   </table>
 
-  <!-- 下方分頁 -->
-  <div class="pager">
-    <button id="prevBot">上一頁</button>
-    <span id="infoBot"></span>
-    <button id="nextBot">下一頁</button>
+  <!-- 下方控制列 -->
+  <div class="controlbar bottom">
+    <div class="control-left">
+      <span id="summaryBottom">顯示第 0 至 0 項結果，共 0 項</span>
+    </div>
+    <div class="control-center pager" id="pagerBot"></div>
+    <div class="control-right"></div>
   </div>
 </div>
 
 <script>
 const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
-let RAW = [];
+
+let RAW = [];                                // 全部資料
 const state = { page:1, size:20, q:"", loc:"" };
 
 const qEl = document.getElementById('q');
 const sizeEl = document.getElementById('pageSize');
 const locEl = document.getElementById('loc');
-const tbody = document.querySelector('#tbl tbody');
+const tbody = document.getElementById('tbody');
+const summary = document.getElementById('summary');
+const summaryBottom = document.getElementById('summaryBottom');
+const pagerTop = document.getElementById('pagerTop');
+const pagerBot = document.getElementById('pagerBot');
 
-const prevTop = document.getElementById('prevTop');
-const nextTop = document.getElementById('nextTop');
-const infoTop = document.getElementById('infoTop');
-const prevBot = document.getElementById('prevBot');
-const nextBot = document.getElementById('nextBot');
-const infoBot = document.getElementById('infoBot');
+function escapeHtml(s){return (s??'').replace(/[&<>"]/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]))}
 
 async function load(){
   try{
@@ -132,8 +143,8 @@ async function load(){
 }
 
 function fillLocations(){
-  const set = new Set(RAW.map(x => x.location).filter(Boolean));
-  locEl.innerHTML = '<option value="">全部館藏地</option>' + [...set].map(v => `<option>${escapeHtml(v)}</option>`).join('');
+  const set = new Set(RAW.map(x=>x.location).filter(Boolean));
+  locEl.innerHTML = '<option value="">全部</option>' + [...set].map(v=>`<option>${escapeHtml(v)}</option>`).join('');
 }
 
 function applyFilter(){
@@ -146,44 +157,86 @@ function applyFilter(){
   });
 }
 
+function renderPager(container, pages, page){
+  const MAX = 7; // 顯示最多 7 個按鈕（含首尾與省略）
+  const makeBtn = (label, target, disabled=false, current=false)=>{
+    const el = document.createElement('button');
+    el.textContent = label;
+    el.className = current? 'current' : (disabled? 'disabled' : '');
+    if(!disabled && !current){
+      el.addEventListener('click', ()=>{ state.page = target; render(); });
+    }
+    return el;
+  };
+
+  container.innerHTML = '';
+  // 上一頁
+  container.appendChild(makeBtn('上一頁', page-1, page<=1));
+
+  let nums = [];
+  if(pages <= MAX){
+    nums = Array.from({length:pages}, (_,i)=>i+1);
+  }else{
+    const head = [1,2];
+    const tail = [pages-1,pages];
+    const midStart = Math.max(3, page-1);
+    const midEnd   = Math.min(pages-2, page+1);
+    nums = [...head, ...(midStart>3?['…']:[]), ...range(midStart,midEnd), ...(midEnd<pages-2?['…']:[]), ...tail];
+  }
+
+  nums.forEach(n=>{
+    if(n==='…'){
+      const span = document.createElement('span');
+      span.textContent = '…';
+      span.style.padding = '0 6px';
+      span.style.color = '#999';
+      container.appendChild(span);
+    }else{
+      container.appendChild(makeBtn(String(n), n, false, n===page));
+    }
+  });
+
+  // 下一頁
+  container.appendChild(makeBtn('下一頁', page+1, page>=pages));
+}
+
+function range(a,b){ const out=[]; for(let i=a;i<=b;i++) out.push(i); return out; }
+
 function render(){
   const rows = applyFilter();
   const total = rows.length;
   const pages = Math.max(1, Math.ceil(total/state.size));
   if(state.page>pages) state.page=pages;
-  const start = (state.page-1)*state.size;
-  const pageRows = rows.slice(start, start+state.size);
 
-  tbody.innerHTML = pageRows.map(r=>`
+  const start = (state.page-1)*state.size;
+  const end   = Math.min(start+state.size, total);
+  const pageRows = rows.slice(start,end);
+
+  // 表格內容（序號、題名、館藏地、索書號、上架日期）
+  tbody.innerHTML = pageRows.map((r, i)=>`
     <tr>
-      <td class="col-title title">
-        <a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.title||'(無題名)')}</a>
-      </td>
+      <td class="col-idx">${start + i + 1}</td>
+      <td class="col-title title"><a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.title||'(無題名)')}</a></td>
       <td class="col-loc">${escapeHtml(r.location||'')}</td>
       <td class="col-call">${escapeHtml(r.callno||'')}</td>
       <td class="col-date">${escapeHtml(r.date||'')}</td>
     </tr>
   `).join('');
 
-  const infoText = total? `第 ${total? start+1:0}-${Math.min(start+state.size,total)} 筆，共 ${total} 筆` : '目前沒有資料';
-  infoTop.textContent = infoText;
-  infoBot.textContent = infoText;
+  // 統計
+  const text = total ? `顯示第 ${start+1} 至 ${end} 項結果，共 ${total} 項` : '目前沒有資料';
+  summary.textContent = text;
+  summaryBottom.textContent = text;
 
-  prevTop.disabled = prevBot.disabled = state.page<=1;
-  nextTop.disabled = nextBot.disabled = state.page>=pages;
+  // 分頁器（上下）
+  renderPager(pagerTop, pages, state.page);
+  renderPager(pagerBot, pages, state.page);
 }
 
-function escapeHtml(s){return (s??'').replace(/[&<>"]/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]))}
-
-// 事件
+/* 事件 */
 qEl.addEventListener('input', ()=>{ state.q=qEl.value; state.page=1; render(); });
 sizeEl.addEventListener('change', ()=>{ state.size=+sizeEl.value||10; state.page=1; render(); });
 locEl.addEventListener('change', ()=>{ state.loc=locEl.value; state.page=1; render(); });
-
-prevTop.addEventListener('click', ()=>{ if(state.page>1){ state.page--; render(); }});
-nextTop.addEventListener('click', ()=>{ state.page++; render(); });
-prevBot.addEventListener('click', ()=>{ if(state.page>1){ state.page--; render(); }});
-nextBot.addEventListener('click', ()=>{ state.page++; render(); });
 
 load();
 </script>
