@@ -3,60 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <title>新進館藏</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     :root{
       --fg:#222;
       --fg-soft:#666;
       --border:#ddd;
-      --link:#06c;
-      --link-hover:#039;
+      --link:#0a58ca;
+      --link-hover:#084298;
       --bg:#fff;
       --muted:#f9f9f9;
+      --wrap:1100px;  /* 內容最大寬度 */
     }
     html,body{background:var(--bg); color:var(--fg);}
     body{
       font-family:"Microsoft JhengHei","Segoe UI",Roboto,Arial,sans-serif;
-      font-size:15px; line-height:1.6; margin:40px;
+      font-size:15px; line-height:1.6; margin:0;
     }
+    .wrap{
+      max-width:var(--wrap);
+      margin:32px auto 24px;
+      padding:0 16px;
+    }
+
     h1{
-      margin:0 0 12px;
+      margin:0 0 10px;
       font-size:24px; font-weight:700; letter-spacing:.02em;
     }
 
     /* 工具列 */
     .toolbar{
       display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-      justify-content:flex-end; margin:4px 0 8px;
+      justify-content:flex-end; margin:6px 0 8px;
     }
     .toolbar .stat{
       margin-right:auto; color:var(--fg-soft); font-size:13px;
     }
     select,input,label{ font-size:14px; }
     select,input{
-      padding:3px 6px; border:1px solid var(--border); border-radius:8px;
+      padding:6px 8px; border:1px solid var(--border); border-radius:8px;
       background:#fff;
     }
+    input#searchBox{ min-width:260px; }
     .check{
       display:inline-flex; align-items:center; gap:6px; user-select:none;
       color:var(--fg-soft);
     }
 
+    /* 表格外層（小螢幕保底捲軸） */
+    .table-wrap{ overflow:auto; -webkit-overflow-scrolling:touch; }
+
     /* 表格 */
-    table{ width:100%; border-collapse:collapse; margin-top:8px; }
+    table{ width:100%; border-collapse:collapse; margin-top:6px; }
     th,td{
       border-bottom:1px solid var(--border);
-      padding:6px 10px; vertical-align:top; text-align:left;
+      padding:8px 10px; vertical-align:top; text-align:left;
     }
     th{ background:var(--muted); font-weight:600; }
     a{ color:var(--link); text-decoration:none; }
     a:hover{ color:var(--link-hover); text-decoration:underline; }
 
-    /* 書影欄 */
+    /* 欄寬與樣式 */
+    .col-idx{ width:56px; }
     .col-cover{ width:64px; }
     .cover{
       width:56px; height:76px; object-fit:cover; border:1px solid var(--border);
       background:#fff; border-radius:4px; display:block;
     }
+    .col-title{ word-break:break-word; white-space:normal; } /* 題名可換行 */
+    .nowrap{ white-space:nowrap; }
+
     /* 當「顯示書影」關閉時，整欄隱藏 */
     .hide-cover .col-cover,
     .hide-cover td.col-cover { display:none; }
@@ -64,7 +80,7 @@
     /* 分頁 */
     .pager{
       display:flex; justify-content:center; align-items:center;
-      gap:10px; margin:16px 0; flex-wrap:wrap;
+      gap:10px; margin:14px 0 8px; flex-wrap:wrap;
       color:var(--fg-soft);
     }
     .pager a,.pager button{
@@ -75,60 +91,78 @@
     .pager .current{ color:var(--fg); font-weight:700; }
     .pager .disabled{ color:#aaa; pointer-events:none; text-decoration:none; }
 
-    /* 上架日期不換行 */
-    .nowrap{ white-space:nowrap; }
+    /* RWD 調整 */
+    @media (max-width: 1024px){
+      :root{ --wrap: 920px; }
+    }
+    @media (max-width: 860px){
+      :root{ --wrap: 760px; }
+      /* 中小螢幕預設不顯示書影（仍可用開關顯示，大於 860px 自動恢復） */
+      .col-cover, td.col-cover{ display:none; }
+    }
+    @media (max-width: 640px){
+      :root{ --wrap: 560px; }
+      body{ font-size:14px; }
+      input#searchBox{ min-width:180px; }
+      .col-idx{ width:44px; }
+    }
   </style>
 </head>
-<body class="hide-cover"><!-- 預設不顯示書影：套用 hide-cover -->
 
-  <h1>新進館藏</h1>
+<!-- 預設不顯示書影（可用右側開關打開），大螢幕顯示效果更佳 -->
+<body class="hide-cover">
+  <div class="wrap">
+    <h1>新進館藏</h1>
 
-  <!-- 上方工具列 -->
-  <div class="toolbar topbar">
-    <span class="stat" id="stat-top"></span>
+    <!-- 上方工具列 -->
+    <div class="toolbar topbar">
+      <span class="stat" id="stat-top"></span>
 
-    <label class="check">
-      <input type="checkbox" id="showCovers">
-      顯示書影（ISBN 封面）
-    </label>
+      <label class="check">
+        <input type="checkbox" id="showCovers">
+        顯示書影（ISBN 封面）
+      </label>
 
-    <label>每頁
-      <select id="pageSize">
-        <option>10</option>
-        <option selected>20</option>
-        <option>50</option>
-      </select> 筆
-    </label>
+      <label>每頁
+        <select id="pageSize">
+          <option>10</option>
+          <option selected>20</option>
+          <option>50</option>
+        </select> 筆
+      </label>
 
-    <input id="searchBox" placeholder="搜尋：題名／索書號" style="min-width:280px;">
-    <select id="locFilter">
-      <option value="">全部館藏地</option>
-    </select>
+      <input id="searchBox" placeholder="搜尋：題名／索書號">
+      <select id="locFilter">
+        <option value="">全部館藏地</option>
+      </select>
+    </div>
+
+    <!-- 上方分頁 -->
+    <div class="pager" id="pager-top"></div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-idx">#</th>
+            <th class="col-cover">書影</th>
+            <th class="col-title">題名</th>
+            <th style="width:180px;">館藏地</th>
+            <th style="width:180px;">索書號</th>
+            <th style="width:140px;">上架日期</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+
+    <div class="toolbar bottombar">
+      <span class="stat" id="stat-bottom"></span>
+    </div>
+
+    <!-- 下方分頁 -->
+    <div class="pager" id="pager"></div>
   </div>
-
-  <!-- 上方分頁 -->
-  <div class="pager" id="pager-top"></div>
-
-  <table>
-    <thead>
-      <tr>
-        <th style="width:48px">#</th>
-        <th class="col-cover">書影</th>
-        <th>題名</th>
-        <th style="width:160px">館藏地</th>
-        <th style="width:160px">索書號</th>
-        <th style="width:120px">上架日期</th>
-      </tr>
-    </thead>
-    <tbody id="list"></tbody>
-  </table>
-
-  <div class="toolbar bottombar">
-    <span class="stat" id="stat-bottom"></span>
-  </div>
-
-  <!-- 下方分頁 -->
-  <div class="pager" id="pager"></div>
 
 <script>
 const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
@@ -158,6 +192,7 @@ function fillLocations(){
   }
 }
 
+/* 分頁元件（上下共用） */
 function buildPager(containerId, page, pages){
   const el = document.getElementById(containerId);
   el.innerHTML = '';
@@ -172,23 +207,22 @@ function buildPager(containerId, page, pages){
     return a;
   };
 
-  const go = p => { state.page=p; render(); window.scrollTo(0,0); };
+  const go = p => { state.page=p; render(); window.scrollTo({top:0,behavior:'smooth'}); };
 
   // 上一頁
   const prev = push('上一頁', page>1);
   if(prev) prev.onclick=()=>go(page-1);
 
-  // 中間數字：1 ... p-2 p-1 p p+1 p+2 ... last
-  const pagesArr = [];
+  // 中段：1 … p-2 p-1 p p+1 p+2 … last
+  const arr = [];
   for(let i=1;i<=pages;i++){
     if(i===1 || i===pages || Math.abs(i-page)<=2){
-      pagesArr.push(i);
-    }else if(pagesArr[pagesArr.length-1] !== '...'){
-      pagesArr.push('...');
+      arr.push(i);
+    }else if(arr[arr.length-1] !== '...'){
+      arr.push('...');
     }
   }
-
-  pagesArr.forEach(n=>{
+  arr.forEach(n=>{
     if(n==='...'){ push('...', false, 'disabled'); }
     else if(n===page){ push(String(n), false, 'current'); }
     else{
@@ -220,7 +254,7 @@ function render(){
   const end   = Math.min(start + size, total);
   const pageRows = rows.slice(start, end);
 
-  // 切換 body class 以隱藏/顯示 書影欄
+  // 切換 body class 以隱藏/顯示書影欄
   document.body.classList.toggle('hide-cover', !showCover);
 
   // render rows
@@ -231,11 +265,11 @@ function render(){
     const idx = start + i + 1;
 
     tr.innerHTML = `
-      <td>${idx}</td>
+      <td class="col-idx">${idx}</td>
       <td class="col-cover">
-        ${r.cover ? `<img class="cover" src="${r.cover}" onerror="this.style.display='none'">` : ''}
+        ${r.cover ? `<img class="cover" src="${r.cover}" alt="" onerror="this.style.display='none'">` : ''}
       </td>
-      <td><a href="${r.link}" target="_blank" rel="noopener">${r.title}</a></td>
+      <td class="col-title"><a href="${r.link}" target="_blank" rel="noopener">${r.title}</a></td>
       <td>${r.location || ''}</td>
       <td>${r.callno || ''}</td>
       <td class="nowrap">${r.date || ''}</td>
