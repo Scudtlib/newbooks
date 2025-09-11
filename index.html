@@ -1,139 +1,49 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>新進館藏</title>
 
-  <!-- 好看、可讀性高的字體 -->
+  <!-- 好讀字體 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+TC:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     :root{
-      --fg:#1f2937;
-      --fg-soft:#6b7280;
-      --blue:#2563eb;
-      --blue-600:#1d4ed8;
-      --line:#e5e7eb;
-      --bg:#ffffff;
-      --muted:#f8fafc;
-      --radius:12px;
-      --maxw:1100px;
+      --fg:#1f2937; --fg-soft:#6b7280; --blue:#2563eb; --blue-600:#1d4ed8;
+      --line:#e5e7eb; --bg:#fff; --muted:#f8fafc; --radius:12px; --maxw:1100px;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      color:var(--fg);
-      background:var(--bg);
-      font-family: Inter,"Noto Sans TC","Segoe UI",Roboto,system-ui,Arial,sans-serif;
-      line-height:1.6;
-    }
-    .wrap{
-      max-width:var(--maxw);
-      margin:28px auto 64px;
-      padding:0 16px;
-    }
-    h1{
-      margin:0 0 16px;
-      font-size:28px;
-      letter-spacing:.02em;
-      font-weight:700;
-    }
+    body{margin:0;color:var(--fg);background:var(--bg);
+      font-family:Inter,"Noto Sans TC","Segoe UI",Roboto,system-ui,Arial,sans-serif;line-height:1.6;}
+    .wrap{max-width:var(--maxw);margin:28px auto 64px;padding:0 16px;}
+    h1{margin:0 0 16px;font-size:28px;letter-spacing:.02em;font-weight:700;}
 
-    /* 控制列（靠右、單行） */
-    .toolbar{
-      display:flex;
-      justify-content:flex-end;
-      align-items:center;
-      gap:12px;
-      flex-wrap:wrap; /* 手機時自動換行 */
-      margin:8px 0 12px;
-    }
-    .toolbar .stat{
-      margin-right:auto; /* 讓統計靠左，其他靠右 */
-      color:var(--fg-soft);
-      font-size:14px;
-    }
-    .select, .input, .btn{
-      font:inherit;
-      border:1px solid var(--line);
-      background:#fff;
-      border-radius:10px;
-      padding:8px 12px;
-      height:36px;
-      color:var(--fg);
-      outline:none;
-    }
-    .input{width:320px}
-    .input::placeholder{color:#9aa2af}
+    /* 工具列（靠右單行） */
+    .toolbar{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 12px;}
+    .toolbar .stat{margin-right:auto;color:var(--fg-soft);font-size:14px;}
+    .select,.input{font:inherit;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;height:36px;color:var(--fg);outline:none;}
+    .input{width:320px}.input::placeholder{color:#9aa2af}
 
     /* 表格 */
-    .table{
-      width:100%;
-      border-collapse:collapse;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      overflow:hidden;
-      background:#fff;
-    }
-    .table thead th{
-      background:var(--muted);
-      font-weight:600;
-      text-align:left;
-      padding:12px 14px;
-      color:#111827;
-      border-bottom:1px solid var(--line);
-      font-size:15px;
-    }
-    .table tbody td{
-      padding:14px;
-      border-bottom:1px solid var(--line);
-      vertical-align:top;
-      font-size:15px;
-    }
-    .title a{
-      color:var(--blue);
-      text-decoration:none;
-      word-break:break-word;     /* 題名太長自動換行 */
-    }
-    .title a:hover{color:var(--blue-600); text-decoration:underline}
-    .meta{
-      margin-top:4px;
-      color:var(--fg-soft);
-      font-size:13px;
-    }
+    .table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;}
+    .table thead th{background:var(--muted);font-weight:600;text-align:left;padding:12px 14px;color:#111827;border-bottom:1px solid var(--line);font-size:15px;}
+    .table tbody td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15px;}
+    .title a{color:var(--blue);text-decoration:none;word-break:break-word}
+    .title a:hover{color:var(--blue-600);text-decoration:underline}
+    .td-date{white-space:nowrap;}  /* 上架日期不換行 */
+    .td-idx{width:64px;color:#4b5563}
 
-    /* 分頁：單列、無方框 */
-    .pager{
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      gap:12px;
-      margin:18px 0 0;
-      flex-wrap:wrap;
-      color:var(--fg-soft);
-    }
-    .pager .link{
-      color:var(--blue);
-      cursor:pointer;
-      user-select:none;
-    }
-    .pager .link:hover{color:var(--blue-600); text-decoration:underline}
-    .pager .current{
-      font-weight:700;
-      color:#111827;
-      cursor:default;
-      text-decoration:none;
-    }
+    /* 分頁（單列、無方框） */
+    .pager{display:flex;justify-content:center;align-items:center;gap:12px;margin:16px 0;color:var(--fg-soft);flex-wrap:wrap}
+    .pager.top{margin-top:0;margin-bottom:12px}
+    .pager .link{color:var(--blue);cursor:pointer;user-select:none}
+    .pager .link:hover{color:var(--blue-600);text-decoration:underline}
+    .pager .current{font-weight:700;color:#111827;cursor:default}
     .pager .sep{color:#9aa2af}
 
-    /* 小尺寸調整 */
     @media (max-width:720px){
       .input{width:180px}
-      .table thead th:nth-child(3),
-      .table tbody td:nth-child(3){ /* 手機隱藏索書號 */
-        display:none;
-      }
+      .table thead th:nth-child(4), .table tbody td:nth-child(4){display:none;} /* 手機隱藏索書號 */
     }
   </style>
 </head>
@@ -141,75 +51,72 @@
   <div class="wrap">
     <h1>新進館藏</h1>
 
-    <!-- 控制列 -->
+    <!-- 工具列 -->
     <div class="toolbar">
-      <div class="stat" id="stat">顯示 0 至 0 項結果，共 0 項</div>
-
+      <div id="stat" class="stat">顯示 0 至 0 項結果，共 0 項</div>
       <label>每頁
         <select id="pageSize" class="select">
           <option>10</option><option selected>20</option><option>50</option>
         </select> 筆
       </label>
-
-      <input id="q" class="input" placeholder="搜尋：題名／索書號" />
-
-      <select id="loc" class="select">
-        <option value="">全部館藏地</option>
-      </select>
+      <input id="q" class="input" placeholder="搜尋：題名／索書號">
+      <select id="loc" class="select"><option value="">全部館藏地</option></select>
     </div>
+
+    <!-- 上方分頁 -->
+    <div id="pagerTop" class="pager top"></div>
 
     <!-- 表格 -->
     <table class="table" id="tbl">
       <thead>
         <tr>
-          <th style="width:55%;">題名</th>
-          <th style="width:18%;">館藏地</th>
-          <th style="width:17%;">索書號</th>
+          <th style="width:8%;">序</th>
+          <th style="width:47%;">題名</th>
+          <th style="width:20%;">館藏地</th>
+          <th style="width:15%;">索書號</th>
           <th style="width:10%;">上架日期</th>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
 
-    <!-- 分頁 -->
-    <div class="pager" id="pager"></div>
+    <!-- 下方分頁 -->
+    <div id="pager" class="pager"></div>
   </div>
 
 <script>
 /* ====== 設定 ====== */
-// n8n Webhook（Production）
-const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
-// 若要改測試 URL：
-// const API = 'https://sculib.app.n8n.cloud/webhook-test/sculibnewbooks';
+const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks'; // production
 
-/* ====== 資料狀態 ====== */
-let RAW = []; // 全部 rows
-const state = { page: 1, size: 20, q: '', loc: '' };
+/* ====== 狀態 ====== */
+let RAW = [];
+const state = { page:1, size:20, q:'', loc:'' };
 
 const els = {
-  stat:  document.getElementById('stat'),
-  q:     document.getElementById('q'),
-  size:  document.getElementById('pageSize'),
-  loc:   document.getElementById('loc'),
+  stat: document.getElementById('stat'),
+  q: document.getElementById('q'),
+  size: document.getElementById('pageSize'),
+  loc: document.getElementById('loc'),
   tbody: document.querySelector('#tbl tbody'),
+  pagerTop: document.getElementById('pagerTop'),
   pager: document.getElementById('pager'),
 };
 
-/* ====== 載入資料 ====== */
-async function load() {
+/* ====== 取資料 ====== */
+async function load(){
   try{
-    const r = await fetch(API, { cache: 'no-store' });
+    const r = await fetch(API, { cache:'no-store' });
     const d = await r.json();
     const rows = Array.isArray(d?.rows) ? d.rows : [];
-    if (!rows.length) throw new Error('no rows');
+    if(!rows.length) throw new Error('no rows');
 
+    // 後端 rows：title, location, callno, date, link
     RAW = rows.map(x => ({
-      // 後端輸出：title, location, callno, date, link
-      title:    x.title || '(無題名)',
+      title: x.title || '(無題名)',
       location: x.location || '',
-      callno:   x.callno || '',
-      date:     x.date || '',
-      link:     x.link || '#'
+      callno: x.callno || '',
+      date: x.date || '',
+      link: x.link || '#'
     }));
 
     fillLocations();
@@ -221,20 +128,20 @@ async function load() {
   }
 }
 
-/* ====== 元素填充 ====== */
+/* ====== 館藏地下拉 ====== */
 function fillLocations(){
-  const uniq = [...new Set(RAW.map(r => r.location).filter(Boolean))].sort();
+  const uniq = [...new Set(RAW.map(r=>r.location).filter(Boolean))].sort();
   els.loc.innerHTML = '<option value="">全部館藏地</option>' +
-    uniq.map(v => `<option>${escapeHtml(v)}</option>`).join('');
+    uniq.map(v=>`<option>${escapeHtml(v)}</option>`).join('');
 }
 
-/* ====== 篩選與分頁 ====== */
+/* ====== 篩選 + 分頁 ====== */
 function applyFilter(){
   const q = state.q.trim().toLowerCase();
-  return RAW.filter(r => {
-    if (state.loc && r.location !== state.loc) return false;
-    if (!q) return true;
-    const hay = (r.title + ' ' + r.callno).toLowerCase();
+  return RAW.filter(r=>{
+    if(state.loc && r.location!==state.loc) return false;
+    if(!q) return true;
+    const hay = (r.title+' '+r.callno).toLowerCase();
     return hay.includes(q);
   });
 }
@@ -242,79 +149,71 @@ function applyFilter(){
 function render(){
   const rows = applyFilter();
   const total = rows.length;
-  const pages = Math.max(1, Math.ceil(total / state.size));
+  const pages = Math.max(1, Math.ceil(total/state.size));
   state.page = Math.min(state.page, pages);
 
-  const start = (state.page - 1) * state.size;
-  const pageRows = rows.slice(start, start + state.size);
+  const start = (state.page-1)*state.size;
+  const pageRows = rows.slice(start, start+state.size);
 
   els.stat.textContent =
-    `顯示第 ${total ? start + 1 : 0} 至 ${Math.min(start + pageRows.length, total)} 項結果，共 ${total} 項`;
+    `顯示第 ${total?start+1:0} 至 ${Math.min(start+pageRows.length,total)} 項結果，共 ${total} 項`;
 
-  // body
-  els.tbody.innerHTML = pageRows.map(r => `
+  els.tbody.innerHTML = pageRows.map((r,i)=>`
     <tr>
+      <td class="td-idx">${start + i + 1}</td>
       <td class="title"><a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a></td>
       <td>${escapeHtml(r.location)}</td>
       <td>${escapeHtml(r.callno)}</td>
-      <td>${escapeHtml(r.date)}</td>
+      <td class="td-date">${escapeHtml(r.date)}</td>
     </tr>
-  `).join('') || `<tr><td colspan="4" style="text-align:center;color:#9aa2af;padding:24px">目前沒有資料</td></tr>`;
+  `).join('') || `<tr><td colspan="5" style="text-align:center;color:#9aa2af;padding:24px">目前沒有資料</td></tr>`;
 
-  // pager
-  renderPager(pages, state.page);
+  renderPager(els.pagerTop, pages, state.page);
+  renderPager(els.pager,     pages, state.page);
 }
 
-/* ====== 分頁樣式：1 2 3 4 … N（無方框，點頁碼即跳、會滾動視窗） ====== */
-function renderPager(pages, page){
+/* ====== 分頁（1 2 3 4 … N） ====== */
+function renderPager(container, pages, page){
   const segs = [];
-  const push = (p, label = String(p)) => {
-    if (p === page) segs.push(`<span class="current">${label}</span>`);
-    else segs.push(`<span class="link" data-p="${p}">${label}</span>`);
+  const push = (p,l=String(p))=>{
+    if(p===page) segs.push(`<span class="current">${l}</span>`);
+    else segs.push(`<span class="link" data-p="${p}">${l}</span>`);
   };
 
-  // 上一頁
-  if (page > 1) segs.push(`<span class="link" data-p="${page - 1}">上一頁</span>`);
+  if(page>1) segs.push(`<span class="link" data-p="${page-1}">上一頁</span>`);
 
-  // 1 ~ 2
-  const head = Math.min(2, pages);
-  for (let i = 1; i <= head; i++) push(i);
+  const head = Math.min(2,pages);
+  for(let i=1;i<=head;i++) push(i);
 
-  // 中段（目前頁附近）
-  const left  = Math.max(3, page - 2);
-  const right = Math.min(pages - 2, page + 2);
-  if (left > head + 1) segs.push('<span class="sep">…</span>');
-  for (let i = left; i <= right; i++) push(i);
-  if (right < pages - 2) segs.push('<span class="sep">…</span>');
+  const left  = Math.max(3, page-2);
+  const right = Math.min(pages-2, page+2);
+  if(left>head+1) segs.push('<span class="sep">…</span>');
+  for(let i=left;i<=right;i++) push(i);
+  if(right<pages-2) segs.push('<span class="sep">…</span>');
 
-  // 尾端（最後兩頁）
-  for (let i = Math.max(pages - 1, 3); i <= pages; i++) if (i >= 3) push(i);
+  for(let i=Math.max(pages-1,3); i<=pages; i++) if(i>=3) push(i);
 
-  // 下一頁
-  if (page < pages) segs.push(`<span class="link" data-p="${page + 1}">下一頁</span>`);
+  if(page<pages) segs.push(`<span class="link" data-p="${page+1}">下一頁</span>`);
 
-  els.pager.innerHTML = segs.join(' ');
-  els.pager.querySelectorAll('.link').forEach(a=>{
-    a.addEventListener('click', () => {
+  container.innerHTML = segs.join(' ');
+  container.querySelectorAll('.link').forEach(a=>{
+    a.addEventListener('click',()=>{
       state.page = Number(a.dataset.p);
       render();
-      // 讓使用者每次換頁都回到頂部（避免像「看似沒換」）
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 }
 
-/* ====== 工具 ====== */
+/* ====== 小工具 ====== */
 function escapeHtml(s){
-  return String(s ?? '')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+  return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 
 /* ====== 事件 ====== */
-els.q.addEventListener('input', () => { state.q = els.q.value; state.page = 1; render(); });
-els.size.addEventListener('change', () => { state.size = +els.size.value; state.page = 1; render(); });
-els.loc.addEventListener('change', () => { state.loc = els.loc.value; state.page = 1; render(); });
+els.q.addEventListener('input',()=>{ state.q=els.q.value; state.page=1; render(); });
+els.size.addEventListener('change',()=>{ state.size=+els.size.value; state.page=1; render(); });
+els.loc.addEventListener('change',()=>{ state.loc=els.loc.value; state.page=1; render(); });
 
 /* ====== 啟動 ====== */
 load();
