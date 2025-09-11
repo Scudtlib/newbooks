@@ -1,221 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
   <title>新進館藏</title>
-
-  <!-- 好讀字體 -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+TC:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --fg:#1f2937; --fg-soft:#6b7280; --blue:#2563eb; --blue-600:#1d4ed8;
-      --line:#e5e7eb; --bg:#fff; --muted:#f8fafc; --radius:12px; --maxw:1100px;
+      --fg:#222;
+      --fg-soft:#666;
+      --border:#ddd;
+      --link:#06c;
+      --link-hover:#039;
+      --bg:#fff;
+      --muted:#f9f9f9;
     }
-    *{box-sizing:border-box}
-    body{margin:0;color:var(--fg);background:var(--bg);
-      font-family:Inter,"Noto Sans TC","Segoe UI",Roboto,system-ui,Arial,sans-serif;line-height:1.6;}
-    .wrap{max-width:var(--maxw);margin:28px auto 64px;padding:0 16px;}
-    h1{margin:0 0 16px;font-size:28px;letter-spacing:.02em;font-weight:700;}
+    html,body{background:var(--bg); color:var(--fg);}
+    body{
+      font-family:"Microsoft JhengHei","Segoe UI",Roboto,Arial,sans-serif;
+      font-size:15px; line-height:1.6; margin:40px;
+    }
+    h1{
+      margin:0 0 12px;
+      font-size:24px; font-weight:700; letter-spacing:.02em;
+    }
 
-    /* 工具列（靠右單行） */
-    .toolbar{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 12px;}
-    .toolbar .stat{margin-right:auto;color:var(--fg-soft);font-size:14px;}
-    .select,.input{font:inherit;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;height:36px;color:var(--fg);outline:none;}
-    .input{width:320px}.input::placeholder{color:#9aa2af}
+    /* 工具列 */
+    .toolbar{
+      display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+      justify-content:flex-end; margin:4px 0 8px;
+    }
+    .toolbar .stat{
+      margin-right:auto; color:var(--fg-soft); font-size:13px;
+    }
+    select,input,label{ font-size:14px; }
+    select,input{
+      padding:3px 6px; border:1px solid var(--border); border-radius:8px;
+      background:#fff;
+    }
+    .check{
+      display:inline-flex; align-items:center; gap:6px; user-select:none;
+      color:var(--fg-soft);
+    }
 
     /* 表格 */
-    .table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;}
-    .table thead th{background:var(--muted);font-weight:600;text-align:left;padding:12px 14px;color:#111827;border-bottom:1px solid var(--line);font-size:15px;}
-    .table tbody td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15px;}
-    .title a{color:var(--blue);text-decoration:none;word-break:break-word}
-    .title a:hover{color:var(--blue-600);text-decoration:underline}
-    .td-date{white-space:nowrap;}  /* 上架日期不換行 */
-    .td-idx{width:64px;color:#4b5563}
-
-    /* 分頁（單列、無方框） */
-    .pager{display:flex;justify-content:center;align-items:center;gap:12px;margin:16px 0;color:var(--fg-soft);flex-wrap:wrap}
-    .pager.top{margin-top:0;margin-bottom:12px}
-    .pager .link{color:var(--blue);cursor:pointer;user-select:none}
-    .pager .link:hover{color:var(--blue-600);text-decoration:underline}
-    .pager .current{font-weight:700;color:#111827;cursor:default}
-    .pager .sep{color:#9aa2af}
-
-    @media (max-width:720px){
-      .input{width:180px}
-      .table thead th:nth-child(4), .table tbody td:nth-child(4){display:none;} /* 手機隱藏索書號 */
+    table{ width:100%; border-collapse:collapse; margin-top:8px; }
+    th,td{
+      border-bottom:1px solid var(--border);
+      padding:6px 10px; vertical-align:top; text-align:left;
     }
+    th{ background:var(--muted); font-weight:600; }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ color:var(--link-hover); text-decoration:underline; }
+
+    /* 書影欄 */
+    .col-cover{ width:64px; }
+    .cover{
+      width:56px; height:76px; object-fit:cover; border:1px solid var(--border);
+      background:#fff; border-radius:4px; display:block;
+    }
+    /* 當「顯示書影」關閉時，整欄隱藏 */
+    .hide-cover .col-cover,
+    .hide-cover td.col-cover { display:none; }
+
+    /* 分頁 */
+    .pager{
+      display:flex; justify-content:center; align-items:center;
+      gap:10px; margin:16px 0; flex-wrap:wrap;
+      color:var(--fg-soft);
+    }
+    .pager a,.pager button{
+      border:none; background:transparent; color:var(--link);
+      cursor:pointer; font-size:15px; padding:0 2px;
+    }
+    .pager a:hover,.pager button:hover{ color:var(--link-hover); text-decoration:underline; }
+    .pager .current{ color:var(--fg); font-weight:700; }
+    .pager .disabled{ color:#aaa; pointer-events:none; text-decoration:none; }
+
+    /* 上架日期不換行 */
+    .nowrap{ white-space:nowrap; }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <h1>新進館藏</h1>
+<body class="hide-cover"><!-- 預設不顯示書影：套用 hide-cover -->
 
-    <!-- 工具列 -->
-    <div class="toolbar">
-      <div id="stat" class="stat">顯示 0 至 0 項結果，共 0 項</div>
-      <label>每頁
-        <select id="pageSize" class="select">
-          <option>10</option><option selected>20</option><option>50</option>
-        </select> 筆
-      </label>
-      <input id="q" class="input" placeholder="搜尋：題名／索書號">
-      <select id="loc" class="select"><option value="">全部館藏地</option></select>
-    </div>
+  <h1>新進館藏</h1>
 
-    <!-- 上方分頁 -->
-    <div id="pagerTop" class="pager top"></div>
+  <!-- 上方工具列 -->
+  <div class="toolbar topbar">
+    <span class="stat" id="stat-top"></span>
 
-    <!-- 表格 -->
-    <table class="table" id="tbl">
-      <thead>
-        <tr>
-          <th style="width:8%;">序</th>
-          <th style="width:47%;">題名</th>
-          <th style="width:20%;">館藏地</th>
-          <th style="width:15%;">索書號</th>
-          <th style="width:10%;">上架日期</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <label class="check">
+      <input type="checkbox" id="showCovers">
+      顯示書影（ISBN 封面）
+    </label>
 
-    <!-- 下方分頁 -->
-    <div id="pager" class="pager"></div>
+    <label>每頁
+      <select id="pageSize">
+        <option>10</option>
+        <option selected>20</option>
+        <option>50</option>
+      </select> 筆
+    </label>
+
+    <input id="searchBox" placeholder="搜尋：題名／索書號" style="min-width:280px;">
+    <select id="locFilter">
+      <option value="">全部館藏地</option>
+    </select>
   </div>
 
+  <!-- 上方分頁 -->
+  <div class="pager" id="pager-top"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:48px">#</th>
+        <th class="col-cover">書影</th>
+        <th>題名</th>
+        <th style="width:160px">館藏地</th>
+        <th style="width:160px">索書號</th>
+        <th style="width:120px">上架日期</th>
+      </tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+
+  <div class="toolbar bottombar">
+    <span class="stat" id="stat-bottom"></span>
+  </div>
+
+  <!-- 下方分頁 -->
+  <div class="pager" id="pager"></div>
+
 <script>
-/* ====== 設定 ====== */
-const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks'; // production
+const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
 
-/* ====== 狀態 ====== */
 let RAW = [];
-const state = { page:1, size:20, q:'', loc:'' };
+let state = { page:1, size:20, q:"", loc:"", showCover:false };
 
-const els = {
-  stat: document.getElementById('stat'),
-  q: document.getElementById('q'),
-  size: document.getElementById('pageSize'),
-  loc: document.getElementById('loc'),
-  tbody: document.querySelector('#tbl tbody'),
-  pagerTop: document.getElementById('pagerTop'),
-  pager: document.getElementById('pager'),
-};
-
-/* ====== 取資料 ====== */
 async function load(){
   try{
     const r = await fetch(API, { cache:'no-store' });
     const d = await r.json();
-    const rows = Array.isArray(d?.rows) ? d.rows : [];
-    if(!rows.length) throw new Error('no rows');
-
-    // 後端 rows：title, location, callno, date, link
-    RAW = rows.map(x => ({
-      title: x.title || '(無題名)',
-      location: x.location || '',
-      callno: x.callno || '',
-      date: x.date || '',
-      link: x.link || '#'
-    }));
-
+    RAW = Array.isArray(d.rows) ? d.rows : [];
+    render();
     fillLocations();
-    render();
   }catch(e){
-    alert('載入新進館藏失敗：' + e.message);
-    RAW = [];
-    render();
+    alert('載入新進館藏失敗：'+ e.message);
   }
 }
 
-/* ====== 館藏地下拉 ====== */
 function fillLocations(){
-  const uniq = [...new Set(RAW.map(r=>r.location).filter(Boolean))].sort();
-  els.loc.innerHTML = '<option value="">全部館藏地</option>' +
-    uniq.map(v=>`<option>${escapeHtml(v)}</option>`).join('');
+  const sel = document.getElementById('locFilter');
+  const locs = [...new Set(RAW.map(r=>r.location).filter(Boolean))].sort();
+  for(const l of locs){
+    const opt=document.createElement('option');
+    opt.value=opt.textContent=l;
+    sel.appendChild(opt);
+  }
 }
 
-/* ====== 篩選 + 分頁 ====== */
-function applyFilter(){
-  const q = state.q.trim().toLowerCase();
-  return RAW.filter(r=>{
-    if(state.loc && r.location!==state.loc) return false;
-    if(!q) return true;
-    const hay = (r.title+' '+r.callno).toLowerCase();
-    return hay.includes(q);
+function buildPager(containerId, page, pages){
+  const el = document.getElementById(containerId);
+  el.innerHTML = '';
+  if(pages<=1) return;
+
+  const push = (html, on, cls) => {
+    const a = document.createElement(on?'a':'span');
+    a.innerHTML = html;
+    if(cls) a.className = cls;
+    if(on) a.href='javascript:;';
+    el.appendChild(a);
+    return a;
+  };
+
+  const go = p => { state.page=p; render(); window.scrollTo(0,0); };
+
+  // 上一頁
+  const prev = push('上一頁', page>1);
+  if(prev) prev.onclick=()=>go(page-1);
+
+  // 中間數字：1 ... p-2 p-1 p p+1 p+2 ... last
+  const pagesArr = [];
+  for(let i=1;i<=pages;i++){
+    if(i===1 || i===pages || Math.abs(i-page)<=2){
+      pagesArr.push(i);
+    }else if(pagesArr[pagesArr.length-1] !== '...'){
+      pagesArr.push('...');
+    }
+  }
+
+  pagesArr.forEach(n=>{
+    if(n==='...'){ push('...', false, 'disabled'); }
+    else if(n===page){ push(String(n), false, 'current'); }
+    else{
+      const a = push(String(n), true);
+      a.onclick = ()=>go(n);
+    }
   });
+
+  // 下一頁
+  const next = push('下一頁', page<pages);
+  if(next) next.onclick=()=>go(page+1);
 }
 
 function render(){
-  const rows = applyFilter();
-  const total = rows.length;
-  const pages = Math.max(1, Math.ceil(total/state.size));
-  state.page = Math.min(state.page, pages);
+  const { page, size, q, loc, showCover } = state;
+  const qlow = q.trim().toLowerCase();
 
-  const start = (state.page-1)*state.size;
-  const pageRows = rows.slice(start, start+state.size);
-
-  els.stat.textContent =
-    `顯示第 ${total?start+1:0} 至 ${Math.min(start+pageRows.length,total)} 項結果，共 ${total} 項`;
-
-  els.tbody.innerHTML = pageRows.map((r,i)=>`
-    <tr>
-      <td class="td-idx">${start + i + 1}</td>
-      <td class="title"><a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.title)}</a></td>
-      <td>${escapeHtml(r.location)}</td>
-      <td>${escapeHtml(r.callno)}</td>
-      <td class="td-date">${escapeHtml(r.date)}</td>
-    </tr>
-  `).join('') || `<tr><td colspan="5" style="text-align:center;color:#9aa2af;padding:24px">目前沒有資料</td></tr>`;
-
-  renderPager(els.pagerTop, pages, state.page);
-  renderPager(els.pager,     pages, state.page);
-}
-
-/* ====== 分頁（1 2 3 4 … N） ====== */
-function renderPager(container, pages, page){
-  const segs = [];
-  const push = (p,l=String(p))=>{
-    if(p===page) segs.push(`<span class="current">${l}</span>`);
-    else segs.push(`<span class="link" data-p="${p}">${l}</span>`);
-  };
-
-  if(page>1) segs.push(`<span class="link" data-p="${page-1}">上一頁</span>`);
-
-  const head = Math.min(2,pages);
-  for(let i=1;i<=head;i++) push(i);
-
-  const left  = Math.max(3, page-2);
-  const right = Math.min(pages-2, page+2);
-  if(left>head+1) segs.push('<span class="sep">…</span>');
-  for(let i=left;i<=right;i++) push(i);
-  if(right<pages-2) segs.push('<span class="sep">…</span>');
-
-  for(let i=Math.max(pages-1,3); i<=pages; i++) if(i>=3) push(i);
-
-  if(page<pages) segs.push(`<span class="link" data-p="${page+1}">下一頁</span>`);
-
-  container.innerHTML = segs.join(' ');
-  container.querySelectorAll('.link').forEach(a=>{
-    a.addEventListener('click',()=>{
-      state.page = Number(a.dataset.p);
-      render();
-    });
+  let rows = RAW.filter(r=>{
+    const hit = !q || r.title.toLowerCase().includes(qlow) || r.callno.toLowerCase().includes(qlow);
+    const lhit = !loc || r.location === loc;
+    return hit && lhit;
   });
+
+  const total = rows.length;
+  const pages = Math.max(1, Math.ceil(total / size));
+  if(state.page>pages) state.page = pages;
+
+  const start = (state.page - 1) * size;
+  const end   = Math.min(start + size, total);
+  const pageRows = rows.slice(start, end);
+
+  // 切換 body class 以隱藏/顯示 書影欄
+  document.body.classList.toggle('hide-cover', !showCover);
+
+  // render rows
+  const tb = document.getElementById('list');
+  tb.innerHTML = '';
+  pageRows.forEach((r, i) => {
+    const tr = document.createElement('tr');
+    const idx = start + i + 1;
+
+    tr.innerHTML = `
+      <td>${idx}</td>
+      <td class="col-cover">
+        ${r.cover ? `<img class="cover" src="${r.cover}" onerror="this.style.display='none'">` : ''}
+      </td>
+      <td><a href="${r.link}" target="_blank" rel="noopener">${r.title}</a></td>
+      <td>${r.location || ''}</td>
+      <td>${r.callno || ''}</td>
+      <td class="nowrap">${r.date || ''}</td>
+    `;
+    tb.appendChild(tr);
+  });
+
+  // stat
+  const statTxt = total
+    ? `顯示第 ${total? (start+1):0} 至 ${end} 項結果，共 ${total} 項`
+    : `沒有符合條件的資料`;
+  document.getElementById('stat-top').textContent = statTxt;
+  document.getElementById('stat-bottom').textContent = statTxt;
+
+  // pagers
+  buildPager('pager-top', state.page, pages);
+  buildPager('pager', state.page, pages);
 }
 
-/* ====== 小工具 ====== */
-function escapeHtml(s){
-  return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-}
+/* 綁定事件 */
+document.getElementById('pageSize').onchange = e => { state.size = +e.target.value; state.page = 1; render(); };
+document.getElementById('searchBox').oninput = e => { state.q = e.target.value; state.page = 1; render(); };
+document.getElementById('locFilter').onchange = e => { state.loc = e.target.value; state.page = 1; render(); };
+document.getElementById('showCovers').onchange = e => { state.showCover = e.target.checked; render(); };
 
-/* ====== 事件 ====== */
-els.q.addEventListener('input',()=>{ state.q=els.q.value; state.page=1; render(); });
-els.size.addEventListener('change',()=>{ state.size=+els.size.value; state.page=1; render(); });
-els.loc.addEventListener('change',()=>{ state.loc=els.loc.value; state.page=1; render(); });
-
-/* ====== 啟動 ====== */
 load();
 </script>
 </body>
