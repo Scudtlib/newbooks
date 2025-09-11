@@ -177,7 +177,7 @@
 
 <script>
 /* ====== 設定 ====== */
-// 你的 n8n Webhook（Production）
+// n8n Webhook（Production）
 const API = 'https://sculib.app.n8n.cloud/webhook/sculibnewbooks';
 // 若要改測試 URL：
 // const API = 'https://sculib.app.n8n.cloud/webhook-test/sculibnewbooks';
@@ -204,7 +204,7 @@ async function load() {
     if (!rows.length) throw new Error('no rows');
 
     RAW = rows.map(x => ({
-      // 後端已輸出：title, location, callno, date, link
+      // 後端輸出：title, location, callno, date, link
       title:    x.title || '(無題名)',
       location: x.location || '',
       callno:   x.callno || '',
@@ -265,7 +265,7 @@ function render(){
   renderPager(pages, state.page);
 }
 
-/* ====== 分頁樣式：1 2 3 4 … N（無方框） ====== */
+/* ====== 分頁樣式：1 2 3 4 … N（無方框，點頁碼即跳、會滾動視窗） ====== */
 function renderPager(pages, page){
   const segs = [];
   const push = (p, label = String(p)) => {
@@ -298,6 +298,8 @@ function renderPager(pages, page){
     a.addEventListener('click', () => {
       state.page = Number(a.dataset.p);
       render();
+      // 讓使用者每次換頁都回到頂部（避免像「看似沒換」）
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 }
