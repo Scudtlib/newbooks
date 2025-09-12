@@ -4,8 +4,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>新進館藏</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --fg:#1f2937;--muted:#6b7280;--blue:#2563eb;--line:#e5e7eb;--bg:#fafafa;
@@ -13,37 +11,26 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0}
-  body{font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;
+  body{font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
        color:var(--fg);background:var(--bg)}
   .wrap{max-width:var(--maxw);margin:auto;padding:20px}
-  h1{margin:10px 0 14px;font-size:28px}
+  h1{margin:10px 0 14px;font-size:24px;font-weight:700}
   .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:6px 0 14px}
-  .bar .left,.bar .right{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-  .stat{color:var(--muted);font-size:14px}
-  select,input[type="text"]{height:36px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:#fff}
+  .stat{color:var(--muted);font-size:13px}
+  select,input[type="text"]{height:32px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:#fff}
   input[type="checkbox"]{transform:translateY(1px)}
   .table{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
   table{width:100%;border-collapse:collapse}
-  thead th{background:#f8fafc;color:#374151;font-weight:600;font-size:14px;letter-spacing:.02em}
-  th,td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{background:#f8fafc;color:#374151;font-weight:600;font-size:14px}
+  th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
   td.nowrap{white-space:nowrap}
   a{color:var(--blue);text-decoration:none}
   a:hover{text-decoration:underline}
-  .cover{width:54px;height:72px;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:#fff}
+  .cover{width:54px;height:72px;object-fit:cover;border:1px solid var(--line);border-radius:6px;background:#fff}
   .idx{color:#9ca3af;width:56px}
-  .loc{white-space:nowrap}
-  .date{white-space:nowrap}
-  .pager{display:flex;gap:18px;align-items:center;justify-content:center;margin:18px 0}
+  .pager{display:flex;gap:12px;align-items:center;justify-content:center;margin:16px 0}
   .pager a,.pager span{color:var(--blue);text-decoration:none}
   .pager .cur{color:#000;font-weight:700}
-  .topPager{justify-content:flex-end;margin-top:8px}
-  .controls{display:flex;gap:10px;align-items:center}
-  .toggle{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:14px}
-  @media (max-width:900px){
-    .idx{display:none}
-    .wrap{padding:14px}
-    h1{font-size:24px}
-  }
 </style>
 </head>
 <body>
@@ -51,24 +38,18 @@
     <h1>新進館藏</h1>
 
     <div class="bar">
-      <div class="left stat" id="stat">顯示第 1 至 20 項結果，共 0 項</div>
-      <div class="right">
-        <div class="controls">
-          <label class="toggle"><input type="checkbox" id="chkCover"> 顯示書影（ISBN 封面）</label>
-          <label>每頁
-            <select id="selSize">
-              <option>10</option><option selected>20</option><option>50</option>
-            </select> 筆
-          </label>
-          <input id="q" type="text" placeholder="搜尋：題名／索書號" />
-          <select id="selLoc">
-            <option value="">全部館藏地</option>
-          </select>
-        </div>
-      </div>
+      <div class="stat" id="stat">顯示第 0 至 0 項結果，共 0 項</div>
+      <label><input type="checkbox" id="chkCover"> 顯示書影</label>
+      <label>每頁
+        <select id="selSize">
+          <option>10</option><option selected>20</option><option>50</option>
+        </select> 筆
+      </label>
+      <input id="q" type="text" placeholder="搜尋：題名／索書號" />
+      <select id="selLoc"><option value="">全部館藏地</option></select>
     </div>
 
-    <div class="pager topPager" id="topPager"></div>
+    <div class="pager" id="topPager"></div>
 
     <div class="table">
       <table>
@@ -76,9 +57,9 @@
           <tr>
             <th class="idx">#</th>
             <th id="thCover" style="width:70px;display:none">書影</th>
-            <th style="min-width:360px">題名</th>
+            <th>題名</th>
             <th style="width:180px">館藏地</th>
-            <th style="width:180px">索書號</th>
+            <th style="width:160px">索書號</th>
             <th style="width:120px">上架日期</th>
           </tr>
         </thead>
@@ -91,23 +72,20 @@
 
 <script>
 (() => {
-  // 你的 GitHub Pages JSON
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:false };
   let RAW = [];
 
-  const $ = (s,el=document)=>el.querySelector(s);
-  const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
-  const elTbody = $('#tbody');
-  const elPager = $('#pager');
-  const elTopPager = $('#topPager');
-  const elStat  = $('#stat');
-  const elSize  = $('#selSize');
-  const elQ     = $('#q');
-  const elLoc   = $('#selLoc');
-  const elChkCover = $('#chkCover');
-  const elThCover = $('#thCover');
+  const elTbody = document.getElementById('tbody');
+  const elPager = document.getElementById('pager');
+  const elTopPager = document.getElementById('topPager');
+  const elStat  = document.getElementById('stat');
+  const elSize  = document.getElementById('selSize');
+  const elQ     = document.getElementById('q');
+  const elLoc   = document.getElementById('selLoc');
+  const elChkCover = document.getElementById('chkCover');
+  const elThCover = document.getElementById('thCover');
 
   function paginate(total,page,size){
     const pages = Math.max(1, Math.ceil(total/size));
@@ -117,133 +95,83 @@
 
   function pagerHTML(p,pages){
     const parts=[];
-    const add = (txt,to,cur=false)=>{
-      if(cur) parts.push(`<span class="cur">${txt}</span>`);
-      else parts.push(`<a href="#" data-page="${to}">${txt}</a>`);
-    };
+    const add=(t,to,cur)=>{parts.push(cur?`<span class="cur">${t}</span>`:`<a href="#" data-p="${to}">${t}</a>`);};
     if(p>1) add('上一頁',p-1);
-    const win=2;
-    const left=Math.max(1,p-win), right=Math.min(pages,p+win);
+    const w=2,l=Math.max(1,p-w),r=Math.min(pages,p+w);
     add(1,1,p===1);
-    if(left>2) parts.push('<span>…</span>');
-    for(let i=left;i<=right;i++){
-      if(i!==1 && i!==pages) add(i,i,p===i);
-    }
-    if(right<pages-1) parts.push('<span>…</span>');
+    if(l>2) parts.push('<span>…</span>');
+    for(let i=l;i<=r;i++){if(i!==1&&i!==pages) add(i,i,p===i);}
+    if(r<pages-1) parts.push('<span>…</span>');
     if(pages>1) add(pages,pages,p===pages);
     if(p<pages) add('下一頁',p+1);
     return parts.join(' ');
   }
 
   function fillLocations(rows){
-    const set=new Set();
-    rows.forEach(r=>{ if(r.location) set.add(r.location); });
-    const cur=state.loc;
-    elLoc.innerHTML='<option value="">全部館藏地</option>' +
-      [...set].sort().map(x=>`<option${x===cur?' selected':''}>${x}</option>`).join('');
+    const set=new Set(rows.map(r=>r.location).filter(Boolean));
+    elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
   function render(){
-    const q = state.q.trim();
-    let rows = RAW;
-    if(q){
-      const key=q.toLowerCase();
-      rows = rows.filter(r =>
-        (r.title||'').toLowerCase().includes(key) ||
-        (r.callno||'').toLowerCase().includes(key)
-      );
-    }
-    if(state.loc) rows = rows.filter(r => r.location===state.loc);
+    let rows=RAW;
+    const q=state.q.trim().toLowerCase();
+    if(q) rows=rows.filter(r=>(r.title||'').toLowerCase().includes(q)||(r.callno||'').toLowerCase().includes(q));
+    if(state.loc) rows=rows.filter(r=>r.location===state.loc);
 
-    const {pages,page,start,end} = paginate(rows.length,state.page,state.size);
-    state.page = page;
+    const {pages,page,start,end}=paginate(rows.length,state.page,state.size);
+    state.page=page;
+    elStat.textContent=`顯示第 ${rows.length?start+1:0} 至 ${end} 項結果，共 ${rows.length} 項`;
 
-    elStat.textContent = `顯示第 ${rows.length?start+1:0} 至 ${end} 項結果，共 ${rows.length} 項`;
-    const pageRows = rows.slice(start,end);
-
-    elThCover.style.display = state.cover ? '' : 'none';
-    $$('.coverCol').forEach(td => td.style.display = state.cover ? '' : 'none');
-
-    elTbody.innerHTML = pageRows.map((r,i)=>`
+    elThCover.style.display=state.cover?'':'none';
+    elTbody.innerHTML=rows.slice(start,end).map((r,i)=>`
       <tr>
         <td class="idx">${start+i+1}</td>
         <td class="coverCol" style="display:${state.cover?'':'none'}">
-          ${r.cover ? `<img class="cover" src="${r.cover}" alt="">` : ''}
+          ${r.cover?`<img class="cover" src="${r.cover}" onerror="this.style.display='none'">`:''}
         </td>
-        <td>
-          <div style="line-height:1.35">
-            ${r.link ? `<a href="${r.link}" target="_blank" rel="noopener">${r.title}</a>` : r.title}
-          </div>
-        </td>
-        <td class="loc">${r.location||''}</td>
+        <td><a href="${r.link}" target="_blank">${r.title}</a></td>
+        <td>${r.location||''}</td>
         <td class="nowrap">${r.callno||''}</td>
-        <td class="date">${r.date||''}</td>
-      </tr>
-    `).join('');
+        <td class="nowrap">${r.date||''}</td>
+      </tr>`).join('');
 
-    const html = pagerHTML(page,pages);
-    elPager.innerHTML = html;
-    elTopPager.innerHTML = html;
-
-    [elPager, elTopPager].forEach(p=>{
-      p.onclick = e=>{
-        const a = e.target.closest('a[data-page]');
-        if(!a) return;
-        e.preventDefault();
-        state.page = +a.dataset.page;
-        render();
+    const html=pagerHTML(page,pages);
+    elPager.innerHTML=html;
+    elTopPager.innerHTML=html;
+    [elPager,elTopPager].forEach(p=>{
+      p.onclick=e=>{
+        const a=e.target.closest('a[data-p]');
+        if(a){e.preventDefault();state.page=+a.dataset.p;render();}
       };
     });
   }
 
-  // ---- 關鍵：強韌的 JSON 解析 ----
   function tryParseAny(text){
-    // 1) 直接解析
-    try { return JSON.parse(text); } catch(e){}
-    // 2) 擷取第一個 { 到最後一個 }
-    const s = text.indexOf('{'), e = text.lastIndexOf('}');
-    if(s>=0 && e>s){
-      try { return JSON.parse(text.slice(s, e+1)); } catch(_){}
-    }
-    // 3) 直接解析陣列（n8n 有時會是 [ { rows: [...] } ]）
-    const s2 = text.indexOf('['), e2 = text.lastIndexOf(']');
-    if(s2>=0 && e2>s2){
-      try { return JSON.parse(text.slice(s2, e2+1)); } catch(_){}
-    }
-    // 4) 把 "rows":[…] 單獨抓出來解析
-    const m = text.match(/"rows"\s*:\s*(\[[\s\S]*\])/);
-    if(m){
-      try { return { rows: JSON.parse(m[1]) }; } catch(_){}
-    }
+    try{return JSON.parse(text);}catch(e){}
+    const s=text.indexOf('{'),e=text.lastIndexOf('}');
+    if(s>=0&&e>s) try{return JSON.parse(text.slice(s,e+1));}catch(_){}
+    const m=text.match(/"rows"\s*:\s*(\[[\s\S]*\])/);
+    if(m) try{return {rows:JSON.parse(m[1])};}catch(_){}
     return null;
   }
 
   async function load(){
     try{
-      const r = await fetch(API, {cache:'no-store'});
-      const txt = await r.text();          // 先拿純文字
-      let data = tryParseAny(txt);         // 用強韌解析器
-      if(!data) throw new Error(`Unexpected token; 原始回應不是有效 JSON`);
-
-      // 兼容多種包裝格式
-      if(Array.isArray(data)) data = data[0] || {};
-      const rows = data.rows || data?.json?.rows || [];
-      if(!Array.isArray(rows)) throw new Error(`找不到 rows 陣列`);
-
-      RAW = rows;
+      const r=await fetch(API,{cache:'no-store'});
+      const txt=await r.text();
+      let d=tryParseAny(txt);
+      if(!d) throw new Error("無法解析 JSON");
+      if(Array.isArray(d)) d=d[0]||{};
+      RAW=d.rows||[];
       fillLocations(RAW);
       render();
-    }catch(e){
-      alert('載入資料失敗： ' + e.message);
-      console.error(e);
-    }
+    }catch(e){alert('載入資料失敗：'+e.message);}
   }
 
-  // events
-  elSize.onchange = ()=>{ state.size = +elSize.value; state.page=1; render(); };
-  elQ.oninput     = ()=>{ state.q = elQ.value; state.page=1; render(); };
-  elLoc.onchange  = ()=>{ state.loc = elLoc.value; state.page=1; render(); };
-  elChkCover.onchange = ()=>{ state.cover = elChkCover.checked; render(); };
+  elSize.onchange=()=>{state.size=+elSize.value;state.page=1;render();};
+  elQ.oninput=()=>{state.q=elQ.value;state.page=1;render();};
+  elLoc.onchange=()=>{state.loc=elLoc.value;state.page=1;render();};
+  elChkCover.onchange=()=>{state.cover=elChkCover.checked;render();};
 
   load();
 })();
