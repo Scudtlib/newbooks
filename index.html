@@ -87,6 +87,7 @@
   const elChkCover = document.getElementById('chkCover');
   const elThCover = document.getElementById('thCover');
 
+  /* -------------- 分頁 -------------- */
   function paginate(total,page,size){
     const pages = Math.max(1, Math.ceil(total/size));
     page = Math.min(Math.max(1,page), pages);
@@ -107,11 +108,47 @@
     return parts.join(' ');
   }
 
+  /* -------------- 館藏地 -------------- */
   function fillLocations(rows){
     const set=new Set(rows.map(r=>r.location).filter(Boolean));
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
+  /* -------------- 書影：來源串接與失敗接力 -------------- */
+  const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
+  const VID = '886UCO_SCU:886SCU_INST';
+
+  // 從 fulldisplay 連結解析 MMSID（docid=almaXXXXXXXXXXXXX）
+  function getMMS(link){
+    const m = (link||'').match(/docid=alma(\d+)/i);
+    return m ? m[1] : '';
+  }
+
+  // 依序組書影候選清單：OpenLibrary(資料內的 r.cover) → Primo thumbnail
+  function coverCandidates(r){
+    const list = [];
+    if (r.cover) list.push(r.cover);
+    const mms = getMMS(r.link);
+    if (mms) {
+      // Primo VE 官方縮圖端點
+      list.push(`${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`);
+    }
+    return list;
+  }
+
+  // <img> onerror：換下一個來源，全部失敗則隱藏
+  window.__nextCover = function(img){
+    const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
+    let i = +(img.dataset.idx||0);
+    if (i < arr.length - 1){
+      img.dataset.idx = i + 1;
+      img.src = arr[i + 1];
+    }else{
+      img.style.display = 'none';
+    }
+  };
+
+  /* -------------- 繪製 -------------- */
   function render(){
     let rows=RAW;
     const q=state.q.trim().toLowerCase();
@@ -123,17 +160,22 @@
     elStat.textContent=`顯示第 ${rows.length?start+1:0} 至 ${end} 項結果，共 ${rows.length} 項`;
 
     elThCover.style.display=state.cover?'':'none';
-    elTbody.innerHTML=rows.slice(start,end).map((r,i)=>`
+
+    elTbody.innerHTML=rows.slice(start,end).map((r,i)=>{
+      const cands = coverCandidates(r);
+      const coverHTML = (state.cover && cands.length)
+        ? `<img class="cover" src="${cands[0]}" data-srcs="${cands.join('|')}" data-idx="0" onerror="__nextCover(this)" alt="">`
+        : '';
+      return `
       <tr>
         <td class="idx">${start+i+1}</td>
-        <td class="coverCol" style="display:${state.cover?'':'none'}">
-          ${r.cover?`<img class="cover" src="${r.cover}" onerror="this.style.display='none'">`:''}
-        </td>
+        <td class="coverCol" style="display:${state.cover?'':'none'}">${coverHTML}</td>
         <td><a href="${r.link}" target="_blank">${r.title}</a></td>
         <td>${r.location||''}</td>
         <td class="nowrap">${r.callno||''}</td>
         <td class="nowrap">${r.date||''}</td>
-      </tr>`).join('');
+      </tr>`;
+    }).join('');
 
     const html=pagerHTML(page,pages);
     elPager.innerHTML=html;
@@ -146,6 +188,7 @@
     });
   }
 
+  /* -------------- 載入 -------------- */
   function tryParseAny(text){
     try{return JSON.parse(text);}catch(e){}
     const s=text.indexOf('{'),e=text.lastIndexOf('}');
@@ -168,6 +211,7 @@
     }catch(e){alert('載入資料失敗：'+e.message);}
   }
 
+  /* -------------- 事件 -------------- */
   elSize.onchange=()=>{state.size=+elSize.value;state.page=1;render();};
   elQ.oninput=()=>{state.q=elQ.value;state.page=1;render();};
   elLoc.onchange=()=>{state.loc=elLoc.value;state.page=1;render();};
