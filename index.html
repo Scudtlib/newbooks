@@ -91,7 +91,7 @@
 
 <script>
 (() => {
-  // 直接讀 GitHub Pages 上的 JSON
+  // 你的 GitHub Pages JSON
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:false };
@@ -122,8 +122,8 @@
       else parts.push(`<a href="#" data-page="${to}">${txt}</a>`);
     };
     if(p>1) add('上一頁',p-1);
-    const window=2;
-    const left=Math.max(1,p-window), right=Math.min(pages,p+window);
+    const win=2;
+    const left=Math.max(1,p-win), right=Math.min(pages,p+win);
     add(1,1,p===1);
     if(left>2) parts.push('<span>…</span>');
     for(let i=left;i<=right;i++){
@@ -196,15 +196,46 @@
     });
   }
 
+  // ---- 關鍵：強韌的 JSON 解析 ----
+  function tryParseAny(text){
+    // 1) 直接解析
+    try { return JSON.parse(text); } catch(e){}
+    // 2) 擷取第一個 { 到最後一個 }
+    const s = text.indexOf('{'), e = text.lastIndexOf('}');
+    if(s>=0 && e>s){
+      try { return JSON.parse(text.slice(s, e+1)); } catch(_){}
+    }
+    // 3) 直接解析陣列（n8n 有時會是 [ { rows: [...] } ]）
+    const s2 = text.indexOf('['), e2 = text.lastIndexOf(']');
+    if(s2>=0 && e2>s2){
+      try { return JSON.parse(text.slice(s2, e2+1)); } catch(_){}
+    }
+    // 4) 把 "rows":[…] 單獨抓出來解析
+    const m = text.match(/"rows"\s*:\s*(\[[\s\S]*\])/);
+    if(m){
+      try { return { rows: JSON.parse(m[1]) }; } catch(_){}
+    }
+    return null;
+  }
+
   async function load(){
     try{
       const r = await fetch(API, {cache:'no-store'});
-      const d = await r.json();
-      RAW = Array.isArray(d?.rows) ? d.rows : [];
+      const txt = await r.text();          // 先拿純文字
+      let data = tryParseAny(txt);         // 用強韌解析器
+      if(!data) throw new Error(`Unexpected token; 原始回應不是有效 JSON`);
+
+      // 兼容多種包裝格式
+      if(Array.isArray(data)) data = data[0] || {};
+      const rows = data.rows || data?.json?.rows || [];
+      if(!Array.isArray(rows)) throw new Error(`找不到 rows 陣列`);
+
+      RAW = rows;
       fillLocations(RAW);
       render();
     }catch(e){
-      alert('載入資料失敗：' + e.message);
+      alert('載入資料失敗： ' + e.message);
+      console.error(e);
     }
   }
 
