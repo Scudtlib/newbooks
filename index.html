@@ -31,6 +31,11 @@
   .pager{display:flex;gap:12px;align-items:center;justify-content:center;margin:16px 0}
   .pager a,.pager span{color:var(--blue);text-decoration:none}
   .pager .cur{color:#000;font-weight:700}
+  /* sort */
+  .sortable{cursor:pointer;user-select:none}
+  .sortable .arrow{margin-left:6px;color:#9ca3af;font-size:12px}
+  .sortable.active{color:#111827}
+  .sortable.active .arrow{color:#2563eb}
 </style>
 </head>
 <body>
@@ -60,7 +65,7 @@
             <th>題名</th>
             <th style="width:180px">館藏地</th>
             <th style="width:160px">索書號</th>
-            <th style="width:120px">上架日期</th>
+            <th style="width:120px" id="thDate" class="sortable">上架日期 <span class="arrow" id="dateArrow">⇅</span></th>
           </tr>
         </thead>
         <tbody id="tbody"></tbody>
@@ -74,7 +79,8 @@
 (() => {
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
-  const state = { page:1, size:20, q:'', loc:'', cover:false };
+  // sortDir: ''(不排序) / 'asc' / 'desc'
+  const state = { page:1, size:20, q:'', loc:'', cover:false, sortDir:'' };
   let RAW = [];
 
   const elTbody = document.getElementById('tbody');
@@ -86,6 +92,8 @@
   const elLoc   = document.getElementById('selLoc');
   const elChkCover = document.getElementById('chkCover');
   const elThCover = document.getElementById('thCover');
+  const elThDate  = document.getElementById('thDate');
+  const elDateArrow = document.getElementById('dateArrow');
 
   /* -------------- 分頁 -------------- */
   function paginate(total,page,size){
@@ -114,29 +122,23 @@
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
-  /* -------------- 書影：來源串接與失敗接力 -------------- */
+  /* -------------- 書影：OpenLibrary → Primo fallback -------------- */
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
 
-  // 從 fulldisplay 連結解析 MMSID（docid=almaXXXXXXXXXXXXX）
   function getMMS(link){
     const m = (link||'').match(/docid=alma(\d+)/i);
     return m ? m[1] : '';
   }
 
-  // 依序組書影候選清單：OpenLibrary(資料內的 r.cover) → Primo thumbnail
   function coverCandidates(r){
     const list = [];
     if (r.cover) list.push(r.cover);
     const mms = getMMS(r.link);
-    if (mms) {
-      // Primo VE 官方縮圖端點
-      list.push(`${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`);
-    }
+    if (mms) list.push(`${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`);
     return list;
   }
 
-  // <img> onerror：換下一個來源，全部失敗則隱藏
   window.__nextCover = function(img){
     const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
     let i = +(img.dataset.idx||0);
@@ -148,12 +150,33 @@
     }
   };
 
+  /* -------------- 日期排序 -------------- */
+  function dateKey(s){
+    // 返回數值鍵；無日期放最後
+    if(!s) return -Infinity;
+    // YYYY-MM-DD → 整數 20250814
+    const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return m ? +(m[1]+m[2]+m[3]) : -Infinity;
+  }
+  function updateDateHeader(){
+    elThDate.classList.toggle('active', !!state.sortDir);
+    elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
+  }
+
   /* -------------- 繪製 -------------- */
   function render(){
-    let rows=RAW;
+    let rows=RAW.slice();
     const q=state.q.trim().toLowerCase();
     if(q) rows=rows.filter(r=>(r.title||'').toLowerCase().includes(q)||(r.callno||'').toLowerCase().includes(q));
     if(state.loc) rows=rows.filter(r=>r.location===state.loc);
+
+    // 排序（只針對上架日期）
+    if(state.sortDir){
+      rows.sort((a,b)=>{
+        const ka=dateKey(a.date), kb=dateKey(b.date);
+        return state.sortDir==='asc' ? (ka-kb) : (kb-ka);
+      });
+    }
 
     const {pages,page,start,end}=paginate(rows.length,state.page,state.size);
     state.page=page;
@@ -186,6 +209,8 @@
         if(a){e.preventDefault();state.page=+a.dataset.p;render();}
       };
     });
+
+    updateDateHeader();
   }
 
   /* -------------- 載入 -------------- */
@@ -216,6 +241,13 @@
   elQ.oninput=()=>{state.q=elQ.value;state.page=1;render();};
   elLoc.onchange=()=>{state.loc=elLoc.value;state.page=1;render();};
   elChkCover.onchange=()=>{state.cover=elChkCover.checked;render();};
+
+  // 點擊上架日期排序（循環：不排序 → 降冪 → 升冪）
+  elThDate.onclick=()=>{
+    state.page=1;
+    state.sortDir = state.sortDir==='' ? 'desc' : state.sortDir==='desc' ? 'asc' : '';
+    render();
+  };
 
   load();
 })();
