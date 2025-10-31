@@ -5,12 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>新進館藏</title>
 <style>
-  :root{
-    --fg:#1f2937;--muted:#6b7280;--blue:#2563eb;--line:#e5e7eb;--bg:#fafafa;
-    --maxw:1180px;--radius:12px;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0}
+  :root{--fg:#1f2937;--muted:#6b7280;--blue:#2563eb;--line:#e5e7eb;--bg:#fafafa;--maxw:1180px;--radius:12px}
+  *{box-sizing:border-box}html,body{margin:0}
   body{font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg)}
   .wrap{max-width:var(--maxw);margin:auto;padding:20px}
   h1{margin:10px 0 14px;font-size:26px;font-weight:700}
@@ -23,65 +19,63 @@
   thead th{background:#f8fafc;color:#374151;font-weight:600;font-size:14px}
   th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
   td.nowrap{white-space:nowrap}
-  a{color:var(--blue);text-decoration:none}
-  a:hover{text-decoration:underline}
+  a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
   .cover{width:54px;height:72px;object-fit:cover;border:1px solid var(--line);border-radius:6px;background:#fff}
   .idx{color:#9ca3af;width:56px}
   .pager{display:flex;gap:12px;align-items:center;justify-content:center;margin:16px 0}
-  .pager a,.pager span{color:var(--blue);text-decoration:none}
-  .pager .cur{color:#000;font-weight:700}
-  .sortable{cursor:pointer;user-select:none}
-  .sortable .arrow{margin-left:6px;color:#9ca3af;font-size:12px}
-  .sortable.active{color:#111827}
-  .sortable.active .arrow{color:#2563eb}
+  .pager a,.pager span{color:var(--blue);text-decoration:none}.pager .cur{color:#000;font-weight:700}
+  .sortable{cursor:pointer;user-select:none}.sortable .arrow{margin-left:6px;color:#9ca3af;font-size:12px}
+  .sortable.active{color:#111827}.sortable.active .arrow{color:#2563eb}
+  .err{margin:8px 0;padding:10px 12px;border:1px solid #fecaca;background:#fff1f2;color:#991b1b;border-radius:8px}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>新進館藏</h1>
+<div class="wrap">
+  <h1>新進館藏</h1>
 
-    <div class="bar">
-      <div class="stat" id="stat">顯示第 0 至 0 項結果，共 0 項</div>
-      <label><input type="checkbox" id="chkCover" checked> 顯示書影</label>
-      <label>每頁
-        <select id="selSize">
-          <option>10</option><option selected>20</option><option>50</option>
-        </select> 筆
-      </label>
-      <input id="q" type="text" placeholder="搜尋：題名／索書號" />
-      <select id="selLoc"><option value="">全部館藏地</option></select>
-    </div>
-
-    <div class="pager" id="topPager"></div>
-
-    <div class="table">
-      <table>
-        <thead>
-          <tr>
-            <th class="idx">#</th>
-            <th id="thCover" style="width:70px;">書影</th>
-            <th>題名</th>
-            <th style="width:220px">館藏地</th>
-            <th style="width:180px">索書號</th>
-            <th style="width:120px" id="thDate" class="sortable">上架日期 <span class="arrow" id="dateArrow">⇅</span></th>
-          </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-      </table>
-    </div>
-
-    <div class="pager" id="pager"></div>
+  <div class="bar">
+    <div class="stat" id="stat">顯示第 0 至 0 項結果，共 0 項</div>
+    <label><input type="checkbox" id="chkCover" checked> 顯示書影</label>
+    <label>每頁
+      <select id="selSize"><option>10</option><option selected>20</option><option>50</option></select> 筆
+    </label>
+    <input id="q" type="text" placeholder="搜尋：題名／索書號" />
+    <select id="selLoc"><option value="">全部館藏地</option></select>
   </div>
+
+  <div id="error" class="err" style="display:none"></div>
+
+  <div class="pager" id="topPager"></div>
+
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <th class="idx">#</th>
+          <th id="thCover" style="width:70px;">書影</th>
+          <th>題名</th>
+          <th style="width:220px">館藏地</th>
+          <th style="width:180px">索書號</th>
+          <th style="width:120px" id="thDate" class="sortable">上架日期 <span class="arrow" id="dateArrow">⇅</span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="pager" id="pager"></div>
+</div>
 
 <script>
 (() => {
-  // 你的 JSON URL（n8n 或 GitHub Pages）
-  const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
+  // 1) 與 index.html 同資料夾的 newbooks.json
+  // 若你放到自己的網域，改成完整 URL
+  const API = './newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
   let RAW = [];
 
-  // DOM
+  // ====== Dom ======
   const elTbody = document.getElementById('tbody');
   const elPager = document.getElementById('pager');
   const elTopPager = document.getElementById('topPager');
@@ -93,114 +87,14 @@
   const elThCover = document.getElementById('thCover');
   const elThDate  = document.getElementById('thDate');
   const elDateArrow = document.getElementById('dateArrow');
+  const elError = document.getElementById('error');
 
-  // 通用：圖片代理，避免 Referer/CORS
-  function viaProxy(u){
-    if(!u) return '';
-    const clean = String(u).replace(/^https?:\/\//,'');
-    return `https://images.weserv.nl/?url=${encodeURIComponent(clean)}`;
+  // ====== 工具 ======
+  function showError(msg, detail){
+    elError.style.display = '';
+    elError.textContent = msg;
+    if (detail) console.error('[newbooks] ', detail);
   }
-
-  // ===== 候選來源：Primo → Google Books → Open Library =====
-  const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
-  const VID = '886UCO_SCU:886SCU_INST';
-
-  function extractDocId(link){
-    const s = String(link || '');
-    try {
-      const u = new URL(s);
-      const raw = u.searchParams.get('docid') || '';
-      const d = decodeURIComponent(raw);
-      const m = d.match(/alma(\d+)/i);
-      if (m) return m[1];
-      const m2 = d.match(/(\d{9,})/);
-      return m2 ? m2[1] : '';
-    } catch {
-      const m = s.match(/[?&]docid=([^&]+)/i);
-      if (m) {
-        const d = decodeURIComponent(m[1]);
-        const m1 = d.match(/alma(\d+)/i);
-        if (m1) return m1[1];
-        const m2 = d.match(/(\d{9,})/);
-        if (m2) return m2[1];
-      }
-      return '';
-    }
-  }
-
-  function primoThumbs(mms){
-    if(!mms) return [];
-    // 以 Primo 縮圖為主，提供數種參數變體
-    return [
-      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`,
-      `${PRIMO_HOST}/discovery/thumbnail?vid=${VID}&docid=alma${mms}`,
-      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L`,
-      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L&lang=zh-tw`,
-    ];
-  }
-  function googleByIsbn(isbn){
-    if(!isbn) return [];
-    return [
-      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
-      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
-    ];
-  }
-  function openLibraryByIsbn(isbn){
-    if(!isbn) return [];
-    return [
-      `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg?default=false`,
-      `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg?default=false`,
-    ];
-  }
-
-  function coverCandidates(row){
-    const list = [];
-    // 1) Primo（優先）
-    const mms = extractDocId(row.link);
-    list.push(...primoThumbs(mms));
-    // 2) Google / OL（再補）
-    if (row.isbn) {
-      list.push(...googleByIsbn(row.isbn));
-      list.push(...openLibraryByIsbn(row.isbn));
-    }
-    // 3) 後端給的起手式（若有）
-    if (row.cover) list.push(row.cover);
-
-    // 去重並全部走代理
-    const seen = new Set(), out=[];
-    for (const u of list.filter(Boolean)) {
-      const p = viaProxy(u);
-      if (p && !seen.has(p)) { seen.add(p); out.push(p); }
-    }
-    return out;
-  }
-
-  // 占位圖偵測：若載入成功但太小或比例怪，視為占位圖，改試下一條
-  const MIN_W = 52, MIN_H = 70; // 接近我們的容器 54x72，低於此視為不合格
-  window.__checkCover = function(img){
-    const w = img.naturalWidth, h = img.naturalHeight;
-    if (!w || !h || w < MIN_W || h < MIN_H) {
-      // 視為占位圖，切到下一個候選
-      window.__nextCover(img);
-    }
-  };
-
-  // 失敗時換下一條；都失敗則用 fallback
-  const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
-  window.__nextCover = function(img){
-    const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
-    let i = +(img.dataset.idx||0);
-    if (i < arr.length - 1){
-      img.dataset.idx = i + 1;
-      img.src = arr[i + 1];
-    }else{
-      img.onerror = null;
-      img.onload = null;
-      img.src = FALLBACK;
-    }
-  };
-
-  // 分頁與排序
   function paginate(total,page,size){
     const pages = Math.max(1, Math.ceil(total/size));
     page = Math.min(Math.max(1,page), pages);
@@ -224,31 +118,103 @@
     const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
     return m ? +(m[1]+m[2]+m[3]) : -Infinity;
   }
-
-  const elDateArrow = document.getElementById('dateArrow');
-  const elThDate = document.getElementById('thDate');
   function updateDateHeader(){
     elThDate.classList.toggle('active', !!state.sortDir);
     elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
   }
 
-  // 館藏地
-  const elLoc = document.getElementById('selLoc');
+  // ====== 封面候補：Primo → Google → OpenLibrary，全部經代理 ======
+  function viaProxy(u){
+    if(!u) return '';
+    const clean = String(u).replace(/^https?:\/\//,'');
+    return `https://images.weserv.nl/?url=${encodeURIComponent(clean)}`;
+  }
+  const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
+  const VID = '886UCO_SCU:886SCU_INST';
+  function extractDocId(link){
+    const s = String(link || '');
+    try{
+      const u = new URL(s);
+      const raw = u.searchParams.get('docid') || '';
+      const d = decodeURIComponent(raw);
+      const m = d.match(/alma(\d+)/i) || d.match(/(\d{9,})/);
+      return m ? m[1] : '';
+    }catch{
+      const m = s.match(/[?&]docid=([^&]+)/i);
+      if(m){
+        const d = decodeURIComponent(m[1]);
+        const m1 = d.match(/alma(\d+)/i) || d.match(/(\d{9,})/);
+        return m1 ? m1[1] : '';
+      }
+      return '';
+    }
+  }
+  function primoThumbs(mms){
+    if(!mms) return [];
+    return [
+      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`,
+      `${PRIMO_HOST}/discovery/thumbnail?vid=${VID}&docid=alma${mms}`,
+      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L`,
+      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L&lang=zh-tw`,
+    ];
+  }
+  function googleByIsbn(isbn){
+    if(!isbn) return [];
+    return [
+      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
+      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
+    ];
+  }
+  function openLibraryByIsbn(isbn){
+    if(!isbn) return [];
+    return [
+      `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg?default=false`,
+      `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg?default=false`,
+    ];
+  }
+  function coverCandidates(row){
+    const lst=[];
+    const mms = extractDocId(row.link);
+    lst.push(...primoThumbs(mms));           // Primo 優先
+    if (row.isbn){                           // 再補 Google/OL
+      lst.push(...googleByIsbn(row.isbn));
+      lst.push(...openLibraryByIsbn(row.isbn));
+    }
+    if (row.cover) lst.push(row.cover);      // 後端起手式
+    const seen=new Set(), out=[];
+    for(const u of lst.filter(Boolean)){
+      const p = viaProxy(u);
+      if(p && !seen.has(p)){ seen.add(p); out.push(p); }
+    }
+    return out;
+  }
+
+  // 占位圖／錯圖 fallback
+  const MIN_W = 52, MIN_H = 70;
+  const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
+  window.__nextCover = function(img){
+    const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
+    let i = +(img.dataset.idx||0);
+    if (i < arr.length - 1){
+      img.dataset.idx = i + 1;
+      img.src = arr[i + 1];
+    } else {
+      img.onerror = null; img.onload = null; img.src = FALLBACK;
+    }
+  };
+  window.__checkCover = function(img){
+    const w = img.naturalWidth, h = img.naturalHeight;
+    if (!w || !h || w < MIN_W || h < MIN_H) window.__nextCover(img);
+  };
+
+  // ====== Render ======
   function fillLocations(rows){
     const set=new Set(rows.map(r=>r.location).filter(Boolean));
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
-
-  // Render
-  const elTbody = document.getElementById('tbody');
-  const elThCover = document.getElementById('thCover');
-  const elPager = document.getElementById('pager');
-  const elTopPager = document.getElementById('topPager');
-  const elStat  = document.getElementById('stat');
-
   function render(){
     let rows=RAW.slice();
-    const q=document.getElementById('q').value.trim().toLowerCase();
+    const q=elQ.value.trim().toLowerCase();
     if(q) rows=rows.filter(r=>(r.title||'').toLowerCase().includes(q)||(r.callno||'').toLowerCase().includes(q));
     const locVal = elLoc.value;
     if(locVal) rows=rows.filter(r=>r.location===locVal);
@@ -259,7 +225,6 @@
         return state.sortDir==='asc' ? (ka-kb) : (kb-ka);
       });
     }
-
     const {pages,page,start,end}=paginate(rows.length,state.page,state.size);
     state.page=page;
     elStat.textContent=`顯示第 ${rows.length?start+1:0} 至 ${end} 項結果，共 ${rows.length} 項`;
@@ -268,17 +233,10 @@
 
     elTbody.innerHTML=rows.slice(start,end).map((r,i)=>{
       const cands = coverCandidates(r);
-      if (start+i < 3) console.log('[cover-debug]', { idx: start+i+1, title: r.title, isbn: r.isbn, link: r.link, cands });
       const coverHTML = (state.cover && cands.length)
-        ? `<img class="cover"
-                 src="${cands[0]}"
-                 data-srcs="${cands.join('|')}"
-                 data-idx="0"
-                 loading="lazy"
-                 referrerpolicy="no-referrer"
-                 onerror="__nextCover(this)"
-                 onload="__checkCover(this)"
-                 alt="">`
+        ? `<img class="cover" src="${cands[0]}" data-srcs="${cands.join('|')}" data-idx="0"
+                 loading="lazy" referrerpolicy="no-referrer"
+                 onerror="__nextCover(this)" onload="__checkCover(this)" alt="">`
         : (state.cover ? `<img class="cover" src="${FALLBACK}" alt="">` : '');
       return `
       <tr>
@@ -292,47 +250,58 @@
     }).join('');
 
     const html=pagerHTML(page,pages);
-    elPager.innerHTML=html;
-    elTopPager.innerHTML=html;
+    elPager.innerHTML=html; elTopPager.innerHTML=html;
     [elPager,elTopPager].forEach(p=>{
       p.onclick=e=>{
         const a=e.target.closest('a[data-p]');
         if(a){e.preventDefault();state.page=+a.dataset.p;render();}
       };
     });
-
     updateDateHeader();
   }
 
-  // 載入
+  // ====== 載入 JSON（兼容多種形態） ======
   function tryParseAny(text){
     try{return JSON.parse(text);}catch(e){}
     const s=text.indexOf('{'),e=text.lastIndexOf('}');
-    if(s>=0&&e>s) try{return JSON.parse(text.slice(s,e+1));}catch(_){}
+    if(s>=0&&e>s){ try{return JSON.parse(text.slice(s,e+1));}catch(e){} }
     const m=text.match(/"rows"\s*:\s*(\[[\s\S]*\])/);
-    if(m) try{return {rows:JSON.parse(m[1])};}catch(_){}
+    if(m){ try{return {rows:JSON.parse(m[1])};}catch(e){} }
     return null;
   }
+  function extractRows(obj){
+    if(!obj) return [];
+    if (Array.isArray(obj)) {
+      if (obj.length && obj[0] && obj[0].json && Array.isArray(obj[0].json.rows)) return obj[0].json.rows;
+      if (Array.isArray(obj)) return obj; // 若純 rows 陣列
+    }
+    if (obj.rows && Array.isArray(obj.rows)) return obj.rows;
+    return [];
+  }
   async function load(){
-    const r=await fetch(API,{cache:'no-store'});
-    const txt=await r.text();
-    let d=tryParseAny(txt);
-    if(!d) throw new Error("無法解析 JSON");
-    if(Array.isArray(d)) d=d[0]||{};
-    RAW=d.rows||[];
-    fillLocations(RAW);
-    document.getElementById('chkCover').checked = state.cover;
-    render();
+    try{
+      const r = await fetch(API,{cache:'no-store'});
+      if(!r.ok) throw new Error(`HTTP ${r.status}`);
+      const txt = await r.text();
+      const parsed = tryParseAny(txt);
+      const rows = extractRows(parsed);
+      if (!rows.length) throw new Error('JSON 無 rows');
+      RAW = rows;
+      fillLocations(RAW);
+      render();
+    }catch(err){
+      showError('載入資料失敗，請確認 newbooks.json 與 index.html 是否在同一資料夾，或 API 路徑是否正確。', err);
+    }
   }
 
   // 事件
-  document.getElementById('selSize').onchange=()=>{state.size=+document.getElementById('selSize').value;state.page=1;render();};
-  document.getElementById('q').oninput=()=>{state.page=1;render();};
+  elSize.onchange=()=>{state.size=+elSize.value;state.page=1;render();};
+  elQ.oninput=()=>{state.page=1;render();};
   elLoc.onchange=()=>{state.page=1;render();};
-  document.getElementById('chkCover').onchange=()=>{state.cover=document.getElementById('chkCover').checked;render();};
+  elChkCover.onchange=()=>{state.cover=elChkCover.checked;render();};
   elThDate.onclick=()=>{state.page=1;state.sortDir = state.sortDir==='' ? 'desc' : state.sortDir==='desc' ? 'asc' : '';render();};
 
-  load().catch(err=>alert('載入資料失敗：'+err.message));
+  load();
 })();
 </script>
 </body>
