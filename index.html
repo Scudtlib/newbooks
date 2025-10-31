@@ -7,16 +7,15 @@
 <style>
   :root{
     --fg:#1f2937;--muted:#6b7280;--blue:#2563eb;--line:#e5e7eb;--bg:#fafafa;
-    --maxw:1100px;--radius:12px;
+    --maxw:1180px;--radius:12px;
   }
   *{box-sizing:border-box}
   html,body{margin:0}
-  body{font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-       color:var(--fg);background:var(--bg)}
+  body{font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg)}
   .wrap{max-width:var(--maxw);margin:auto;padding:20px}
-  h1{margin:10px 0 14px;font-size:24px;font-weight:700}
-  .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:6px 0 14px}
-  .stat{color:var(--muted);font-size:13px}
+  h1{margin:10px 0 14px;font-size:26px;font-weight:700}
+  .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:flex-start;margin:6px 0 14px}
+  .stat{color:var(--muted);font-size:13px;margin-right:auto}
   select,input[type="text"]{height:32px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:#fff}
   input[type="checkbox"]{transform:translateY(1px)}
   .table{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
@@ -31,7 +30,6 @@
   .pager{display:flex;gap:12px;align-items:center;justify-content:center;margin:16px 0}
   .pager a,.pager span{color:var(--blue);text-decoration:none}
   .pager .cur{color:#000;font-weight:700}
-  /* sort */
   .sortable{cursor:pointer;user-select:none}
   .sortable .arrow{margin-left:6px;color:#9ca3af;font-size:12px}
   .sortable.active{color:#111827}
@@ -44,7 +42,6 @@
 
     <div class="bar">
       <div class="stat" id="stat">顯示第 0 至 0 項結果，共 0 項</div>
-      <!-- 預設勾選 -->
       <label><input type="checkbox" id="chkCover" checked> 顯示書影</label>
       <label>每頁
         <select id="selSize">
@@ -64,8 +61,8 @@
             <th class="idx">#</th>
             <th id="thCover" style="width:70px;">書影</th>
             <th>題名</th>
-            <th style="width:180px">館藏地</th>
-            <th style="width:160px">索書號</th>
+            <th style="width:220px">館藏地</th>
+            <th style="width:180px">索書號</th>
             <th style="width:120px" id="thDate" class="sortable">上架日期 <span class="arrow" id="dateArrow">⇅</span></th>
           </tr>
         </thead>
@@ -78,13 +75,16 @@
 
 <script>
 (() => {
+  // 你的 JSON 位置：可放 n8n endpoint 或 GitHub Pages。
+  // 例：'https://scudtlib.github.io/newbooks/newbooks.json'
+  // 若此檔與 JSON 同資料夾，也可用相對路徑 'newbooks.json'
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
-  // sortDir: ''(不排序) / 'asc' / 'desc'
-  // 預設 cover:true
+  // 狀態：預設封面開啟
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
   let RAW = [];
 
+  // DOM
   const elTbody = document.getElementById('tbody');
   const elPager = document.getElementById('pager');
   const elTopPager = document.getElementById('topPager');
@@ -97,13 +97,12 @@
   const elThDate  = document.getElementById('thDate');
   const elDateArrow = document.getElementById('dateArrow');
 
-  /* -------------- 分頁 -------------- */
+  // 分頁
   function paginate(total,page,size){
     const pages = Math.max(1, Math.ceil(total/size));
     page = Math.min(Math.max(1,page), pages);
     return {pages,page,start:(page-1)*size,end:Math.min(page*size,total)};
   }
-
   function pagerHTML(p,pages){
     const parts=[];
     const add=(t,to,cur)=>{parts.push(cur?`<span class="cur">${t}</span>`:`<a href="#" data-p="${to}">${t}</a>`);};
@@ -118,13 +117,13 @@
     return parts.join(' ');
   }
 
-  /* -------------- 館藏地 -------------- */
+  // 館藏地
   function fillLocations(rows){
     const set=new Set(rows.map(r=>r.location).filter(Boolean));
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
-  /* -------------- 書影：OpenLibrary → Primo fallback -------------- */
+  // 書影候補：OpenLibrary → 多版本 Primo 縮圖
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
 
@@ -132,19 +131,27 @@
     const m = (link||'').match(/docid=alma(\d+)/i);
     return m ? m[1] : '';
   }
-
+  function primoThumbs(mms){
+    if(!mms) return [];
+    return [
+      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`,
+      `${PRIMO_HOST}/discovery/thumbnail?vid=${VID}&docid=alma${mms}`,
+      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L`,
+      `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L&lang=zh-tw`,
+    ];
+  }
   function coverCandidates(r){
     const list = [];
-    if (r.cover) list.push(r.cover);
+    if (r.cover) list.push(r.cover);               // 來自 n8n（ISBN 或 Primo）
     const mms = getMMS(r.link);
-    if (mms) list.push(`${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}`);
-    return list;
+    list.push(...primoThumbs(mms));                // 再補一輪候補
+    return list.filter(Boolean);
   }
 
-  // 失敗占位圖（SVG）
+  // 失敗占位圖
   const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
 
-  // 候補遞進，最後改成占位圖
+  // 候補遞進
   window.__nextCover = function(img){
     const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
     let i = +(img.dataset.idx||0);
@@ -157,7 +164,7 @@
     }
   };
 
-  /* -------------- 日期排序 -------------- */
+  // 日期排序
   function dateKey(s){
     if(!s) return -Infinity;
     const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -168,7 +175,7 @@
     elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
   }
 
-  /* -------------- 繪製 -------------- */
+  // 繪製
   function render(){
     let rows=RAW.slice();
     const q=state.q.trim().toLowerCase();
@@ -224,7 +231,7 @@
     updateDateHeader();
   }
 
-  /* -------------- 載入 -------------- */
+  // 載入
   function tryParseAny(text){
     try{return JSON.parse(text);}catch(e){}
     const s=text.indexOf('{'),e=text.lastIndexOf('}');
@@ -233,36 +240,27 @@
     if(m) try{return {rows:JSON.parse(m[1])};}catch(_){}
     return null;
   }
-
   async function load(){
-    try{
-      const r=await fetch(API,{cache:'no-store'});
-      const txt=await r.text();
-      let d=tryParseAny(txt);
-      if(!d) throw new Error("無法解析 JSON");
-      if(Array.isArray(d)) d=d[0]||{};
-      RAW=d.rows||[];
-      fillLocations(RAW);
-      // 初始化 UI 與渲染
-      elChkCover.checked = state.cover;
-      render();
-    }catch(e){alert('載入資料失敗：'+e.message);}
+    const r=await fetch(API,{cache:'no-store'});
+    const txt=await r.text();
+    let d=tryParseAny(txt);
+    if(!d) throw new Error("無法解析 JSON");
+    if(Array.isArray(d)) d=d[0]||{};
+    RAW=d.rows||[];
+    window.__DATA__ = { rows: RAW }; // 方便你在 Console 檢查
+    fillLocations(RAW);
+    elChkCover.checked = state.cover;
+    render();
   }
 
-  /* -------------- 事件 -------------- */
+  // 事件
   elSize.onchange=()=>{state.size=+elSize.value;state.page=1;render();};
   elQ.oninput=()=>{state.q=elQ.value;state.page=1;render();};
   elLoc.onchange=()=>{state.loc=elLoc.value;state.page=1;render();};
   elChkCover.onchange=()=>{state.cover=elChkCover.checked;render();};
+  elThDate.onclick=()=>{state.page=1;state.sortDir = state.sortDir==='' ? 'desc' : state.sortDir==='desc' ? 'asc' : '';render();};
 
-  // 點擊上架日期排序（循環：不排序 → 降冪 → 升冪）
-  elThDate.onclick=()=>{
-    state.page=1;
-    state.sortDir = state.sortDir==='' ? 'desc' : state.sortDir==='desc' ? 'asc' : '';
-    render();
-  };
-
-  load();
+  load().catch(err=>alert('載入資料失敗：'+err.message));
 })();
 </script>
 </body>
