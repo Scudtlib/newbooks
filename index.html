@@ -194,19 +194,19 @@
     return out;
   }
 
-  // 占位圖／錯圖 fallback
-  const MIN_W = 60, MIN_H = 80;
-  const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
-  window.__nextCover = function(img){
-    const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
-    let i = +(img.dataset.idx||0);
-    if (i < arr.length - 1){
-      img.dataset.idx = i + 1;
-      img.src = arr[i + 1];
-    } else {
-      img.onerror = null; img.onload = null; img.src = FALLBACK;
-    }
-  };
+ // 占位圖／錯圖 fallback
+const MIN_W = 60, MIN_H = 80;
+const FALLBACK = './no-cover.png'; // <-- 幫您修改成您要的預設圖片
+window.__nextCover = function(img){
+  const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
+  let i = +(img.dataset.idx||0);
+  if (i < arr.length - 1){
+    img.dataset.idx = i + 1;
+    img.src = arr[i + 1];
+  } else {
+    img.onerror = null; img.onload = null; img.src = FALLBACK;
+  }
+};
   window.__checkCover = function(img){
     const w = img.naturalWidth, h = img.naturalHeight;
     if (!w || !h || w < MIN_W || h < MIN_H) window.__nextCover(img);
@@ -310,4 +310,5 @@
 })();
 </script>
 </body>
+
 </html>
