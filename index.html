@@ -161,7 +161,8 @@
   function googleByIsbn(isbn){
     if(!isbn) return [];
     return [
-      // +++ 修正：移除 zoom=2，只保留 zoom=1 +++
+      // +++ 修正：恢復 zoom=2 和 zoom=1 +++
+      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
     ];
   }
@@ -196,7 +197,9 @@
 
  // 占位圖／錯圖 fallback
 const MIN_W = 60, MIN_H = 80;
-const FALLBACK = './no-cover.png'; // <-- 幫您修改成您要的預設圖片
+// +++ 修正：恢復為原始的 "No Cover" SVG 圖片 +++
+const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
+
 window.__nextCover = function(img){
   const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
   let i = +(img.dataset.idx||0);
@@ -285,6 +288,7 @@ window.__nextCover = function(img){
   }
   async function load(){
     try{
+      // +++ 修正：強制不使用快取來抓取 newbooks.json +++
       const r = await fetch(API,{cache:'no-store'});
       if(!r.ok) throw new Error(`HTTP ${r.status}`);
       const txt = await r.text();
