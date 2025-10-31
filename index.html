@@ -216,10 +216,14 @@
       img.onerror = null; img.onload = null; img.src = FALLBACK;
     }
   };
+  
+  // ========== 這裡是打字錯誤修正的地方 ==========
   window.__checkCover = function(img){
     const w = img.naturalWidth, h = img.naturalHeight;
+    // 修正： h < MIN_H (之前誤打為 w < MIN_H)
     if (!w || !h || w < MIN_W || h < MIN_H) window.__nextCover(img);
   };
+  // ========== 修正結束 ==========
 
   // ====== Render ======
   function fillLocations(rows){
@@ -321,4 +325,3 @@
 </body>
 
 </html>
-
