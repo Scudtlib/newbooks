@@ -172,20 +172,28 @@
       `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg?default=false`,
     ];
   }
+
+  // ========== 這裡是修改過的地方 ==========
   function coverCandidates(row){
     const lst=[];
     const mms = extractDocId(row.link);
     
-    // +++ 修正：優先嘗試 Google 和 OpenLibrary +++
+    // +++ 修正：優先嘗試 Primo (與 n8n 邏輯一致) +++
+
+    // 1. 優先使用 n8n 提供的 cover (起手式)
+    //    (在修正 n8n Bug 後，這裡應該會是正確的 Primo URL)
+    if (row.cover) lst.push(row.cover);
+    
+    // 2. 其次嘗試 index.html 自己產生的 Primo 縮圖備援
+    lst.push(...primoThumbs(mms));
+    
+    // 3. 最後才備援 Google 和 OpenLibrary
     if (row.isbn){
       lst.push(...googleByIsbn(row.isbn));
       lst.push(...openLibraryByIsbn(row.isbn));
     }
-    
-    // +++ Primo 縮圖作為次要備援 +++
-    lst.push(...primoThumbs(mms));
-    
-    if (row.cover) lst.push(row.cover);      // 後端起手式
+
+    // 後續的代理和去重邏輯不變
     const seen=new Set(), out=[];
     for(const u of lst.filter(Boolean)){
       const p = viaProxy(u);
@@ -193,6 +201,7 @@
     }
     return out;
   }
+  // ========== 修改結束 ==========
 
   // 占位圖／錯圖 fallback
   const MIN_W = 60, MIN_H = 80;
