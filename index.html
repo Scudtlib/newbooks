@@ -175,11 +175,16 @@
   function coverCandidates(row){
     const lst=[];
     const mms = extractDocId(row.link);
-    lst.push(...primoThumbs(mms));           // Primo 優先
-    if (row.isbn){                           // 再補 Google/OL
+    
+    // +++ 修正：優先嘗試 Google 和 OpenLibrary +++
+    if (row.isbn){
       lst.push(...googleByIsbn(row.isbn));
       lst.push(...openLibraryByIsbn(row.isbn));
     }
+    
+    // +++ Primo 縮圖作為次要備援 +++
+    lst.push(...primoThumbs(mms));
+    
     if (row.cover) lst.push(row.cover);      // 後端起手式
     const seen=new Set(), out=[];
     for(const u of lst.filter(Boolean)){
@@ -306,4 +311,3 @@
 </script>
 </body>
 </html>
-
