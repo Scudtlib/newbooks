@@ -69,6 +69,7 @@
 <script>
 (() => {
   // 1) 與 index.html 同資料夾的 newbooks.json
+  // 若你放到自己的網域，改成完整 URL
   const API = './newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
@@ -122,8 +123,12 @@
     elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
   }
 
-  // ====== 封面候補：Primo → Google → OpenLibrary ======
-  // +++ 修正：移除 viaProxy 圖片代理伺服器 +++
+  // ====== 封面候補：Primo → Google → OpenLibrary，全部經代理 ======
+  function viaProxy(u){
+    if(!u) return '';
+    const clean = String(u).replace(/^https?:\/\//,'');
+    return `https://images.weserv.nl/?url=${encodeURIComponent(clean)}`;
+  }
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
   function extractDocId(link){
@@ -156,7 +161,6 @@
   function googleByIsbn(isbn){
     if(!isbn) return [];
     return [
-      // +++ 修正：恢復 zoom=2 和 zoom=1 +++
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
     ];
@@ -184,28 +188,25 @@
     if (row.cover) lst.push(row.cover);      // 後端起手式
     const seen=new Set(), out=[];
     for(const u of lst.filter(Boolean)){
-      // +++ 修正：不再使用 viaProxy，直接使用原始 URL +++
-      const p = u;
+      const p = viaProxy(u);
       if(p && !seen.has(p)){ seen.add(p); out.push(p); }
     }
     return out;
   }
 
- // 占位圖／錯圖 fallback
-const MIN_W = 60, MIN_H = 80;
-// +++ 修正：恢復為原始的 "No Cover" SVG 圖片 +++
-const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
-
-window.__nextCover = function(img){
-  const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
-  let i = +(img.dataset.idx||0);
-  if (i < arr.length - 1){
-    img.dataset.idx = i + 1;
-    img.src = arr[i + 1];
-  } else {
-    img.onerror = null; img.onload = null; img.src = FALLBACK;
-  }
-};
+  // 占位圖／錯圖 fallback
+  const MIN_W = 60, MIN_H = 80;
+  const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
+  window.__nextCover = function(img){
+    const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
+    let i = +(img.dataset.idx||0);
+    if (i < arr.length - 1){
+      img.dataset.idx = i + 1;
+      img.src = arr[i + 1];
+    } else {
+      img.onerror = null; img.onload = null; img.src = FALLBACK;
+    }
+  };
   window.__checkCover = function(img){
     const w = img.naturalWidth, h = img.naturalHeight;
     if (!w || !h || w < MIN_W || h < MIN_H) window.__nextCover(img);
@@ -248,8 +249,8 @@ window.__nextCover = function(img){
         <td class="coverCol" style="display:${state.cover?'':'none'}">${coverHTML}</td>
         <td><a href="${r.link}" target="_blank" rel="noopener">${r.title}</a></td>
         <td>${r.location||''}</td>
-        <td class.nowrap">${r.callno||''}</td>
-        <td class.nowrap">${r.date||''}</td>
+        <td class="nowrap">${r.callno||''}</td>
+        <td class="nowrap">${r.date||''}</td>
       </tr>`;
     }).join('');
 
@@ -284,7 +285,6 @@ window.__nextCover = function(img){
   }
   async function load(){
     try{
-      // +++ 修正：強制不使用快取來抓取 newbooks.json +++
       const r = await fetch(API,{cache:'no-store'});
       if(!r.ok) throw new Error(`HTTP ${r.status}`);
       const txt = await r.text();
@@ -310,5 +310,4 @@ window.__nextCover = function(img){
 })();
 </script>
 </body>
-
 </html>
