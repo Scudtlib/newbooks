@@ -75,13 +75,12 @@
 
 <script>
 (() => {
-  // 將此改成你的 JSON 位置（n8n 或 GitHub Pages）
+  // 將此改成你的 JSON URL
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
   let RAW = [];
 
-  // DOM
   const elTbody = document.getElementById('tbody');
   const elPager = document.getElementById('pager');
   const elTopPager = document.getElementById('topPager');
@@ -94,7 +93,6 @@
   const elThDate  = document.getElementById('thDate');
   const elDateArrow = document.getElementById('dateArrow');
 
-  // 分頁
   function paginate(total,page,size){
     const pages = Math.max(1, Math.ceil(total/size));
     page = Math.min(Math.max(1,page), pages);
@@ -114,17 +112,15 @@
     return parts.join(' ');
   }
 
-  // 館藏地
   function fillLocations(rows){
     const set=new Set(rows.map(r=>r.location).filter(Boolean));
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
-  // 書影候補
+  // ===== 封面候補：Google Books → OpenLibrary → Primo =====
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
 
-  // 兼容所有形式，從 link 解析 docid
   function extractDocId(link){
     const s = String(link || '');
     try {
@@ -133,7 +129,7 @@
       const d = decodeURIComponent(raw);
       const m = d.match(/alma(\d+)/i);
       if (m) return m[1];
-      const m2 = d.match(/(\d{9,})/); // 後備：純數字
+      const m2 = d.match(/(\d{9,})/);
       return m2 ? m2[1] : '';
     } catch {
       const m = s.match(/[?&]docid=([^&]+)/i);
@@ -148,6 +144,22 @@
     }
   }
 
+  function googleByIsbn(isbn){
+    if(!isbn) return [];
+    return [
+      // 清晰版
+      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
+      // 次清晰
+      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
+    ];
+  }
+  function openLibraryByIsbn(isbn){
+    if(!isbn) return [];
+    return [
+      `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg?default=false`,
+      `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg?default=false`
+    ];
+  }
   function primoThumbs(mms){
     if(!mms) return [];
     return [
@@ -160,16 +172,23 @@
 
   function coverCandidates(r){
     const list = [];
-    if (r.cover) list.push(r.cover); // 來自 n8n：OpenLibrary 或 Primo
+    // 後端起手式
+    if (r.cover) list.push(r.cover);
+    // 依序嘗試：Google → OpenLibrary → Primo
+    if (r.isbn) {
+      list.push(...googleByIsbn(r.isbn));
+      list.push(...openLibraryByIsbn(r.isbn));
+    }
     const mms = extractDocId(r.link);
-    list.push(...primoThumbs(mms));  // 多版本 Primo 候補
-    return list.filter(Boolean);
+    list.push(...primoThumbs(mms));
+    // 去重
+    const seen=new Set(); const uniq=[];
+    for (const u of list.filter(Boolean)) { if(!seen.has(u)){ seen.add(u); uniq.push(u); } }
+    return uniq;
   }
 
-  // 失敗占位圖
   const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72"><rect width="100%" height="100%" fill="%23eee"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="10" fill="%23999">No Cover</text></svg>';
 
-  // 候補遞進
   window.__nextCover = function(img){
     const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
     let i = +(img.dataset.idx||0);
@@ -182,7 +201,6 @@
     }
   };
 
-  // 日期排序
   function dateKey(s){
     if(!s) return -Infinity;
     const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -193,7 +211,6 @@
     elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
   }
 
-  // 繪製
   function render(){
     let rows=RAW.slice();
     const q=state.q.trim().toLowerCase();
@@ -215,10 +232,7 @@
 
     elTbody.innerHTML=rows.slice(start,end).map((r,i)=>{
       const cands = coverCandidates(r);
-      // 偵錯：前 3 筆輸出候選網址與 link
-      if (start+i < 3) {
-        console.log('[cover-debug]', { idx: start+i+1, title: r.title, link: r.link, cands });
-      }
+      if (start+i < 3) console.log('[cover-debug]', { idx: start+i+1, title: r.title, isbn: r.isbn, link: r.link, cands });
       const coverHTML = (state.cover && cands.length)
         ? `<img class="cover"
                  src="${cands[0]}"
@@ -253,7 +267,6 @@
     updateDateHeader();
   }
 
-  // 載入
   function tryParseAny(text){
     try{return JSON.parse(text);}catch(e){}
     const s=text.indexOf('{'),e=text.lastIndexOf('}');
@@ -269,13 +282,11 @@
     if(!d) throw new Error("無法解析 JSON");
     if(Array.isArray(d)) d=d[0]||{};
     RAW=d.rows||[];
-    window.__DATA__ = { rows: RAW }; // 方便 Console 檢查
     fillLocations(RAW);
     elChkCover.checked = state.cover;
     render();
   }
 
-  // 事件
   elSize.onchange=()=>{state.size=+elSize.value;state.page=1;render();};
   elQ.oninput=()=>{state.q=elQ.value;state.page=1;render();};
   elLoc.onchange=()=>{state.loc=elLoc.value;state.page=1;render();};
