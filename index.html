@@ -75,12 +75,9 @@
 
 <script>
 (() => {
-  // 你的 JSON 位置：可放 n8n endpoint 或 GitHub Pages。
-  // 例：'https://scudtlib.github.io/newbooks/newbooks.json'
-  // 若此檔與 JSON 同資料夾，也可用相對路徑 'newbooks.json'
+  // 將此改成你的 JSON 位置（n8n 或 GitHub Pages）
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
-  // 狀態：預設封面開啟
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
   let RAW = [];
 
@@ -123,14 +120,34 @@
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
-  // 書影候補：OpenLibrary → 多版本 Primo 縮圖
+  // 書影候補
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
 
-  function getMMS(link){
-    const m = (link||'').match(/docid=alma(\d+)/i);
-    return m ? m[1] : '';
+  // 兼容所有形式，從 link 解析 docid
+  function extractDocId(link){
+    const s = String(link || '');
+    try {
+      const u = new URL(s);
+      const raw = u.searchParams.get('docid') || '';
+      const d = decodeURIComponent(raw);
+      const m = d.match(/alma(\d+)/i);
+      if (m) return m[1];
+      const m2 = d.match(/(\d{9,})/); // 後備：純數字
+      return m2 ? m2[1] : '';
+    } catch {
+      const m = s.match(/[?&]docid=([^&]+)/i);
+      if (m) {
+        const d = decodeURIComponent(m[1]);
+        const m1 = d.match(/alma(\d+)/i);
+        if (m1) return m1[1];
+        const m2 = d.match(/(\d{9,})/);
+        if (m2) return m2[1];
+      }
+      return '';
+    }
   }
+
   function primoThumbs(mms){
     if(!mms) return [];
     return [
@@ -140,11 +157,12 @@
       `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L&lang=zh-tw`,
     ];
   }
+
   function coverCandidates(r){
     const list = [];
-    if (r.cover) list.push(r.cover);               // 來自 n8n（ISBN 或 Primo）
-    const mms = getMMS(r.link);
-    list.push(...primoThumbs(mms));                // 再補一輪候補
+    if (r.cover) list.push(r.cover); // 來自 n8n：OpenLibrary 或 Primo
+    const mms = extractDocId(r.link);
+    list.push(...primoThumbs(mms));  // 多版本 Primo 候補
     return list.filter(Boolean);
   }
 
@@ -197,6 +215,10 @@
 
     elTbody.innerHTML=rows.slice(start,end).map((r,i)=>{
       const cands = coverCandidates(r);
+      // 偵錯：前 3 筆輸出候選網址與 link
+      if (start+i < 3) {
+        console.log('[cover-debug]', { idx: start+i+1, title: r.title, link: r.link, cands });
+      }
       const coverHTML = (state.cover && cands.length)
         ? `<img class="cover"
                  src="${cands[0]}"
@@ -247,7 +269,7 @@
     if(!d) throw new Error("無法解析 JSON");
     if(Array.isArray(d)) d=d[0]||{};
     RAW=d.rows||[];
-    window.__DATA__ = { rows: RAW }; // 方便你在 Console 檢查
+    window.__DATA__ = { rows: RAW }; // 方便 Console 檢查
     fillLocations(RAW);
     elChkCover.checked = state.cover;
     render();
