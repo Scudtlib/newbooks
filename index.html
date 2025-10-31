@@ -75,7 +75,7 @@
 
 <script>
 (() => {
-  // 將此改成你的 JSON URL
+  // 改成你的 JSON URL（n8n / GitHub Pages）
   const API = 'https://scudtlib.github.io/newbooks/newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
@@ -93,6 +93,7 @@
   const elThDate  = document.getElementById('thDate');
   const elDateArrow = document.getElementById('dateArrow');
 
+  // 分頁
   function paginate(total,page,size){
     const pages = Math.max(1, Math.ceil(total/size));
     page = Math.min(Math.max(1,page), pages);
@@ -112,12 +113,20 @@
     return parts.join(' ');
   }
 
+  // 館藏地
   function fillLocations(rows){
     const set=new Set(rows.map(r=>r.location).filter(Boolean));
     elLoc.innerHTML='<option value="">全部館藏地</option>'+[...set].sort().map(x=>`<option>${x}</option>`).join('');
   }
 
-  // ===== 封面候補：Google Books → OpenLibrary → Primo =====
+  // ===== 圖片代理與候補 =====
+  // 統一用圖片代理，避免 Referer/CORS 封鎖；合法嵌入遠端圖像
+  function viaProxy(u){
+    if(!u) return '';
+    const clean = String(u).replace(/^https?:\/\//,''); // wsrv 需要不帶 scheme
+    return `https://images.weserv.nl/?url=${encodeURIComponent(clean)}`;
+  }
+
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
 
@@ -147,9 +156,7 @@
   function googleByIsbn(isbn){
     if(!isbn) return [];
     return [
-      // 清晰版
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
-      // 次清晰
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
     ];
   }
@@ -172,18 +179,23 @@
 
   function coverCandidates(r){
     const list = [];
-    // 後端起手式
-    if (r.cover) list.push(r.cover);
-    // 依序嘗試：Google → OpenLibrary → Primo
+    if (r.cover) list.push(r.cover); // 後端起手式
     if (r.isbn) {
       list.push(...googleByIsbn(r.isbn));
       list.push(...openLibraryByIsbn(r.isbn));
     }
     const mms = extractDocId(r.link);
     list.push(...primoThumbs(mms));
-    // 去重
-    const seen=new Set(); const uniq=[];
-    for (const u of list.filter(Boolean)) { if(!seen.has(u)){ seen.add(u); uniq.push(u); } }
+
+    // 用代理包一層
+    const seen=new Set(), uniq=[];
+    for(const u of list.filter(Boolean)){
+      const proxied = viaProxy(u);
+      if(proxied && !seen.has(proxied)){
+        seen.add(proxied);
+        uniq.push(proxied);
+      }
+    }
     return uniq;
   }
 
@@ -201,6 +213,7 @@
     }
   };
 
+  // 日期排序
   function dateKey(s){
     if(!s) return -Infinity;
     const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -211,6 +224,7 @@
     elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
   }
 
+  // 繪製
   function render(){
     let rows=RAW.slice();
     const q=state.q.trim().toLowerCase();
@@ -267,6 +281,7 @@
     updateDateHeader();
   }
 
+  // 載入
   function tryParseAny(text){
     try{return JSON.parse(text);}catch(e){}
     const s=text.indexOf('{'),e=text.lastIndexOf('}');
@@ -287,6 +302,7 @@
     render();
   }
 
+  // 事件
   elSize.onchange=()=>{state.size=+elSize.value;state.page=1;render();};
   elQ.oninput=()=>{state.q=elQ.value;state.page=1;render();};
   elLoc.onchange=()=>{state.loc=elLoc.value;state.page=1;render();};
