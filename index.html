@@ -69,7 +69,6 @@
 <script>
 (() => {
   // 1) 與 index.html 同資料夾的 newbooks.json
-  // 若你放到自己的網域，改成完整 URL
   const API = './newbooks.json';
 
   const state = { page:1, size:20, q:'', loc:'', cover:true, sortDir:'' };
@@ -123,12 +122,8 @@
     elDateArrow.textContent = state.sortDir==='asc' ? '▲' : state.sortDir==='desc' ? '▼' : '⇅';
   }
 
-  // ====== 封面候補：Primo → Google → OpenLibrary，全部經代理 ======
-  function viaProxy(u){
-    if(!u) return '';
-    const clean = String(u).replace(/^https?:\/\//,'');
-    return `https://images.weserv.nl/?url=${encodeURIComponent(clean)}`;
-  }
+  // ====== 封面候補：Primo → Google → OpenLibrary ======
+  // +++ 修正：移除 viaProxy 圖片代理伺服器 +++
   const PRIMO_HOST = 'https://uco-scu.primo.exlibrisgroup.com';
   const VID = '886UCO_SCU:886SCU_INST';
   function extractDocId(link){
@@ -189,7 +184,8 @@
     if (row.cover) lst.push(row.cover);      // 後端起手式
     const seen=new Set(), out=[];
     for(const u of lst.filter(Boolean)){
-      const p = viaProxy(u);
+      // +++ 修正：不再使用 viaProxy，直接使用原始 URL +++
+      const p = u;
       if(p && !seen.has(p)){ seen.add(p); out.push(p); }
     }
     return out;
@@ -252,8 +248,8 @@ window.__nextCover = function(img){
         <td class="coverCol" style="display:${state.cover?'':'none'}">${coverHTML}</td>
         <td><a href="${r.link}" target="_blank" rel="noopener">${r.title}</a></td>
         <td>${r.location||''}</td>
-        <td class="nowrap">${r.callno||''}</td>
-        <td class="nowrap">${r.date||''}</td>
+        <td class.nowrap">${r.callno||''}</td>
+        <td class.nowrap">${r.date||''}</td>
       </tr>`;
     }).join('');
 
