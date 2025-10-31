@@ -161,7 +161,7 @@
   function googleByIsbn(isbn){
     if(!isbn) return [];
     return [
-      `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=2`,
+      // +++ 修正：移除 zoom=2，只保留 zoom=1 +++
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
     ];
   }
