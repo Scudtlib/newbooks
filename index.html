@@ -173,23 +173,32 @@
     ];
   }
 
+  
   function coverCandidates(row){
     const lst=[];
     const mms = extractDocId(row.link);
-    
-    // +++ 優先嘗試 Primo (與 n8n 邏輯一致) +++
 
-    // 1. 優先使用 n8n 提供的 cover (起手式)
-    if (row.cover) lst.push(row.cover);
-    
-    // 2. 其次嘗試 index.html 自己產生的 Primo 縮圖備援
-    lst.push(...primoThumbs(mms));
-    
-    // 3. 最後才備援 Google 和 OpenLibrary
+    // 1) Google 優先
     if (row.isbn){
       lst.push(...googleByIsbn(row.isbn));
       lst.push(...openLibraryByIsbn(row.isbn));
     }
+
+    // 2) 最後才嘗試 Primo（含 n8n 給的與本頁組的）
+    if (row.cover) lst.push(row.cover);
+    lst.push(...primoThumbs(mms));
+
+    // 3) 經代理與去重，並盡量略過 Primo 的預設圖樣
+    const seen=new Set(), out=[];
+    for(const u of lst.filter(Boolean)){
+      // 直接過濾常見 placeholder 關鍵字
+      if (/discovery\/thumbnail/i.test(u) && /default|no.?image|placeholder/i.test(u)) continue;
+      const p = viaProxy(u);
+      if(p && !seen.has(p)){ seen.add(p); out.push(p); }
+    }
+    return out;
+  }
+
 
     // 後續的代理和去重邏輯不變
     const seen=new Set(), out=[];
@@ -217,10 +226,15 @@
     }
   };
   
+  
   window.__checkCover = function(img){
     const w = img.naturalWidth, h = img.naturalHeight;
-    if (!w || !h || w < MIN_W || h < MIN_H) window.__nextCover(img);
+    const url = img.currentSrc || img.src || '';
+    const isPrimo = /discovery\/thumbnail/i.test(url);
+    const looksPlaceholder = isPrimo && (/default|no.?image|placeholder/i.test(url));
+    if (!w || !h || w < MIN_W || h < MIN_H || looksPlaceholder) window.__nextCover(img);
   };
+
 
   // ====== Render ======
   function fillLocations(rows){
