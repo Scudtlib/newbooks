@@ -9,7 +9,7 @@
   *{box-sizing:border-box}html,body{margin:0}
   body{font-family:"Noto Sans TC",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg)}
   .wrap{max-width:var(--maxw);margin:auto;padding:20px}
-  h1{margin:10px 0 14px;font-size:26px;font-weight:700} /* <-- 在這裡修改 font-size 可調整標題大小 */
+  h1{margin:10px 0 14px;font-size:26px;font-weight:700}
   .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:flex-start;margin:6px 0 14px}
   .stat{color:var(--muted);font-size:13px;margin-right:auto}
   select,input[type="text"]{height:32px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:#fff}
@@ -158,6 +158,7 @@
       `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L&lang=zh-tw`,
     ];
   }
+  /* (Google 函式保留，但下方 coverCandidates 已不再呼叫它)
   function googleByIsbn(isbn){
     if(!isbn) return [];
     return [
@@ -165,6 +166,7 @@
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
     ];
   }
+  */
   function openLibraryByIsbn(isbn){
     if(!isbn) return [];
     return [
@@ -173,11 +175,12 @@
     ];
   }
 
+  // ========== 這裡是修改過的地方 (移除 Google Books) ==========
   function coverCandidates(row){
     const lst=[];
     const mms = extractDocId(row.link);
     
-    // +++ 優先嘗試 Primo (與 n8n 邏輯一致) +++
+    // +++ 修正：優先 Primo，備援 OpenLibrary +++
 
     // 1. 優先使用 n8n 提供的 cover (起手式)
     if (row.cover) lst.push(row.cover);
@@ -185,9 +188,9 @@
     // 2. 其次嘗試 index.html 自己產生的 Primo 縮圖備援
     lst.push(...primoThumbs(mms));
     
-    // 3. 最後才備援 Google 和 OpenLibrary
+    // 3. 備援 OpenLibrary (它會 404，不會回傳占位圖)
     if (row.isbn){
-      lst.push(...googleByIsbn(row.isbn));
+      // lst.push(...googleByIsbn(row.isbn)); // <-- 已移除 Google
       lst.push(...openLibraryByIsbn(row.isbn));
     }
 
@@ -199,12 +202,12 @@
     }
     return out;
   }
+  // ========== 修改結束 ==========
 
   // 占位圖／錯圖 fallback
   const MIN_W = 50, MIN_H = 70;
-  // ========== 這裡是新的 FALLBACK SVG 圖片 (立體感書本圖示) ==========
+  // 這裡是您要的立體書本圖示
   const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72" viewBox="0 0 54 72"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="%23f0f0f0"/><stop offset="100%" stop-color="%23e0e0e0"/></linearGradient><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="%23cccccc"/><stop offset="100%" stop-color="%23aaaaaa"/></linearGradient></defs><rect x="0" y="0" width="54" height="72" fill="url(%23g1)" rx="4" ry="4"/><path d="M40 8H14a2 2 0 0 0-2 2v52a2 2 0 0 0 2 2h26a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM15 10c-0.55 0-1 0.45-1 1v50c0 0.55 0.45 1 1 1h24c0.55 0 1-0.45 1-1V11c0-0.55-0.45-1-1-1H15z" fill="url(%23g2)"/><rect x="18" y="15" width="18" height="4" fill="%23888888" rx="1" ry="1"/><rect x="18" y="24" width="14" height="4" fill="%23888888" rx="1" ry="1"/><rect x="18" y="33" width="18" height="4" fill="%23888888" rx="1" ry="1"/><path d="M12 10a2 2 0 0 1 2-2h-0.5c-0.83 0-1.5.67-1.5 1.5v53c0 0.83 0.67 1.5 1.5 1.5H14a2 2 0 0 1-2-2V10z" fill="%23909090"/></svg>';
-  // ========== FALLBACK SVG 圖片結束 ==========
   
   window.__nextCover = function(img){
     const arr = (img.dataset.srcs || '').split('|').filter(Boolean);
