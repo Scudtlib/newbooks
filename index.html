@@ -158,7 +158,6 @@
       `${PRIMO_HOST}/discovery/thumbnail?docid=alma${mms}&vid=${VID}&context=L&lang=zh-tw`,
     ];
   }
-  /* (Google 函式保留，但下方 coverCandidates 已不再呼叫它)
   function googleByIsbn(isbn){
     if(!isbn) return [];
     return [
@@ -166,7 +165,6 @@
       `https://books.google.com/books/content?vid=ISBN:${isbn}&printsec=frontcover&img=1&zoom=1`,
     ];
   }
-  */
   function openLibraryByIsbn(isbn){
     if(!isbn) return [];
     return [
@@ -175,12 +173,12 @@
     ];
   }
 
-  // ========== 這裡是修改過的地方 (移除 Google Books) ==========
+  // ========== 這裡是還原的 coverCandidates 函式 ==========
   function coverCandidates(row){
     const lst=[];
     const mms = extractDocId(row.link);
     
-    // +++ 修正：優先 Primo，備援 OpenLibrary +++
+    // +++ 優先 Primo，備援 Google 和 OpenLibrary +++
 
     // 1. 優先使用 n8n 提供的 cover (起手式)
     if (row.cover) lst.push(row.cover);
@@ -188,9 +186,9 @@
     // 2. 其次嘗試 index.html 自己產生的 Primo 縮圖備援
     lst.push(...primoThumbs(mms));
     
-    // 3. 備援 OpenLibrary (它會 404，不會回傳占位圖)
+    // 3. 備援 Google 和 OpenLibrary
     if (row.isbn){
-      // lst.push(...googleByIsbn(row.isbn)); // <-- 已移除 Google
+      lst.push(...googleByIsbn(row.isbn)); // <-- 還原 Google Books
       lst.push(...openLibraryByIsbn(row.isbn));
     }
 
@@ -206,7 +204,6 @@
 
   // 占位圖／錯圖 fallback
   const MIN_W = 50, MIN_H = 70;
-  // 這裡是您要的立體書本圖示
   const FALLBACK = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="54" height="72" viewBox="0 0 54 72"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="%23f0f0f0"/><stop offset="100%" stop-color="%23e0e0e0"/></linearGradient><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="%23cccccc"/><stop offset="100%" stop-color="%23aaaaaa"/></linearGradient></defs><rect x="0" y="0" width="54" height="72" fill="url(%23g1)" rx="4" ry="4"/><path d="M40 8H14a2 2 0 0 0-2 2v52a2 2 0 0 0 2 2h26a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM15 10c-0.55 0-1 0.45-1 1v50c0 0.55 0.45 1 1 1h24c0.55 0 1-0.45 1-1V11c0-0.55-0.45-1-1-1H15z" fill="url(%23g2)"/><rect x="18" y="15" width="18" height="4" fill="%23888888" rx="1" ry="1"/><rect x="18" y="24" width="14" height="4" fill="%23888888" rx="1" ry="1"/><rect x="18" y="33" width="18" height="4" fill="%23888888" rx="1" ry="1"/><path d="M12 10a2 2 0 0 1 2-2h-0.5c-0.83 0-1.5.67-1.5 1.5v53c0 0.83 0.67 1.5 1.5 1.5H14a2 2 0 0 1-2-2V10z" fill="%23909090"/></svg>';
   
   window.__nextCover = function(img){
@@ -220,10 +217,22 @@
     }
   };
   
+  // ========== 這裡是加入「長寬比檢查」的 __checkCover 函式 ==========
   window.__checkCover = function(img){
     const w = img.naturalWidth, h = img.naturalHeight;
-    if (!w || !h || w < MIN_W || h < MIN_H) window.__nextCover(img);
+    // 檢查寬度是否有效，以避免除以零
+    const ratio = (w > 0) ? (h / w) : 0; 
+    
+    // 檢查：
+    // 1. 圖片是否存在 (w, h > 0)
+    // 2. 是否小於最小尺寸 (w < MIN_W or h < MIN_H)
+    // 3. (新) 是否長寬比太接近方形 (ratio < 1.1), 這種通常是占位圖
+    if (!w || !h || w < MIN_W || h < MIN_H || ratio < 1.1) {
+      window.__nextCover(img);
+    }
+    // 如果都通過，則不執行任何動作 (即接受圖片)
   };
+  // ========== 修改結束 ==========
 
   // ====== Render ======
   function fillLocations(rows){
@@ -291,7 +300,7 @@
     if(!obj) return [];
     if (Array.isArray(obj)) {
       if (obj.length && obj[0] && obj[0].json && Array.isArray(obj[0].json.rows)) return obj[0].json.rows;
-      if (Array.isArray(obj)) return obj; // 若純 rows 陣列
+      if (Array.isArray(obj)) return obj; // 若純 rows E_ARRAY
     }
     if (obj.rows && Array.isArray(obj.rows)) return obj.rows;
     return [];
