@@ -502,16 +502,6 @@
     },
     {
       "idx": 51,
-      "isbn": "9787521776249",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215394705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "生命传 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "361.5 2710",
-      "date": "2025-12-11",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215394705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 52,
       "isbn": "9787100227919",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215994605913&vid=886UCO_SCU:886SCU_INST",
       "title": "认知语言学关键概念 /",
@@ -519,6 +509,16 @@
       "callno": "800.14 0046",
       "date": "2025-12-17",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215994605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 52,
+      "isbn": "9789865467388",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215794105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "來!學華語  = Let's learn Mandarin  /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "802.85 1244",
+      "date": "2025-12-17",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215794105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 53,
@@ -592,16 +592,6 @@
     },
     {
       "idx": 60,
-      "isbn": "9789865467388",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215794105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "來!學華語  = Let's learn Mandarin  /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "802.85 1244",
-      "date": "2025-12-17",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215794105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 61,
       "isbn": "9789865407100",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007090087605913&vid=886UCO_SCU:886SCU_INST",
       "title": "語法動起來 /",
@@ -611,7 +601,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007090087605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 62,
+      "idx": 61,
       "isbn": "9789865265878",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215994705913&vid=886UCO_SCU:886SCU_INST",
       "title": "內容本位與思辨中文教學 = Content-based and critical thinking approaches to teaching Chinese /",
@@ -621,7 +611,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215994705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 63,
+      "idx": 62,
       "isbn": "9786264236805",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793705913&vid=886UCO_SCU:886SCU_INST",
       "title": "華語趣味成語 = Easy to learn Chinese/",
@@ -631,7 +621,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 64,
+      "idx": 63,
       "isbn": "9786267283752",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793805913&vid=886UCO_SCU:886SCU_INST",
       "title": "讓思考變得可見的力量 : 一本同時強化教學力與學習力的實作書 /",
@@ -641,7 +631,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 65,
+      "idx": 64,
       "isbn": "9789863878711",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215794005913&vid=886UCO_SCU:886SCU_INST",
       "title": "台灣同婚法的誕生與演進 /",
@@ -651,7 +641,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215794005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 66,
+      "idx": 65,
       "isbn": "9786267729472",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215994505913&vid=886UCO_SCU:886SCU_INST",
       "title": "來上一堂2小時國際社會入門課 /",
@@ -661,7 +651,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215994505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 67,
+      "idx": 66,
       "isbn": "9789887109846",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793605913&vid=886UCO_SCU:886SCU_INST",
       "title": "字旅行間： 穿梭港臺日韓街巷．講習漢字根源流變 /",
@@ -671,7 +661,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 68,
+      "idx": 67,
       "isbn": "9789571178806",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215094705913&vid=886UCO_SCU:886SCU_INST",
       "title": "工商事業活動與法律風險管理 /",
@@ -681,7 +671,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215094705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 69,
+      "idx": 68,
       "isbn": "0197683169",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210789205913&vid=886UCO_SCU:886SCU_INST",
       "title": "A measure short of war : a brief history of great power subversion /",
@@ -691,7 +681,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210789205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 70,
+      "idx": 69,
       "isbn": "3631586655",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000247229705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Europaeische Hochschulschriften.. Publications universitaires européennes..",
@@ -701,7 +691,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000247229705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 71,
+      "idx": 70,
       "isbn": "3161644565",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210164605913&vid=886UCO_SCU:886SCU_INST",
       "title": "Nachhaltigkeitsaspekte in der EGMR-Rechtsprechung: Status quo und Zukunftsperspektiven für das Prinzip der Nachhaltigkeit in der Rechtsprechung des Europäischen Gerichtshofs für Menschenrechte /",
@@ -711,7 +701,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210164605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 72,
+      "idx": 71,
       "isbn": "3161610253",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210176805913&vid=886UCO_SCU:886SCU_INST",
       "title": "Der voraussetzungslose Zugang zu amtlichen Informationen und private Belange : der Schutz des Dritten in den Informationszugangsgesetzen unter besonderer Berücksichtigung der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung)/",
@@ -721,7 +711,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210176805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 73,
+      "idx": 72,
       "isbn": "3161640217",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210172005913&vid=886UCO_SCU:886SCU_INST",
       "title": "Die gewähr der verfassungstreue : eine verfassungsrechtliche neubewertung der Überprüfung der verfassungstreue mittels einer regelanfrage bei den verfassungsschutzbehörden Im einstellungsverfahren für den öffentlichen dienst /",
@@ -731,7 +721,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210172005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 74,
+      "idx": 73,
       "isbn": "3161564561",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210177705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Das Recht auf Vergessenwerden /",
@@ -741,7 +731,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210177705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 75,
+      "idx": 74,
       "isbn": "3161644581",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210176905913&vid=886UCO_SCU:886SCU_INST",
       "title": "Eigentum und natur : pfade zur Ökologisierung des eigentums, unter besonderer berücksichtigung von art. 14 Abs. 2 GG /",
@@ -751,7 +741,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210176905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 76,
+      "idx": 75,
       "isbn": "3161645049",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210172605913&vid=886UCO_SCU:886SCU_INST",
       "title": "Der Rechtswidrigkeitszusammenhang zwischen Amtsinhaberschaft und Amtshandlung: eine Untersuchung aus verfassungs-, unions- und konventionsrechtlicher Perspektive /",
@@ -761,7 +751,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210172605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 77,
+      "idx": 76,
       "isbn": "3161553535",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210177405913&vid=886UCO_SCU:886SCU_INST",
       "title": "Die Verfassungsmässigkeit administrativer Letztentscheidungsbefugnisse : Behördenorganisation und Verwaltungsverfahren als Mittel zur Kompensation materiell-rechtlicher Defizite am Beispiel der Bundesnetzagentur im Telekommunikationsrecht /",
@@ -771,7 +761,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210177405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 78,
+      "idx": 77,
       "isbn": "9798218574574",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793505913&vid=886UCO_SCU:886SCU_INST",
       "title": "The bluebook : a uniform system of citation  /",
@@ -781,7 +771,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 79,
+      "idx": 78,
       "isbn": "9787513223201",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211692205913&vid=886UCO_SCU:886SCU_INST",
       "title": "陈自明医学全书 /",
@@ -789,6 +779,16 @@
       "callno": "413.2 7526",
       "date": "2025-12-17",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211692205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 79,
+      "isbn": "9787571343040",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211692105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "苏派中医珍稀未刊医籍集粹.",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "413.1 4357",
+      "date": "2025-12-17",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211692105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 80,
@@ -812,16 +812,6 @@
     },
     {
       "idx": 82,
-      "isbn": "9787571343040",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211692105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "苏派中医珍稀未刊医籍集粹.",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "413.1 4357",
-      "date": "2025-12-17",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211692105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 83,
       "isbn": "9787571008871",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211692305913&vid=886UCO_SCU:886SCU_INST",
       "title": "岭南医派 /",
@@ -831,7 +821,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211692305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 84,
+      "idx": 83,
       "isbn": "9787571029166",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211692505913&vid=886UCO_SCU:886SCU_INST",
       "title": "齐鲁医派 /",
@@ -841,7 +831,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211692505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 85,
+      "idx": 84,
       "isbn": "9787571016531",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007190588605913&vid=886UCO_SCU:886SCU_INST",
       "title": "中国针灸大成.",
@@ -851,7 +841,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007190588605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 86,
+      "idx": 85,
       "isbn": "9787571019365",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007193993305913&vid=886UCO_SCU:886SCU_INST",
       "title": "中国针灸大成. Compendium of Chinese acupuncture and moxibustion /",
@@ -859,6 +849,16 @@
       "callno": "413.91 1078",
       "date": "2025-12-17",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007193993305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 86,
+      "isbn": "9787571017170",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007193993705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "中国针灸大成. Compendium of Chinese acupuncture and moxibustion /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "413.91 1078(3)",
+      "date": "2025-12-17",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007193993705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 87,
@@ -882,16 +882,6 @@
     },
     {
       "idx": 89,
-      "isbn": "9787571017170",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007193993705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "中国针灸大成. Compendium of Chinese acupuncture and moxibustion /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "413.91 1078(3)",
-      "date": "2025-12-17",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007193993705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 90,
       "isbn": "9786263340930",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007125794705913&vid=886UCO_SCU:886SCU_INST",
       "title": "民法債編 = Civil law /",
@@ -901,7 +891,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007125794705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 91,
+      "idx": 90,
       "isbn": "9786263775381",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215990905913&vid=886UCO_SCU:886SCU_INST",
       "title": "相反的你和我 = Seihantaina kimi to boku /",
@@ -911,7 +901,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215990905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 92,
+      "idx": 91,
       "isbn": "9786264341509",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215990805913&vid=886UCO_SCU:886SCU_INST",
       "title": "神墮之境 = After God /",
@@ -921,7 +911,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215990805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 93,
+      "idx": 92,
       "isbn": "9789572683354",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007152390205913&vid=886UCO_SCU:886SCU_INST",
       "title": "海波追尋的終幕 /",
@@ -931,7 +921,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007152390205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 94,
+      "idx": 93,
       "isbn": "9789572642658",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007047187005913&vid=886UCO_SCU:886SCU_INST",
       "title": "Spy x Family間諜家家酒 /",
@@ -941,7 +931,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007047187005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 95,
+      "idx": 94,
       "isbn": "9789865121228",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007111892205913&vid=886UCO_SCU:886SCU_INST",
       "title": "如果30歲還是處男, 似乎就能成為魔法師 /",
@@ -951,7 +941,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007111892205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 96,
+      "idx": 95,
       "isbn": "9786267412558",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215990705913&vid=886UCO_SCU:886SCU_INST",
       "title": "敢動我弟弟就死定了 /",
@@ -959,6 +949,16 @@
       "callno": "862.57 1228",
       "date": "2025-12-26",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215990705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 96,
+      "isbn": "9789570872989",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "東亞近現代通史 : 從19世紀至今的地域史 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "730.2807 2654",
+      "date": "2025-12-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 97,
@@ -972,13 +972,13 @@
     },
     {
       "idx": 98,
-      "isbn": "9789570872989",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793305913&vid=886UCO_SCU:886SCU_INST",
-      "title": "東亞近現代通史 : 從19世紀至今的地域史 /",
+      "isbn": "9789577875860",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "患上不出道就會死的病 /",
       "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "730.2807 2654",
+      "callno": "862.57 5212",
       "date": "2025-12-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 99,
@@ -992,16 +992,6 @@
     },
     {
       "idx": 100,
-      "isbn": "9789577875860",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "患上不出道就會死的病 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "862.57 5212",
-      "date": "2025-12-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 101,
       "isbn": "9786263692558",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991805913&vid=886UCO_SCU:886SCU_INST",
       "title": "民法總則 /",
@@ -1011,7 +1001,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 102,
+      "idx": 101,
       "isbn": "9789863128458",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991605913&vid=886UCO_SCU:886SCU_INST",
       "title": "Ollama本地AI全方位攻略 : 設備需求X模型量化X微調訓練 /",
@@ -1021,7 +1011,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 103,
+      "idx": 102,
       "isbn": "9789863365877",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793205913&vid=886UCO_SCU:886SCU_INST",
       "title": "紐約生領路, 品味紐約 : 美國生醫博士候選人KOL帶給你最在地的紐約旅遊、生活、留學指南 /",
@@ -1031,7 +1021,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 104,
+      "idx": 103,
       "isbn": "9786269831968",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991505913&vid=886UCO_SCU:886SCU_INST",
       "title": "城隍 : 賽米絲物語 /",
@@ -1041,7 +1031,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 105,
+      "idx": 104,
       "isbn": "9789577419880",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793105913&vid=886UCO_SCU:886SCU_INST",
       "title": "低成本生活 : 不用努力工作, 生活依然從容不迫 /",
@@ -1051,7 +1041,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 106,
+      "idx": 105,
       "isbn": "9786269831968",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991505913&vid=886UCO_SCU:886SCU_INST",
       "title": "城隍 : 賽米絲物語 /",
@@ -1061,7 +1051,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 107,
+      "idx": 106,
       "isbn": "9786263209022",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991405913&vid=886UCO_SCU:886SCU_INST",
       "title": "圖解台灣寺廟建築與裝飾語彙 /",
@@ -1071,7 +1061,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 108,
+      "idx": 107,
       "isbn": "9789863574125",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215793005913&vid=886UCO_SCU:886SCU_INST",
       "title": "走進孩子的內心 : 精神分析視角下兒童與家庭的心理治療 /",
@@ -1081,7 +1071,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215793005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 109,
+      "idx": 108,
       "isbn": "9786260203603",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991205913&vid=886UCO_SCU:886SCU_INST",
       "title": "長濱To Be, or Not To Be /",
@@ -1091,7 +1081,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 110,
+      "idx": 109,
       "isbn": "9786269831968",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991505913&vid=886UCO_SCU:886SCU_INST",
       "title": "城隍 : 賽米絲物語 /",
@@ -1099,6 +1089,16 @@
       "callno": "863.57 4444",
       "date": "2025-12-26",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 110,
+      "isbn": "9789869613781",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "皇極經世書今說 =",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "290.1 7728",
+      "date": "2025-12-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 111,
@@ -1132,16 +1132,6 @@
     },
     {
       "idx": 114,
-      "isbn": "9789869613781",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "皇極經世書今說 =",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "290.1 7728",
-      "date": "2025-12-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 115,
       "isbn": "9786264143479",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215994305913&vid=886UCO_SCU:886SCU_INST",
       "title": "超實用AI技能工具箱 : 提升職場.教育與生活的288個高效應用技巧 /",
@@ -1151,7 +1141,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215994305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 116,
+      "idx": 115,
       "isbn": "9786264251914",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215994405913&vid=886UCO_SCU:886SCU_INST",
       "title": "AI生成影音創作 : 超好用的文案、圖像、影片、音樂實戰技 /",
@@ -1161,7 +1151,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215994405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 117,
+      "idx": 116,
       "isbn": "9786269831661",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792805913&vid=886UCO_SCU:886SCU_INST",
       "title": "永續發展相關規範與實務 : 永續發展基礎能力測驗學習指南與題庫.",
@@ -1171,7 +1161,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 118,
+      "idx": 117,
       "isbn": "9786263952324",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792705913&vid=886UCO_SCU:886SCU_INST",
       "title": "淑世.才女.張李德和 /",
@@ -1181,7 +1171,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 119,
+      "idx": 118,
       "isbn": "9786263952331",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792605913&vid=886UCO_SCU:886SCU_INST",
       "title": "堅定.深刻.黃清埕 /",
@@ -1191,7 +1181,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 120,
+      "idx": 119,
       "isbn": "9786263952348",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792505913&vid=886UCO_SCU:886SCU_INST",
       "title": "跨界.蠟染.黃歌川 /",
@@ -1201,7 +1191,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 121,
+      "idx": 120,
       "isbn": "9786263952355",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792405913&vid=886UCO_SCU:886SCU_INST",
       "title": "遺世.永恆.葉世強 /",
@@ -1211,7 +1201,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 122,
+      "idx": 121,
       "isbn": "9786263952362",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792305913&vid=886UCO_SCU:886SCU_INST",
       "title": "逐光.淨美.江賢二 /",
@@ -1221,7 +1211,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 123,
+      "idx": 122,
       "isbn": "9786263952379",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792205913&vid=886UCO_SCU:886SCU_INST",
       "title": "造境.殺墨.洪根深 /",
@@ -1231,7 +1221,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 124,
+      "idx": 123,
       "isbn": "9786263952386",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792105913&vid=886UCO_SCU:886SCU_INST",
       "title": "悲心.反骨.陳來興 /",
@@ -1241,7 +1231,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 125,
+      "idx": 124,
       "isbn": "9786263952393",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792005913&vid=886UCO_SCU:886SCU_INST",
       "title": "光影.心跡.卓有瑞 /",
@@ -1251,7 +1241,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 126,
+      "idx": 125,
       "isbn": "9786263952409",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791905913&vid=886UCO_SCU:886SCU_INST",
       "title": "仙才.卓絕.于彭 /",
@@ -1261,7 +1251,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 127,
+      "idx": 126,
       "isbn": "9786263952416",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791805913&vid=886UCO_SCU:886SCU_INST",
       "title": "游牧.詣擬.蘇旺伸 /",
@@ -1271,7 +1261,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 128,
+      "idx": 127,
       "isbn": "9786267423745",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791705913&vid=886UCO_SCU:886SCU_INST",
       "title": "未來戰爭轉型 /",
@@ -1281,7 +1271,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 129,
+      "idx": 128,
       "isbn": "9786267688380",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294205913&vid=886UCO_SCU:886SCU_INST",
       "title": "戰後臺灣政治案件 : 臺灣基督長老教會相關案件史料彙編 /",
@@ -1291,7 +1281,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 130,
+      "idx": 129,
       "isbn": "9786269999651",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791605913&vid=886UCO_SCU:886SCU_INST",
       "title": "現代總釋韓非子新註 : 中國之文明文化精要  /",
@@ -1301,7 +1291,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 131,
+      "idx": 130,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000450049705913&vid=886UCO_SCU:886SCU_INST",
       "title": "臺灣詩學: 吹鼓吹詩論壇/",
@@ -1311,7 +1301,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000450049705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 132,
+      "idx": 131,
       "isbn": "9786263749702",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791505913&vid=886UCO_SCU:886SCU_INST",
       "title": "消失的愛 : 逆轉我們的時代 /",
@@ -1321,7 +1311,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 133,
+      "idx": 132,
       "isbn": "9789860654516",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791405913&vid=886UCO_SCU:886SCU_INST",
       "title": "打造台灣永續環境記事 = The journey toward the sustaninable Taiwan /",
@@ -1331,7 +1321,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 134,
+      "idx": 133,
       "isbn": "9786269674770",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791305913&vid=886UCO_SCU:886SCU_INST",
       "title": "ESG永續發展  /",
@@ -1341,7 +1331,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 135,
+      "idx": 134,
       "isbn": "9786269996940",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294705913&vid=886UCO_SCU:886SCU_INST",
       "title": "旗與像的恩怨情仇 /",
@@ -1351,7 +1341,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 136,
+      "idx": 135,
       "isbn": "9786260151003",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791205913&vid=886UCO_SCU:886SCU_INST",
       "title": "張天春詩文彙編 /",
@@ -1361,7 +1351,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 137,
+      "idx": 136,
       "isbn": "9789860601947",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294105913&vid=886UCO_SCU:886SCU_INST",
       "title": "設置 : 「精神分析」特定獨有之必要工作條件 = Setting /",
@@ -1371,7 +1361,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 138,
+      "idx": 137,
       "isbn": "9786267267943",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294305913&vid=886UCO_SCU:886SCU_INST",
       "title": "公立醫療體系的新策略 : 高雄經驗 /",
@@ -1381,7 +1371,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 139,
+      "idx": 138,
       "isbn": "9789575481872",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216293905913&vid=886UCO_SCU:886SCU_INST",
       "title": "杜維明教授著述年表 /",
@@ -1391,7 +1381,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216293905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 140,
+      "idx": 139,
       "isbn": "9789575481865",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216293805913&vid=886UCO_SCU:886SCU_INST",
       "title": "杜維明教授專書目錄 /",
@@ -1401,7 +1391,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216293805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 141,
+      "idx": 140,
       "isbn": "9786267688380",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294205913&vid=886UCO_SCU:886SCU_INST",
       "title": "戰後臺灣政治案件 : 臺灣基督長老教會相關案件史料彙編 /",
@@ -1411,7 +1401,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 142,
+      "idx": 141,
       "isbn": "9786267667767",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294605913&vid=886UCO_SCU:886SCU_INST",
       "title": "疫後新生 : 國家醫院 轉變與永續 /",
@@ -1421,7 +1411,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 143,
+      "idx": 142,
       "isbn": "9786260133016",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215790905913&vid=886UCO_SCU:886SCU_INST",
       "title": "之後 = Afterwards /",
@@ -1431,7 +1421,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215790905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 144,
+      "idx": 143,
       "isbn": "9786260146863",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294405913&vid=886UCO_SCU:886SCU_INST",
       "title": "拾像圖 = Photography paintings /",
@@ -1441,7 +1431,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 145,
+      "idx": 144,
       "isbn": "9789575481834",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216293705913&vid=886UCO_SCU:886SCU_INST",
       "title": "徐復觀教授論戰與譯述手稿整理彙編 /",
@@ -1451,7 +1441,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216293705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 146,
+      "idx": 145,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004101739705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Sarabande & minuet for four-part brass choir or brass quartet /",
@@ -1461,7 +1451,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004101739705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 147,
+      "idx": 146,
       "isbn": "9789575481889",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215790405913&vid=886UCO_SCU:886SCU_INST",
       "title": "徐復觀教授中國思想史論集續篇手稿整理彙編 /",
@@ -1469,6 +1459,16 @@
       "callno": "112 2824(1)",
       "date": "2025-12-18",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215790405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 147,
+      "isbn": "9786267688328",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "戰後臺灣史料與研究 : 國內安全委員會檔案選編 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.293 6438",
+      "date": "2025-12-18",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 148,
@@ -1482,16 +1482,6 @@
     },
     {
       "idx": 149,
-      "isbn": "9786267688328",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "戰後臺灣史料與研究 : 國內安全委員會檔案選編 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "733.293 6438",
-      "date": "2025-12-18",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 150,
       "isbn": "9786260116910",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216294505913&vid=886UCO_SCU:886SCU_INST",
       "title": "釘地 = Dropping a pin /",
@@ -1501,7 +1491,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216294505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 151,
+      "idx": 150,
       "isbn": "9786263534148",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215791005913&vid=886UCO_SCU:886SCU_INST",
       "title": "晚安, 我的生命 /",
@@ -1511,7 +1501,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215791005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 152,
+      "idx": 151,
       "isbn": "9786264195362",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216394705913&vid=886UCO_SCU:886SCU_INST",
       "title": "如此歲月, 如此幸福 /",
@@ -1521,7 +1511,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216394705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 153,
+      "idx": 152,
       "isbn": "9784990845292",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594605913&vid=886UCO_SCU:886SCU_INST",
       "title": "台湾の日本語俳句 : 台北俳句会百人百句 /",
@@ -1531,7 +1521,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 154,
+      "idx": 153,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991002935669705913&vid=886UCO_SCU:886SCU_INST",
       "title": "台灣半導體產業協會年刊 = Taiwan Semiconductor Industry Association Annual Convention /",
@@ -1541,7 +1531,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991002935669705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 155,
+      "idx": 154,
       "isbn": "9786267432488",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007176374405913&vid=886UCO_SCU:886SCU_INST",
       "title": "桃園市立美術館典藏專刊 = Taoyuan Museum of Fine Arts collection.  /",
@@ -1551,7 +1541,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007176374405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 156,
+      "idx": 155,
       "isbn": "9786267392355",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007198791405913&vid=886UCO_SCU:886SCU_INST",
       "title": "万里の流れ : 台湾大学生.俳句川柳集 /",
@@ -1561,7 +1551,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007198791405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 157,
+      "idx": 156,
       "isbn": "7560178456",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216394605913&vid=886UCO_SCU:886SCU_INST",
       "title": "高句丽硏究史 /",
@@ -1571,7 +1561,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216394605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 158,
+      "idx": 157,
       "isbn": "9787568109840",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215790805913&vid=886UCO_SCU:886SCU_INST",
       "title": "高句丽研究论文选 /",
@@ -1581,7 +1571,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215790805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 159,
+      "idx": 158,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215790705913&vid=886UCO_SCU:886SCU_INST",
       "title": "高句丽研究20年 : 从 高句丽研究所到高句丽研究院/",
@@ -1591,7 +1581,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215790705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 160,
+      "idx": 159,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000460949705913&vid=886UCO_SCU:886SCU_INST",
       "title": "臺灣現代詩 = Taiwan modern poetry",
@@ -1601,7 +1591,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000460949705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 161,
+      "idx": 160,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215790605913&vid=886UCO_SCU:886SCU_INST",
       "title": "失智症前準備及預立意願 /",
@@ -1611,7 +1601,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215790605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 162,
+      "idx": 161,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215790505913&vid=886UCO_SCU:886SCU_INST",
       "title": "為實現共生社會金融機構對於失智症的因應對策 : 以當事人經驗探討金融機構的角色 /",
@@ -1621,7 +1611,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215790505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 163,
+      "idx": 162,
       "isbn": "9784092274266",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211592505913&vid=886UCO_SCU:886SCU_INST",
       "title": "ポケモン生態図鑑 = Pokécology /",
@@ -1631,7 +1621,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211592505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 164,
+      "idx": 163,
       "isbn": "9784641228788",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211592605913&vid=886UCO_SCU:886SCU_INST",
       "title": "行政法の理論と実務 : 宇賀克也先生古稀記念 /",
@@ -1641,7 +1631,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211592605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 165,
+      "idx": 164,
       "isbn": "9784344949249",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211592405913&vid=886UCO_SCU:886SCU_INST",
       "title": "陳璧君考 : 中国の革命と女性 /",
@@ -1651,7 +1641,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211592405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 166,
+      "idx": 165,
       "isbn": "9784832296602",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211592305913&vid=886UCO_SCU:886SCU_INST",
       "title": "Girls, be badness! : ばっどがーる画集 = Bad girl art collection book /",
@@ -1661,7 +1651,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211592305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 167,
+      "idx": 166,
       "isbn": "9784788516700",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211592205913&vid=886UCO_SCU:886SCU_INST",
       "title": "拡張による学習 : 発達研究への活動理論からのアプローチ /",
@@ -1671,7 +1661,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211592205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 168,
+      "idx": 167,
       "isbn": "9784409220115",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007211592105913&vid=886UCO_SCU:886SCU_INST",
       "title": "母性を問う : 歴史的変遷 /",
@@ -1681,7 +1671,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007211592105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 169,
+      "idx": 168,
       "isbn": "9789620706615",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794705913&vid=886UCO_SCU:886SCU_INST",
       "title": "在克麗歐長河遠航： 杜維運教授論著選集 =Sailing with CLIO : selected papers of professor Wei-Yun Tu/",
@@ -1691,7 +1681,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 170,
+      "idx": 169,
       "isbn": "9784832296527",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214093205913&vid=886UCO_SCU:886SCU_INST",
       "title": "プロジェクト.ユリフォーミング!  /",
@@ -1701,7 +1691,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214093205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 171,
+      "idx": 170,
       "isbn": "9784160902138",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214093305913&vid=886UCO_SCU:886SCU_INST",
       "title": "悪役令嬢のお嫁さま = The villainess' bride /",
@@ -1711,7 +1701,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214093305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 172,
+      "idx": 171,
       "isbn": "9784335359262",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214093505913&vid=886UCO_SCU:886SCU_INST",
       "title": "条解行政事件訴訟法 /",
@@ -1721,7 +1711,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214093505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 173,
+      "idx": 172,
       "isbn": "9784480075901",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214093405913&vid=886UCO_SCU:886SCU_INST",
       "title": "「家庭」の誕生 : 理想と現実の歴史を追う /",
@@ -1731,7 +1721,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214093405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 174,
+      "idx": 173,
       "isbn": "9784502530913",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214093605913&vid=886UCO_SCU:886SCU_INST",
       "title": "法の歴史と法解釈の基礎 /",
@@ -1741,7 +1731,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214093605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 175,
+      "idx": 174,
       "isbn": "9784049160147",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007198789905913&vid=886UCO_SCU:886SCU_INST",
       "title": "シャイなあの子に懐かれたい /",
@@ -1751,7 +1741,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007198789905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 176,
+      "idx": 175,
       "isbn": "9784582837254",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214093705913&vid=886UCO_SCU:886SCU_INST",
       "title": "新.目白雑録 : もっと、小さいこと /",
@@ -1761,7 +1751,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214093705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 177,
+      "idx": 176,
       "isbn": "9789572669921",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991305913&vid=886UCO_SCU:886SCU_INST",
       "title": "金牌得主 /",
@@ -1771,7 +1761,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 178,
+      "idx": 177,
       "isbn": "9786264237925",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215992005913&vid=886UCO_SCU:886SCU_INST",
       "title": "人性尊嚴導論 /",
@@ -1781,7 +1771,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215992005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 179,
+      "idx": 178,
       "isbn": "9789865263409",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215792905913&vid=886UCO_SCU:886SCU_INST",
       "title": "家事事件法 /",
@@ -1791,7 +1781,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215792905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 180,
+      "idx": 179,
       "isbn": "9786260147518",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007215991705913&vid=886UCO_SCU:886SCU_INST",
       "title": "現代公司法 = Modern corporate law /",
@@ -1801,7 +1791,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007215991705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 181,
+      "idx": 180,
       "isbn": "9789860306040",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991002983289705913&vid=886UCO_SCU:886SCU_INST",
       "title": "臺灣原住民族文學獎得獎作品集 /",
@@ -1811,7 +1801,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991002983289705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 182,
+      "idx": 181,
       "isbn": "9784299067142",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594705913&vid=886UCO_SCU:886SCU_INST",
       "title": "昭和100年昭和天皇の実像 /",
@@ -1821,7 +1811,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 183,
+      "idx": 182,
       "isbn": "9786267341827",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792205913&vid=886UCO_SCU:886SCU_INST",
       "title": "行政管制與行政爭訟.",
@@ -1831,7 +1821,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 184,
+      "idx": 183,
       "isbn": "9786260137465",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792105913&vid=886UCO_SCU:886SCU_INST",
       "title": "始終如一 : 新聞人朱宗軻憶往文集 /",
@@ -1841,7 +1831,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 185,
+      "idx": 184,
       "isbn": "9576715725",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004405159705913&vid=886UCO_SCU:886SCU_INST",
       "title": "憲法解釋之理論與實務 /",
@@ -1851,7 +1841,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004405159705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 186,
+      "idx": 185,
       "isbn": "9786267658253",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217294605913&vid=886UCO_SCU:886SCU_INST",
       "title": "聖戰千秋 : 紀念對日抗戰勝利暨臺灣光復八十周年 /",
@@ -1861,7 +1851,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217294605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 187,
+      "idx": 186,
       "isbn": "9789887622659",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217294705913&vid=886UCO_SCU:886SCU_INST",
       "title": "全人健康 : 精神復元互助小組27課.",
@@ -1871,7 +1861,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217294705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 188,
+      "idx": 187,
       "isbn": "9786267665084",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217394705913&vid=886UCO_SCU:886SCU_INST",
       "title": "川普主義重塑國際地緣政治秩序之探討 /",
@@ -1881,7 +1871,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217394705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 189,
+      "idx": 188,
       "isbn": "9786267770085",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792005913&vid=886UCO_SCU:886SCU_INST",
       "title": "主義的魅惑 : 一次搞懂超現實主義、新即物主義、後現代主義 = Charisnaticism /",
@@ -1891,7 +1881,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 190,
+      "idx": 189,
       "isbn": "9786269610303",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007132893705913&vid=886UCO_SCU:886SCU_INST",
       "title": "觀音文化國際論壇文集. The ... International forum on the Guan Yin culture /",
@@ -1901,7 +1891,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007132893705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 191,
+      "idx": 190,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Brandenburg concerto no. 3 : in G : BMV 1048 /",
@@ -1911,7 +1901,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 192,
+      "idx": 191,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Unsicherheit /",
@@ -1921,7 +1911,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 193,
+      "idx": 192,
       "isbn": "9781454833888",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210171905913&vid=886UCO_SCU:886SCU_INST",
       "title": "Economic analysis of law /",
@@ -1931,7 +1921,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210171905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 194,
+      "idx": 193,
       "isbn": "1954750196",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210171805913&vid=886UCO_SCU:886SCU_INST",
       "title": "Harry First : a global vision for competition law /",
@@ -1941,7 +1931,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210171805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 195,
+      "idx": 194,
       "isbn": "019890603X",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210171705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Competition law /",
@@ -1949,6 +1939,16 @@
       "callno": "KD2212 .W48 2024",
       "date": "2026-01-06",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210171705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 195,
+      "isbn": "9783406792304",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210170905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Grundgesetz : Kommentar /",
+      "location": "城區分館書庫 城區分館書庫",
+      "callno": "KK4444.3.A7 H83 2024",
+      "date": "2026-01-06",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210170905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 196,
@@ -1972,16 +1972,6 @@
     },
     {
       "idx": 198,
-      "isbn": "9783406792304",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210170905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Grundgesetz : Kommentar /",
-      "location": "城區分館書庫 城區分館書庫",
-      "callno": "KK4444.3.A7 H83 2024",
-      "date": "2026-01-06",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210170905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 199,
       "isbn": "9781023700863",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210171305913&vid=886UCO_SCU:886SCU_INST",
       "title": "Cursus der Institutionen /",
@@ -1991,7 +1981,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210171305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 200,
+      "idx": 199,
       "isbn": "9783161623295",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214794505913&vid=886UCO_SCU:886SCU_INST",
       "title": "Die \"gemischte Schenkung\" : Eine Studie Zum Schenkungsbegriff und Zur Teilentgeltlichkeit Im System des BGB /",
@@ -2001,7 +1991,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214794505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 201,
+      "idx": 200,
       "isbn": "3061229671",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210164405913&vid=886UCO_SCU:886SCU_INST",
       "title": "Treffpunkt : Deutsch als Zweitsprache für Alltag und Beruf - A1: Gesamtband Testheft mit Audios online /",
@@ -2011,7 +2001,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210164405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 202,
+      "idx": 201,
       "isbn": "3428195493",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210779205913&vid=886UCO_SCU:886SCU_INST",
       "title": "Gewaltenteilung, funktionsgerechte Organstruktur und Legitimation im Haushaltsrecht: über die Auswirkung demokratischer und rechtsstaatlicher Grundsätze auf Kontrolle, Gestaltung und Legitimation des Budgets /",
@@ -2021,7 +2011,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210779205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 203,
+      "idx": 202,
       "isbn": "3406548784",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210779005913&vid=886UCO_SCU:886SCU_INST",
       "title": "Rechtsvergleichung: ein Studienbuch /",
@@ -2031,7 +2021,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210779005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 204,
+      "idx": 203,
       "isbn": "9780367609528",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210789005913&vid=886UCO_SCU:886SCU_INST",
       "title": "Handbook of matching and weighting adjustments for causal inference /",
@@ -2041,7 +2031,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210789005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 205,
+      "idx": 204,
       "isbn": "0817926453",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210778605913&vid=886UCO_SCU:886SCU_INST",
       "title": "The boiling moat : urgent steps to defend Taiwan /",
@@ -2051,7 +2041,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210778605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 206,
+      "idx": 205,
       "isbn": "1032319941",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210778505913&vid=886UCO_SCU:886SCU_INST",
       "title": "China on the rise : the transformation of structural power in the era of multipolarity /",
@@ -2061,7 +2051,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210778505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 207,
+      "idx": 206,
       "isbn": "9789819805389",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210777505913&vid=886UCO_SCU:886SCU_INST",
       "title": "Research on China's strategy and policy in Northeast Asia /",
@@ -2071,7 +2061,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210777505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 208,
+      "idx": 207,
       "isbn": "9781032557236",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210777405913&vid=886UCO_SCU:886SCU_INST",
       "title": "Navigating international order transition in the Indo-Pacific /",
@@ -2081,7 +2071,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210777405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 209,
+      "idx": 208,
       "isbn": "9781800614840",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210777305913&vid=886UCO_SCU:886SCU_INST",
       "title": "Indo-Pacific security : US-China rivalry and regional states' responses /",
@@ -2091,7 +2081,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210777305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 210,
+      "idx": 209,
       "isbn": "9789811274879",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210777205913&vid=886UCO_SCU:886SCU_INST",
       "title": "Russo-Ukrainian war : implications for the Asia Pacific /",
@@ -2101,7 +2091,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210777205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 211,
+      "idx": 210,
       "isbn": "9781036404642",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210777105913&vid=886UCO_SCU:886SCU_INST",
       "title": "American gold in post-second World War Taiwan : the forgotten free China /",
@@ -2111,7 +2101,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210777105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 212,
+      "idx": 211,
       "isbn": "1032486961",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210777005913&vid=886UCO_SCU:886SCU_INST",
       "title": "National identity and millennials in Northeast Asia : power and contestations in the digital age /",
@@ -2121,7 +2111,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210777005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 213,
+      "idx": 212,
       "isbn": "9781250249296",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210776905913&vid=886UCO_SCU:886SCU_INST",
       "title": "Surveillance state : inside China's quest to launch a new era of social control /",
@@ -2131,7 +2121,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210776905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 214,
+      "idx": 213,
       "isbn": "1032330929",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210776805913&vid=886UCO_SCU:886SCU_INST",
       "title": "Public health and Cold War politics in Asia /",
@@ -2139,6 +2129,16 @@
       "callno": "RA525 .P647 2024",
       "date": "2026-01-02",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210776805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 214,
+      "isbn": "9787100217835",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "近代漢語官話方言域外文獻集成 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "802.5208 3230(4)",
+      "date": "2025-12-31",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 215,
@@ -2492,16 +2492,6 @@
     },
     {
       "idx": 250,
-      "isbn": "9787100217835",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST",
-      "title": "近代漢語官話方言域外文獻集成 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "802.5208 3230(4)",
-      "date": "2025-12-31",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 251,
       "isbn": "9784093801331",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594505913&vid=886UCO_SCU:886SCU_INST",
       "title": "昭和歌謡イイネ! /",
@@ -2511,7 +2501,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 252,
+      "idx": 251,
       "isbn": "9784128001569",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594405913&vid=886UCO_SCU:886SCU_INST",
       "title": "昭和100年 : 348のキーワードでたどる挫折と栄光 : 1926-1989昭和史の年表付き",
@@ -2521,7 +2511,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 253,
+      "idx": 252,
       "isbn": "9784296123797",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594305913&vid=886UCO_SCU:886SCU_INST",
       "title": "昭和100年 : 令和に活きる日本の強さ /",
@@ -2531,7 +2521,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 254,
+      "idx": 253,
       "isbn": "9784299070524",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594205913&vid=886UCO_SCU:886SCU_INST",
       "title": "歴史アドベンチャー語られなかった沖縄の真実 /",
@@ -2541,7 +2531,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 255,
+      "idx": 254,
       "isbn": "9786267688366",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217494205913&vid=886UCO_SCU:886SCU_INST",
       "title": "冷戰時期臺灣實施心戰工作相關人物訪談錄 = The Reminiscences of national army personnel in psychological warfare during the Cold War /",
@@ -2549,6 +2539,16 @@
       "callno": "788.31 1141",
       "date": "2025-12-26",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217494205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 255,
+      "isbn": "9786267269718",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "美國國家安全與對臺政策檔案選譯 = Select documents on U.S. national security and Taiwan policy in translation",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "578.52 8663",
+      "date": "2025-12-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 256,
@@ -2572,16 +2572,6 @@
     },
     {
       "idx": 258,
-      "isbn": "9786267269718",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "美國國家安全與對臺政策檔案選譯 = Select documents on U.S. national security and Taiwan policy in translation",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "578.52 8663",
-      "date": "2025-12-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 259,
       "isbn": "9789865433963",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217594005913&vid=886UCO_SCU:886SCU_INST",
       "title": "國家海洋政策白皮書 = National ocean policy white paper /",
@@ -2591,7 +2581,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217594005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 260,
+      "idx": 259,
       "isbn": "9784802216142",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007217593805913&vid=886UCO_SCU:886SCU_INST",
       "title": "日本のすごい祭り : 残したい!知られざる祭礼・行事の数々 /",
@@ -2601,7 +2591,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007217593805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 261,
+      "idx": 260,
       "isbn": "9786263107038",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792305913&vid=886UCO_SCU:886SCU_INST",
       "title": "萬事揭曉 : 打破文明演進的神話, 開啓自由曙光的全新人類史 /",
@@ -2611,7 +2601,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 262,
+      "idx": 261,
       "isbn": "9789863878056",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691205913&vid=886UCO_SCU:886SCU_INST",
       "title": "雪盲 /",
@@ -2621,7 +2611,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 263,
+      "idx": 262,
       "isbn": "9789865437404",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691105913&vid=886UCO_SCU:886SCU_INST",
       "title": "李渝 /",
@@ -2631,7 +2621,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 264,
+      "idx": 263,
       "isbn": "9786267645604",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691005913&vid=886UCO_SCU:886SCU_INST",
       "title": "不受統治的藝術 : 東南亞高地無政府主義的歷史 /",
@@ -2641,7 +2631,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 265,
+      "idx": 264,
       "isbn": "9789864508068",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691405913&vid=886UCO_SCU:886SCU_INST",
       "title": "一次沒有參加的座談會 : 郭松棻、李渝文藝評論集 /",
@@ -2651,7 +2641,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 266,
+      "idx": 265,
       "isbn": "9789863877950",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691305913&vid=886UCO_SCU:886SCU_INST",
       "title": "落九花 /",
@@ -2661,7 +2651,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 267,
+      "idx": 266,
       "isbn": "9789866102936",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691505913&vid=886UCO_SCU:886SCU_INST",
       "title": "綠血球 /",
@@ -2669,6 +2659,16 @@
       "callno": "851.486 2732-2",
       "date": "2026-01-07",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 267,
+      "isbn": "9786267242803",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216690905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "詹冰全集 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "863.4 2732",
+      "date": "2026-01-08",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216690905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 268,
@@ -2752,16 +2752,6 @@
     },
     {
       "idx": 276,
-      "isbn": "9786267242803",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216690905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "詹冰全集 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "863.4 2732",
-      "date": "2026-01-08",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216690905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 277,
       "isbn": "9786264174541",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218393505913&vid=886UCO_SCU:886SCU_INST",
       "title": "職場人的生成式AI工作法 : 哈佛商業評論提升生產力、團隊創意和決策品質的35堂課 /",
@@ -2769,6 +2759,16 @@
       "callno": "494 3112",
       "date": "2026-01-02",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218393505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 277,
+      "isbn": "9786269581825",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218693905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "素學 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "192.1 4216",
+      "date": "2026-01-02",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218693905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 278,
@@ -2782,16 +2782,6 @@
     },
     {
       "idx": 279,
-      "isbn": "9786269581825",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218693905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "素學 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "192.1 4216",
-      "date": "2026-01-02",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218693905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 280,
       "isbn": "9786267312186",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218694005913&vid=886UCO_SCU:886SCU_INST",
       "title": "黃仁勳 : 從臺南囝仔到AI教父 = The rise of Jensen Huang : from Tainan roots to the AI revolution /",
@@ -2801,7 +2791,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218694005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 281,
+      "idx": 280,
       "isbn": "9786267312186",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218694005913&vid=886UCO_SCU:886SCU_INST",
       "title": "黃仁勳 : 從臺南囝仔到AI教父 = The rise of Jensen Huang : from Tainan roots to the AI revolution /",
@@ -2811,7 +2801,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218694005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 282,
+      "idx": 281,
       "isbn": "9789860548266",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991002983139705913&vid=886UCO_SCU:886SCU_INST",
       "title": "原住民族文獻 : 文獻的.文摘的.大眾的 /",
@@ -2819,6 +2809,16 @@
       "callno": "536.29 4721(2)",
       "date": "2026-01-02",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991002983139705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 282,
+      "isbn": "9787100217835",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "近代漢語官話方言域外文獻集成 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "802.5208 3230(4)",
+      "date": "2025-12-31",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 283,
@@ -3012,13 +3012,13 @@
     },
     {
       "idx": 302,
-      "isbn": "9787100217835",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST",
-      "title": "近代漢語官話方言域外文獻集成 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "802.5208 3230(4)",
-      "date": "2025-12-31",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218494505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Fugue (on the Kyrie): transcribed for four-part brass choir /",
+      "location": "雙溪中正書庫 密集書庫-樂譜專區",
+      "callno": "M959.C68 F84 1955",
+      "date": "2025-12-12",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 303,
@@ -3063,12 +3063,12 @@
     {
       "idx": 307,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Fugue (on the Kyrie): transcribed for four-part brass choir /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Scherzo: Brass sextet: for Two B♭ trumpet(cornet), horn in F, trombone, baritone, and tube, with score /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.C68 F84 1955",
+      "callno": "M659.K641 S34",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 308,
@@ -3093,12 +3093,12 @@
     {
       "idx": 310,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093305913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Scherzo: Brass sextet: for Two B♭ trumpet(cornet), horn in F, trombone, baritone, and tube, with score /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Two magnificats: transcribed for four-part brass choir or bass quartet /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M659.K641 S34",
+      "callno": "M959.P34 T86 1950",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 311,
@@ -3163,12 +3163,12 @@
     {
       "idx": 317,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093805913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Two magnificats: transcribed for four-part brass choir or bass quartet /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Two canzonas : La Fina, La Foresta : for 2 trumpets and 2 trombones (2 trumpets, horn and trombone) /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.P34 T86 1950",
+      "callno": "M559.C381 T86 1972",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 318,
@@ -3213,12 +3213,12 @@
     {
       "idx": 322,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Two canzonas : La Fina, La Foresta : for 2 trumpets and 2 trombones (2 trumpets, horn and trombone) /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213092705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Who?: from Sunny /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M559.C381 T86 1972",
+      "callno": "M659.K476 W46 1958",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213092705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 323,
@@ -3273,12 +3273,12 @@
     {
       "idx": 328,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213092705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Who?: from Sunny /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Aria and minuet : brass quintet: for Two B♭ cornet (trumpets), horn in F or trombone, trombone or baritone, and tube, with score /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M659.K476 W46 1958",
+      "callno": "M559.S32 A298 1961",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213092705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 329,
@@ -3313,12 +3313,12 @@
     {
       "idx": 332,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093205913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Aria and minuet : brass quintet: for Two B♭ cornet (trumpets), horn in F or trombone, trombone or baritone, and tube, with score /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Sonata no.7 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M559.S32 A298 1961",
+      "callno": "M959.R453 no.7",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 333,
@@ -3393,12 +3393,12 @@
     {
       "idx": 340,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Sonata no.7 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213094005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Sonata no.18 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.R453 no.7",
+      "callno": "M959.R453 no.18",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213094005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 341,
@@ -3473,12 +3473,12 @@
     {
       "idx": 348,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213094005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Sonata no.18 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213094205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Sonata no.24 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir or brass quartet /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.R453 no.18",
+      "callno": "M959.R453 no.24",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213094005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213094205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 349,
@@ -3553,12 +3553,12 @@
     {
       "idx": 356,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213094205913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Sonata no.24 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir or brass quartet /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007212794105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "March, chorale & fugue : for four-part brass choir /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.R453 no.24",
+      "callno": "M559.B3 M37 1958",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213094205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007212794105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 357,
@@ -3623,12 +3623,12 @@
     {
       "idx": 363,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007212794105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "March, chorale & fugue : for four-part brass choir /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007212794405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Sonata no. 15 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir or brass quartet /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M559.B3 M37 1958",
+      "callno": "M959.R453 no.15",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007212794105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007212794405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 364,
@@ -3703,12 +3703,12 @@
     {
       "idx": 371,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007212794405913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Sonata no. 15 from Vierundzwanzig neue Quatricinia (Leipzig, 1696): for four-part brass choir or brass quartet /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Ricercar del duodecimo tuono : for 2 trumpets and 2 trombones /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.R453 no.15",
+      "callno": "M489.G317 R53 1957",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007212794405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 372,
@@ -3743,12 +3743,12 @@
     {
       "idx": 375,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Ricercar del duodecimo tuono : for 2 trumpets and 2 trombones /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213092905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Irish airs (on Irish folk songs): for brass quartet /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M489.G317 R53 1957",
+      "callno": "M959.O8 I75 1965",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213092905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 376,
@@ -3773,12 +3773,12 @@
     {
       "idx": 378,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213092905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Irish airs (on Irish folk songs): for brass quartet /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213092805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Blue Flame March: for brass quartet /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M959.O8 I75 1965",
+      "callno": "M457.4.S621 B58 1965",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213092905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213092805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 379,
@@ -3823,12 +3823,12 @@
     {
       "idx": 383,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213092805913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Blue Flame March: for brass quartet /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007212794705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Sonata no. 1 : for four-part brass choir /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M457.4.S621 B58 1965",
+      "callno": "M559.S75 S66 1957",
       "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213092805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007212794705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 384,
@@ -3903,22 +3903,22 @@
     {
       "idx": 391,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007212794705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Sonata no. 1 : for four-part brass choir /",
-      "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M559.S75 S66 1957",
-      "date": "2025-12-12",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007212794705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 392,
-      "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213093705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Fugue (on the Kyrie): transcribed for four-part brass choir /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
       "callno": "M959.C68 F84 1955",
       "date": "2025-12-12",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213093705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 392,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004101739705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Sarabande & minuet for four-part brass choir or brass quartet /",
+      "location": "雙溪中正書庫 密集書庫-樂譜專區",
+      "callno": "M489.B3 S343",
+      "date": "2025-12-23",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004101739705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 393,
@@ -3973,12 +3973,12 @@
     {
       "idx": 398,
       "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004101739705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Sarabande & minuet for four-part brass choir or brass quartet /",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "Brandenburg concerto no. 3 : in G : BMV 1048 /",
       "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M489.B3 S343",
+      "callno": "M1040 .B3 no.3",
       "date": "2025-12-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004101739705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 399,
@@ -4062,16 +4062,6 @@
     },
     {
       "idx": 407,
-      "isbn": "",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "Brandenburg concerto no. 3 : in G : BMV 1048 /",
-      "location": "雙溪中正書庫 密集書庫-樂譜專區",
-      "callno": "M1040 .B3 no.3",
-      "date": "2025-12-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 408,
       "isbn": "",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991004865839705913&vid=886UCO_SCU:886SCU_INST",
       "title": "Brandenburg concerto no. 3 : in G : BMV 1048 /",
