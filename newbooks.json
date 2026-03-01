@@ -2,6 +2,226 @@
   "rows": [
     {
       "idx": 1,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210788705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "維蘇威火山的陰影 = In the shadow of Vesuvius = 赫克雷尼亞與龐貝古城重見天日 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "354.1 2459",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210788705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 2,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210788105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "滄海浮生記 = Ocean drifters = 一趟令人目眩神迷的海洋之旅 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.9 3332",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210788105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 3,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "白銀谷 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "989.2 2688",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 4,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "白銀谷 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "989.2 2688",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 5,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "白銀谷 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "989.2 2688",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 6,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "白銀谷 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "989.2 2688",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208685005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 7,
+      "isbn": "4710884316",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "新絲綢之路 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "690 0223",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 8,
+      "isbn": "4710884316",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "新絲綢之路 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "690 0223",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 9,
+      "isbn": "4710884316",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "新絲綢之路 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "690 0223",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 10,
+      "isbn": "4710884316",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "新絲綢之路 /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "690 0223",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208687805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 11,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 12,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 13,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 14,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 15,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 16,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 17,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 18,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 19,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣特稀有生物",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "366.232 4322",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000337379705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 20,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208684605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "大英博物館 = The British museum /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "069.9 4442",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208684605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 21,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208684605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "大英博物館 = The British museum /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "069.9 4442",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208684605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 22,
+      "isbn": "",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007208684605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "大英博物館 = The British museum /",
+      "location": "雙溪中正非書 雙溪中正非書",
+      "callno": "069.9 4442",
+      "date": "2026-02-25",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007208684605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 23,
       "isbn": "9781009483940",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007214794605913&vid=886UCO_SCU:886SCU_INST",
       "title": "The Cambridge handbook of EU sustainable finance : regulation, supervision, and governance /",
@@ -11,7 +231,17 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007214794605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 2,
+      "idx": 24,
+      "isbn": "9781438496597",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007210789305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "The China race : global competition for alternative world orders /",
+      "location": "雙溪中正書庫 密集書庫",
+      "callno": "DS779.47 .W333 2024",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007210789305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 25,
       "isbn": "9783161647031",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693005913&vid=886UCO_SCU:886SCU_INST",
       "title": "Grundlagen der demokratischen Verfassung: Festschrift für Robert Alexy zum 80. Geburtstag /",
@@ -21,7 +251,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 3,
+      "idx": 26,
       "isbn": "9815019430",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693405913&vid=886UCO_SCU:886SCU_INST",
       "title": "Woon's corporations law /",
@@ -31,7 +261,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 4,
+      "idx": 27,
       "isbn": "9815019430",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693405913&vid=886UCO_SCU:886SCU_INST",
       "title": "Woon's corporations law /",
@@ -41,7 +271,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 5,
+      "idx": 28,
       "isbn": "9780414124745",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693305913&vid=886UCO_SCU:886SCU_INST",
       "title": "Bowstead and Reynolds on agency /",
@@ -51,7 +281,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 6,
+      "idx": 29,
       "isbn": "9780414119598",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693205913&vid=886UCO_SCU:886SCU_INST",
       "title": "McGregor on damages /",
@@ -61,7 +291,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 7,
+      "idx": 30,
       "isbn": "9780414130418",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693105913&vid=886UCO_SCU:886SCU_INST",
       "title": "Oil and gas contracts : principles and practice /",
@@ -71,7 +301,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 8,
+      "idx": 31,
       "isbn": "9780414124745",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693305913&vid=886UCO_SCU:886SCU_INST",
       "title": "Bowstead and Reynolds on agency /",
@@ -81,7 +311,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 9,
+      "idx": 32,
       "isbn": "9780414119598",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007213693205913&vid=886UCO_SCU:886SCU_INST",
       "title": "McGregor on damages /",
@@ -91,327 +321,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007213693205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 10,
-      "isbn": "9786269943685",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793405913&vid=886UCO_SCU:886SCU_INST",
-      "title": "時光庇護所 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "883.257 5431",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 11,
-      "isbn": "9786267478691",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792605913&vid=886UCO_SCU:886SCU_INST",
-      "title": "成為幽魂的總統 : 一段橫跨三代的家族記憶與臺灣獨立運動往事 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "783.37 0080",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 12,
-      "isbn": "9786264181280",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792405913&vid=886UCO_SCU:886SCU_INST",
-      "title": "盲人國度 : 從看的見到看不見的奇異旅程 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "785.28 4044-3",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 13,
-      "isbn": "9786267462522",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "女工之死 : 後工業時代, 一則關於鬧鬼和空間記憶的人類學敘事 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "556.54 4034",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 14,
-      "isbn": "9789864508280",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219093205913&vid=886UCO_SCU:886SCU_INST",
-      "title": "大腿山 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.857 2612",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219093205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 15,
-      "isbn": "9789863387183",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691805913&vid=886UCO_SCU:886SCU_INST",
-      "title": "鯊魚使者 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "873.596 6031",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 16,
-      "isbn": "9786267244869",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218394505913&vid=886UCO_SCU:886SCU_INST",
-      "title": "尋找北極森林線 : 融化的冰河、凍土與地球最後的森林 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "436.13378 9924",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218394505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 17,
-      "isbn": "9786267739037",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "蕉葉與樹的約定 = Makaketonay to paloma' /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.857 4417",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 18,
-      "isbn": "9786267478790",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "切、炒、觀、學 : 傅培梅、戰後臺灣與20世紀中華料理 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "783.3886 2344",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 19,
-      "isbn": "9786263148574",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "暮色 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "876.57 4052-1",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 20,
-      "isbn": "9786263156050",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793505913&vid=886UCO_SCU:886SCU_INST",
-      "title": "足跡 : 考古學家眼中的故道 、遠古人類與動物足印 、史前車轍 、朝聖路徑 : 一部始於足下 、行不止息的人類移動史 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "790 4012",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 21,
-      "isbn": "9786264171182",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216692105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "書貓 : 戰火下的祕密任務 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "873.596 5526",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216692105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 22,
-      "isbn": "9786267421543",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "歌之國土 : 馬世芳的巴布.狄倫六講 = Bob Dylan : hard travelin' in the land of songs /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "910.9952 4928",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 23,
-      "isbn": "9786263905122",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "當我們不再理解世界 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "885.8157 5762",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 24,
-      "isbn": "9786263148413",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "裸山 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "857.7 4411-5",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 25,
-      "isbn": "9786264195171",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792505913&vid=886UCO_SCU:886SCU_INST",
-      "title": "即使某天忘了你 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "415.934 4421",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 26,
-      "isbn": "9786264330640",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794205913&vid=886UCO_SCU:886SCU_INST",
-      "title": "群島有事 = Islands in Peril /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.57 2532(1)",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 27,
-      "isbn": "9786264192385",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794505913&vid=886UCO_SCU:886SCU_INST",
-      "title": "原光 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.51 4640",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 28,
-      "isbn": "9786267705315",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793305913&vid=886UCO_SCU:886SCU_INST",
-      "title": "喬治.歐威爾之妻的隱形人生 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "784.18 4041",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 29,
-      "isbn": "9786269684168",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216692305913&vid=886UCO_SCU:886SCU_INST",
-      "title": "東谷沙飛 : 山的孩子笛昂 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.859 4344",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216692305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 30,
-      "isbn": "9786264173483",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691605913&vid=886UCO_SCU:886SCU_INST",
-      "title": "你是探險家 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "866.599 4123",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 31,
-      "isbn": "9789570876086",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216692205913&vid=886UCO_SCU:886SCU_INST",
-      "title": "阿春和1000棵櫻花樹 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "861.599 2621",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216692205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 32,
-      "isbn": "9786267594384",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216692405913&vid=886UCO_SCU:886SCU_INST",
-      "title": "我的頭頂長了一朵香菇 = A Mushroom popped up on my head! /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.599 2561",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216692405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
       "idx": 33,
-      "isbn": "9786267669044",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216792805913&vid=886UCO_SCU:886SCU_INST",
-      "title": "人本建築 : 一位匠造者的世界建設指南 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "920.7 3324",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216792805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 34,
-      "isbn": "9786267478783",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794405913&vid=886UCO_SCU:886SCU_INST",
-      "title": "島都之河 : 匯流與共生, 淡水河與臺北的百年互動 = A city's river : history and water culture of the Tamsui river and Taipei city /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "443.6933 3170",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 35,
-      "isbn": "9786264174534",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691705913&vid=886UCO_SCU:886SCU_INST",
-      "title": "一頭鯨死了以後 : 鯨落 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "366.98 3621",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 36,
-      "isbn": "9786269923250",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216692005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "當你發現一顆剛剛好的石頭 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "874.599 4422",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216692005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 37,
-      "isbn": "9786267747209",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793805913&vid=886UCO_SCU:886SCU_INST",
-      "title": "口袋沒你想得那麼簡單 : 從功能配件到文化象徵, 小小口袋如何裝進性別、權力與身體政治 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "541.3 2140",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 38,
-      "isbn": "9786263109001",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216793005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "萬物的名字 : 博物學之父布豐與林奈的頂尖對決,一場影響日後三百年生物學發展的競賽 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "360.99 6024",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216793005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 39,
-      "isbn": "9786267640029",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794305913&vid=886UCO_SCU:886SCU_INST",
-      "title": "暗房與光 : 臺灣白色恐怖詩選 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.51 6379",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 40,
-      "isbn": "9786267640029",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216794305913&vid=886UCO_SCU:886SCU_INST",
-      "title": "暗房與光 : 臺灣白色恐怖詩選 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "863.51 6379",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216794305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 41,
-      "isbn": "9786267504697",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007216691905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "橋梁 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "441.8 4145",
-      "date": "2026-01-23",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007216691905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 42,
       "isbn": "9784589027955",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041805913&vid=886UCO_SCU:886SCU_INST",
       "title": "在野「法曹」と地域社会 /",
@@ -421,7 +331,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 43,
+      "idx": 34,
       "isbn": "9784000906517",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991000640779705913&vid=886UCO_SCU:886SCU_INST",
       "title": "川島武宜著作集 /",
@@ -431,7 +341,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991000640779705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 44,
+      "idx": 35,
       "isbn": "9784130065030",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041405913&vid=886UCO_SCU:886SCU_INST",
       "title": "日本の法を考える /",
@@ -441,7 +351,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 45,
+      "idx": 36,
       "isbn": "9784326986217",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041605913&vid=886UCO_SCU:886SCU_INST",
       "title": "経済法の歴史 /",
@@ -451,7 +361,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 46,
+      "idx": 37,
       "isbn": "9784863271487",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041505913&vid=886UCO_SCU:886SCU_INST",
       "title": "戦時司法の諸相 : 翼賛選挙無効判決と司法権の独立 /",
@@ -461,7 +371,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 47,
+      "idx": 38,
       "isbn": "9784771028340",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041905913&vid=886UCO_SCU:886SCU_INST",
       "title": "明治初年の裁判 : 垂直的手続構造から水平的手続構造へ /",
@@ -471,7 +381,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 48,
+      "idx": 39,
       "isbn": "9784335360268",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041305913&vid=886UCO_SCU:886SCU_INST",
       "title": "条解消費者三法 : 消費者契約法, 特定商取引法, 割賦販売法 /",
@@ -481,97 +391,17 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 49,
-      "isbn": "9789571519883",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221394105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "教育得英才 : 溪城勝境留鴻爪 : 劉源俊在東吳大學 /",
+      "idx": 40,
+      "isbn": "9784065293577",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "出世と恋愛 : 近代文学で読む男と女 /",
       "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "525.07 7232 v.3",
-      "date": "2026-01-22",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221394105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "callno": "861.27 0484",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 50,
-      "isbn": "9789571519883",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221394105913&vid=886UCO_SCU:886SCU_INST",
-      "title": "教育得英才 : 溪城勝境留鴻爪 : 劉源俊在東吳大學 /",
-      "location": "城區分館書庫 校長書房B區",
-      "callno": "525.07 7232 v.3",
-      "date": "2026-01-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221394105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 51,
-      "isbn": "9789571519876",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221393905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "學 驗 思 : 文化承啟與科學教育 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "525.07 7232 v.2",
-      "date": "2026-01-22",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221393905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 52,
-      "isbn": "9789571519876",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221393905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "學 驗 思 : 文化承啟與科學教育 /",
-      "location": "城區分館書庫 校長書房B區",
-      "callno": "525.07 7232 v.2",
-      "date": "2026-01-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221393905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 53,
-      "isbn": "9789571519869",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221394005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "知行省 : 高等教育與教育改革 /",
-      "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "525.07 7232 v.1",
-      "date": "2026-01-22",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221394005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 54,
-      "isbn": "9789571519869",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221394005913&vid=886UCO_SCU:886SCU_INST",
-      "title": "知行省 : 高等教育與教育改革 /",
-      "location": "城區分館書庫 校長書房B區",
-      "callno": "525.07 7232 v.1",
-      "date": "2026-01-26",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221394005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 55,
-      "isbn": "9786267395677",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221593905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "成本與管理會計 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "494.74 4464 2026",
-      "date": "2026-01-27",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221593905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 56,
-      "isbn": "9786267395677",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221593905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "成本與管理會計 /",
-      "location": "城區分館書庫 近三年新書區",
-      "callno": "494.74 4464 2026",
-      "date": "2026-01-27",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221593905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 57,
-      "isbn": "9786267395677",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221593905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "成本與管理會計 /",
-      "location": "雙溪中正書庫 東吳書房",
-      "callno": "494.74 4464 2026",
-      "date": "2026-01-27",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221593905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
-    },
-    {
-      "idx": 58,
+      "idx": 41,
       "isbn": "9784785731342",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041205913&vid=886UCO_SCU:886SCU_INST",
       "title": "コンメンタール消費者契約法 /",
@@ -581,7 +411,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 59,
+      "idx": 42,
       "isbn": "9784766419177",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218041705913&vid=886UCO_SCU:886SCU_INST",
       "title": "明治日本の法解釈と法律家 /",
@@ -591,57 +421,1207 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218041705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 60,
-      "isbn": "9786264331531",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221892905913&vid=886UCO_SCU:886SCU_INST",
-      "title": "循環在有無之間 : 永豐一百年的永續智慧 /",
+      "idx": 43,
+      "isbn": "9786263863231",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "行遠 : 劉源俊八十憶往 /",
       "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "783.3886 2142",
-      "date": "2026-01-27",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221892905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "callno": "783.3886 7232-1",
+      "date": "2026-02-04",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 44,
+      "isbn": "9786263863231",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "行遠 : 劉源俊八十憶往 /",
+      "location": "城區分館書庫 校長書房B區",
+      "callno": "783.3886 7232-1",
+      "date": "2026-02-05",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 45,
+      "isbn": "9786263863231",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "行遠 : 劉源俊八十憶往 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "783.3886 7232-1",
+      "date": "2026-02-04",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 46,
+      "isbn": "9786263863231",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "行遠 : 劉源俊八十憶往 /",
+      "location": "城區分館書庫 校長書房B區",
+      "callno": "783.3886 7232-1",
+      "date": "2026-02-05",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 47,
+      "isbn": "9784866472232",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ゲームデザイナー小島秀夫論 : 世界のゲーム市場を熱狂させた革新性 : MSX2版『メタルギア』から『DEATH STRANDING』まで /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.82 9225",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 48,
+      "isbn": "9784845921454",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ゲームスタディーズ : 遊びから文化と社会を考える = Critical words for game studies /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "541.3 4063",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 49,
+      "isbn": "9784087890150",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ソ連兵へ差し出された娘たち /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 1584",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 50,
+      "isbn": "9784845921317",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ポピュラー音楽 : 「聴く」を広げる.更新する = Critical words for popular music /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "913.6 3742",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 51,
+      "isbn": "9784845924110",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "アクティビズムのアート/アートのアクティビズム : 「抵抗する表現」の軌跡と行方 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "901.5 2812",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 52,
+      "isbn": "9784393424636",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "フォルモサ南方奇譚 = Formosa's enchanted south /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.69 8586",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 53,
+      "isbn": "9784422300955",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "写真図説占領下の大阪.関西 : 昭和20年(1945)-昭和30年(1955) /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.75025 4724",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 54,
+      "isbn": "9784122043404",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "東京焼盡 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.7 4617",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 55,
+      "isbn": "9784167919375",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "女たちのシベリア抑留 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "712.847 9422",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 56,
+      "isbn": "9784334043759",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218893105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "秘蔵カラー写真で味わう60年前の東京.日本 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.278 4084(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218893105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 57,
+      "isbn": "9784004319641",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "占領期カラー写真を読む : オキュパイド.ジャパンの色 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.279 2431",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 58,
+      "isbn": "9784334106942",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "動物たちがみた戦争 : 戦中写真が伝える /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 3342",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 59,
+      "isbn": "9784004110958",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ひとり暮しの戦後史 : 戦中世代の婦人たち /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "544.5931 4382",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 60,
+      "isbn": "9784065295076",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "新.哲学入門 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "107 8656",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 61,
-      "isbn": "9786263863231",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
-      "title": "行遠 : 劉源俊八十憶往 /",
+      "isbn": "9784003313510",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "女工哀史 /",
       "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "783.3886 7232-1",
-      "date": "2026-02-04",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "callno": "556.54 2524",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 62,
-      "isbn": "9786263863231",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
-      "title": "行遠 : 劉源俊八十憶往 /",
-      "location": "城區分館書庫 校長書房B區",
-      "callno": "783.3886 7232-1",
-      "date": "2026-02-05",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "isbn": "9784480512444",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "鉄の暴風 : 沖縄戦記 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 3222",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 63,
-      "isbn": "9786263863231",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
-      "title": "行遠 : 劉源俊八十憶往 /",
+      "isbn": "9784480440334",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218985905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "いくさ世を生きて : 沖縄戦の女たち /",
       "location": "雙溪中正書庫 雙溪中正書庫",
-      "callno": "783.3886 7232-1",
-      "date": "2026-02-04",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "callno": "731.2788 4791",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218985905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 64,
-      "isbn": "9786263863231",
-      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
-      "title": "行遠 : 劉源俊八十憶往 /",
-      "location": "城區分館書庫 校長書房B區",
-      "callno": "783.3886 7232-1",
-      "date": "2026-02-05",
-      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+      "isbn": "9784480439604",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "シベリヤ物語 : 長谷川四郎傑作選 = Selected works of Shiro Hasegawa /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.37 7826",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
       "idx": 65,
+      "isbn": "9784122076419",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "わが復員わが戦後 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.57 4761(5)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 66,
+      "isbn": "9784122076686",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "昭和歳時記 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.67 4046-1",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 67,
+      "isbn": "9784003313527",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "小説.女工哀史 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.57 2524",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 68,
+      "isbn": "9784003313527",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "小説.女工哀史 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.57 2524",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 69,
+      "isbn": "9784582769135",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219093805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "フォルモサ : 台湾と日本の地理歴史 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733 4162",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219093805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 70,
+      "isbn": "9784480511928",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "樺太一九四五年夏 : 樺太終戦記録 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 8126",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 71,
+      "isbn": "9784480513090",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "敗戦日記 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.67 3315",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 72,
+      "isbn": "9784022621207",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "女たちの太平洋戦争 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 4607",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 73,
+      "isbn": "9784334742614",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "読書の方法 : なにを、どう読むか /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "019.1 4576",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 74,
+      "isbn": "9784101016412",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218892305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "創作する遺伝子 : 僕が愛したMEME (ミーム) たち /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "011.69 9225",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218892305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 75,
+      "isbn": "9784002711102",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218985605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "『女工哀史』は生きている : 細井和喜蔵と貧困日本 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "783.18 4853",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218985605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 76,
+      "isbn": "9784827214413",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "本当にためになるゲームの歴史 : 1本のゲームが億を生む仕組みのすべて /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.809 2234",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 77,
+      "isbn": "9784000617024",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "不屈のひと : 物語「女工哀史」 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.57 1671",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 78,
+      "isbn": "4905497612",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219093905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "近代天皇制から象徴天皇制へ : 「象徴」への道程 = From modern emperor system to symbol emperor system /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "574.251 3124",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219093905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 79,
+      "isbn": "9784140018569",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "「昭和」という国家 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2707 1734",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 80,
+      "isbn": "9784140912447",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "象徴天皇制の成立 : 昭和天皇と宮中の「葛藤」 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "574.251 4801",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 81,
+      "isbn": "9784140912805",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "「新しい時代」の文学論 : 夏目漱石、大江健三郎、そして3.11後へ /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.27 2738",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 82,
+      "isbn": "9784140912621",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "哲学とは何か /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "140 8656",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 83,
+      "isbn": "9784140912874",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218985505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "集中講義!アメリカ現代思想 : リベラリズムはどこへ行くのか /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "509.52 2164",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218985505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 84,
+      "isbn": "9784867930991",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ゲーム作家小島秀夫論 : エスピオナージ.オペラ = Espionage opera : an essay on Hideo Kojima /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "011.69 9225",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 85,
+      "isbn": "9784865280586",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "アート&デザイン表現史 : 1800s-2000s = History of art & design expression /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "909.1 4621",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 86,
+      "isbn": "9784750515847",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "今すぐソーシャルメディアのアカウントを削除すべき10の理由 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "541.415 4471",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 87,
+      "isbn": "9784766002164",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "花森安治選集 = Yasuji Hanamori selection /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.478 4433-1",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 88,
+      "isbn": "9784766002164",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "花森安治選集 = Yasuji Hanamori selection /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.478 4433-1",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 89,
+      "isbn": "9784766002164",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "花森安治選集 = Yasuji Hanamori selection /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.478 4433-1",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 90,
+      "isbn": "9784568430684",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218985805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "現代アート事典 : モダンからコンテンポラリーまで…世界と日本の現代美術用語集 = The encyclopedia of modern & contemporary art /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "909.1 8224",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218985805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 91,
+      "isbn": "9784864631297",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "イメージかモノか : 日本現代美術のアポリア /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "901.2 0243",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 92,
+      "isbn": "9784766001723",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "花森安治の仕事 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "783.18 4433",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 93,
+      "isbn": "9784409241332",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "日本デジタルゲーム産業史 : ファミコン以前からスマホゲームまで /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.80931 9248",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 94,
+      "isbn": "9784130101578",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218985705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "デジタルゲーム研究 = Digital game studies /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.82 4063",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218985705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 95,
+      "isbn": "9784866472010",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ビデオゲームの語り部たち : 日本のゲーム産業を支えたクリエイターの創造と挑戦 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.820931 6204",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 96,
+      "isbn": "9784864630573",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "現代アート10講 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "909.408 6513",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 97,
+      "isbn": "9784766425673",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218989005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ビデオゲームの美学 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.8 4321",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218989005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 98,
+      "isbn": "9784336073266",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218987705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "帝国の写真師小川一眞 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "783.1878 9214",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218987705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 99,
+      "isbn": "9784766001730",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "花森安治のデザイン : 『暮しの手帖』創刊から30年間の手仕事 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "964 4433",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 100,
+      "isbn": "9784766002393",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218986805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "花森安治の広告デザイン : 暮しの手帖のポスターと新聞広告 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "964 4433(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218986805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 101,
+      "isbn": "9784422700281",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218892505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "写真の読み方 : 初期から現代までの世界の大写真家67人 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "950.9 4056(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218892505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 102,
+      "isbn": "9784326800438",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "映画理論講義 : 映像の理解と探究のために /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "987.01 2744",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 103,
+      "isbn": "9784480818614",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "RPGのつくりかた : 橋野桂と『メタファー:リファンタジオ』 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "312.8 4264",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 104,
+      "isbn": "9784778340186",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ゲームフリーク : 遊びの世界標準を塗り替えるクリエイティブ集団 = Game Freak : a creative group redefining the global standard of play /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997.8 2347",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 105,
+      "isbn": "9784750518671",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "書くことのメディア史 : AIは人間の言語能力に何をもたらすのか /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "801.4 7701",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 106,
+      "isbn": "9784865280937",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "戦争とデザイン = War & design : color symbol words /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "964.09 4621",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 107,
+      "isbn": "9784907497170",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ジェンダー写真論 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "953.3 8788",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 108,
+      "isbn": "9784924671638",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "プロヴォーク : 中平卓馬をめぐる50年目の日記 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "959.31 5127",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 109,
+      "isbn": "9784479798262",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218988805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ゲーム作家の全思考 = The complete thoughts of game creator /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "997 9915",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218988805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 110,
+      "isbn": "9784568105872",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "12ヶ月で学ぶ現代アート入門 = Art /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "909.1 2535",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 111,
+      "isbn": "9784801004610",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218892405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ストーリーとディスコース : 小説と映画における物語構造 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "812.023 4026(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218892405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 112,
+      "isbn": "9784588420221",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218894205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "映像アーカイブ.スタディーズ  = Film archival studies /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "023.8 2612",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218894205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 113,
+      "isbn": "9784047381483",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "隙間 /",
+      "location": "雙溪中正書庫 漫讀區",
+      "callno": "947.41 0041",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 114,
+      "isbn": "9784047381483",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "隙間 /",
+      "location": "雙溪中正書庫 漫讀區",
+      "callno": "947.41 0041",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 115,
+      "isbn": "9784047381483",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "隙間 /",
+      "location": "雙溪中正書庫 漫讀區",
+      "callno": "947.41 0041",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 116,
+      "isbn": "9784047381483",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "隙間 /",
+      "location": "雙溪中正書庫 漫讀區",
+      "callno": "947.41 0041",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 117,
+      "isbn": "9784409511077",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "人文学のための計量分析入門 : 歴史を数量化する /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "603.1 4414",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 118,
+      "isbn": "9784492371374",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "戦後日本経済史 : かつて経済大国だった「日本」という国について /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "552.319 6622",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 119,
+      "isbn": "9784065377918",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "庭の話 = Think as a garden /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "540.7 3693",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 120,
+      "isbn": "9784000617079",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "文学は何の役に立つのか? = What is the use of literature? /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.2 1631-3",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 121,
+      "isbn": "9784758414906",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "#東京アパート = #Tokyo apartment /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.57 4681",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 122,
+      "isbn": "9784991358517",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ダメ男小説傑作選 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.37 0832",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 123,
+      "isbn": "9784103985112",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "松本清張の女たち = Women in Seicho Matsumoto's writings /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.2 3521",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 124,
+      "isbn": "9784336077493",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "虚栄の市 汚れた土地 冬の神話 : 小林信彦初期長篇集成 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.479 9420",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 125,
+      "isbn": "9784044094683",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "文学とは何か /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "810 4471(2)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 126,
+      "isbn": "9784909782205",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "戦後京都の「色」はアメリカにあった! : 占領期カラー写真が描く「オキュパイド.ジャパン」とその後 = True colors of postwar Kyoto (1945-52), found in the USA! : occupied Japan and beyond, captured in vintage color photographs /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.752 4631",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 127,
+      "isbn": "9784163914923",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "日本橋に生まれて /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.67 9420",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 128,
+      "isbn": "9784120058592",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "文学者とは何か /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.2 3083",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 129,
+      "isbn": "9784103318293",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "世界の喜劇人 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "984.26099 9420",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 130,
+      "isbn": "9784480076915",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "写真が語る敗戦と占領 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 4136",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 131,
+      "isbn": "9784480075581",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "写真が語る銃後の暮らし /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 4136(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 132,
+      "isbn": "9784334044817",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "AIとカラー化した写真でよみがえる戦前.戦争 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "731.2788 0641",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 133,
+      "isbn": "9784750518800",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "仮面考 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "541.3 8304",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 134,
+      "isbn": "9784588010637",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ベルクソニズム : 新訳 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "146.71 2448",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 135,
+      "isbn": "9784588140662",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "哲学の余白 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "143.2 2443",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 136,
+      "isbn": "9784588140662",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "哲学の余白 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "143.2 2443",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 137,
+      "isbn": "9784588010743",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "左翼のメランコリー : 隠された伝統の力一九世紀-二一世紀 = Left-wing melancholia /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "549.3 2551",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 138,
+      "isbn": "9784588099588",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218893505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "場所を消費する /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "551.85 7160",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218893505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 139,
+      "isbn": "9784588010149",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "観光のまなざし /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "992 7160(2)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 140,
+      "isbn": "9784588011269",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "暴力 : 手すりなき思考 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "541.627 2644",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 141,
+      "isbn": "9784908672682",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地「公娼制」に帝国の性政治をみる: 釜山から上海まで /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "544.76931 3031",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 142,
+      "isbn": "4588603434",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地を読む : 「贋」日本人たちの肖像 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.907 6232",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 143,
+      "isbn": "9784883034376",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地がつくった近代 : 植民地朝鮮と帝国日本のもつれを考える /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "732.26 1735",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 144,
+      "isbn": "9784874984413",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地主義の暴力 : 「ことばの檻」から /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "577.14 2804",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 145,
+      "isbn": "9784796702102",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218993105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "ミハイル.バフチンの時空 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "810.7 7748",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218993105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 146,
+      "isbn": "9784582769852",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "プロレタリア文学セレクション /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "861.37 4424",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 147,
+      "isbn": "9784909832498",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "帝国幻想と台湾 : 1871-1949 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.28 2640",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 148,
+      "isbn": "9784876360970",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "デイゴ燃ゆ /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "857.63 7242(4)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 149,
+      "isbn": "9784990536640",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地台湾で上映された映画 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "987.0933 2321",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 150,
+      "isbn": "9784990536640",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218992505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地台湾で上映された映画 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "987.0933 2321",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218992505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 151,
+      "isbn": "9784990536626",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "植民地台湾で上映された映画.",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "987.021 2321",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 152,
+      "isbn": "9784582768961",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "バフチン : カーニヴァル.対話.笑い /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "880.46 7677 2020",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 153,
+      "isbn": "481581158X",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "日本統治下の台湾 : 開発.植民地主義.主体性 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "552.339 1528",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 154,
+      "isbn": "9784866917979",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218991705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "『台湾愛国婦人』という文学場 : 「帝国」日本のプロパガンダと女性 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "544.54 1744",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218991705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 155,
+      "isbn": "9784867350102",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218893205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "牡丹社事件マブイの行方 : 日本と台湾、それぞれの和解 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.2768 1628(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218893205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 156,
+      "isbn": "9784636980363",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "オノ.ヨーコ = Ono Yoko /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "910.9941 9631",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 157,
+      "isbn": "9784130203166",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "日本の植民地統治と台湾人認識 : 「支那民族性」のまなざし /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.28 7723",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 158,
+      "isbn": "9784130860659",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007219094105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "描かれた「故郷」 : 日本統治期における台湾美術の研究 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "909.33 7714(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007219094105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 159,
+      "isbn": "9784588011481",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "狂気.言語.文学 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "146.79 2341(2)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 160,
+      "isbn": "9784588011832",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218990105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "共和国における動物 : フランス革命と動物の権利の起源1789-1802年 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "548.38 3012",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218990105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 161,
+      "isbn": "9784588011436",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218893805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "エクリチュールと差異 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "146.79 2443(22)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218893805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 162,
+      "isbn": "9784588010903",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007218994405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "社会的なものを組み直す : アクターネットワーク理論入門 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "540.2 5060",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007218994405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 163,
       "isbn": "9789571519869",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221394005913&vid=886UCO_SCU:886SCU_INST",
       "title": "知行省 : 高等教育與教育改革 /",
@@ -651,7 +1631,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221394005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 66,
+      "idx": 164,
       "isbn": "9789571519876",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221393905913&vid=886UCO_SCU:886SCU_INST",
       "title": "學 驗 思 : 文化承啟與科學教育 /",
@@ -661,7 +1641,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221393905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 67,
+      "idx": 165,
       "isbn": "9789571519883",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221394105913&vid=886UCO_SCU:886SCU_INST",
       "title": "教育得英才 : 溪城勝境留鴻爪 : 劉源俊在東吳大學 /",
@@ -671,7 +1651,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221394105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 68,
+      "idx": 166,
       "isbn": "9786263863231",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
       "title": "行遠 : 劉源俊八十憶往 /",
@@ -681,7 +1661,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 69,
+      "idx": 167,
       "isbn": "9786263863231",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST",
       "title": "行遠 : 劉源俊八十憶往 /",
@@ -691,7 +1671,7 @@
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221792605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     },
     {
-      "idx": 70,
+      "idx": 168,
       "isbn": "9786267582367",
       "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222694605913&vid=886UCO_SCU:886SCU_INST",
       "title": "散華 : 翻譯與文學論辭 = Efflorescence: critical essays on translation and literature /",
@@ -699,6 +1679,296 @@
       "callno": "811.707 1123(3)",
       "date": "2026-02-03",
       "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222694605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 169,
+      "isbn": "9789860666663",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "反動的修辭 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "570.11509 4416 2021",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 170,
+      "isbn": "9786269978465",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "科技造浪者 : 一部奇蹟般的台灣科技產業史 揭開全球都想知道的人脈網絡 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "484 8744",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 171,
+      "isbn": "9786269979646",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "何苦為男? : 活在競爭、控制與成就壓力下的他們 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "544.7 0873",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 172,
+      "isbn": "9786264331449",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "台灣有事, 世界有事 : 處在大國衝突第一線, 台灣人必須理解的國際關係與戰略思維 = Taiwan with the world : navigating great powers, shaping our future /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "578.1 1000",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 173,
+      "isbn": "9786263439313",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "當代拉丁美洲人文與社會科學巨擘 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "540.956 2134",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 174,
+      "isbn": "9786267645987",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "奶茶聯盟 : 亞洲民主運動如何互相幫助與組織抗中網路  /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "541.45 4447",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 175,
+      "isbn": "9786267509654",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "哨兵國度 : 中國如何透過監控維繫獨裁政權 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "574.1 1187",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 176,
+      "isbn": "9786269275601",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222193905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "論習近平： 習近平的馬克思主義民族主義如何形塑中國與世界？ /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "574.1 7440",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222193905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 177,
+      "isbn": "6267478653",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "「沒有人」的運動 : 黑客.鄉民.與g0v零時政府的數位行動主義 = The nobody movement : civic hackers and digital activism in Taiwan /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "572.2 4041",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 178,
+      "isbn": "9786264196109",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "群王之夢 : 東南亞的故事 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "738.01 3684",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 179,
+      "isbn": "9786269965397",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "臺灣人的歷史 : 若林正丈拆解臺灣躊躇又持續變動的國族認同 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.21 4415",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 180,
+      "isbn": "9786267478844",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221993005913&vid=886UCO_SCU:886SCU_INST",
+      "title": "成為「新二代」 : 多元文化與地緣政治下的跨國婚姻子女 = Becoming the \"New Second Generation\" : children of cross-border marriages navigating multiculturalism and geopolitics /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "535.733 4424",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221993005913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 181,
+      "isbn": "9786269988648",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "後期日中戰爭 : 太平洋戰爭下的中國戰場 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "628.58 0512",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 182,
+      "isbn": "9786267462768",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "巨浪後 : 國安法時代的香港與香港人 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "574.107 2687(3)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 183,
+      "isbn": "9786269651528",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "拉丁美洲觀察 : 原住民族權利.新自由主義經濟.認同與轉型正義 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "571.113 1074",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 184,
+      "isbn": "9786267463956",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992805913&vid=886UCO_SCU:886SCU_INST",
+      "title": "全面控制 : 總體檢蔣介石獨裁統治及其影響 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "733.293 1081",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992805913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 185,
+      "isbn": "9786267462829",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "幻象帝國 : 天朝中國的自我神話與天下敘事 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "574.1 4472",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 186,
+      "isbn": "9789869100557",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992605913&vid=886UCO_SCU:886SCU_INST",
+      "title": "世界觀 : 現代年輕人必懂的科學哲學和科學史 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "309 4322",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992605913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 187,
+      "isbn": "9786267478486",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194705913&vid=886UCO_SCU:886SCU_INST",
+      "title": "戰後臺灣經濟的再思考 : 資源､產業與國家治理 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "552.339 3423(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194705913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 188,
+      "isbn": "9786267727386",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "柯媽媽 : 小說柯旗化 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "863.57 4081(1)",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 189,
+      "isbn": "9786264193597",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "想像的共同體 : 民族主義的起源與散布 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "571.11 3024 2025",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 190,
+      "isbn": "9786267509982",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "冷戰之海 : 美國在東亞水域的歷史、戰略與布局 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "578.52 7532",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 191,
+      "isbn": "9786267523377",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992505913&vid=886UCO_SCU:886SCU_INST",
+      "title": "富士坑 : 美國製造的真實故事 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "484.5 4474",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992505913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 192,
+      "isbn": "9786267509487",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992405913&vid=886UCO_SCU:886SCU_INST",
+      "title": "越過高牆 : 一九四九至一九九0年的東德 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "743.27 0010",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992405913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 193,
+      "isbn": "9786267759066",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992305913&vid=886UCO_SCU:886SCU_INST",
+      "title": "這樣比太扯 : 讓你看穿荒謬比較的思考武器 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "176.4 4244-2",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992305913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 194,
+      "isbn": "9786267645734",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "二次建國 : 重塑美國憲法的關鍵時刻 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "581.52 3124",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 195,
+      "isbn": "9786269960620",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007222194205913&vid=886UCO_SCU:886SCU_INST",
+      "title": "如何打贏戰爭 : 平民的現代戰爭實戰指南 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "592.4 7110",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007222194205913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 196,
+      "isbn": "9789869944489",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007221992105913&vid=886UCO_SCU:886SCU_INST",
+      "title": "革命萬歲 : 霍布斯邦論拉丁美洲 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "578.54 1445",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007221992105913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
+    },
+    {
+      "idx": 197,
+      "isbn": "9789577327468",
+      "cover": "https://uco-scu.primo.exlibrisgroup.com/discovery/thumbnail?docid=alma991007224090905913&vid=886UCO_SCU:886SCU_INST",
+      "title": "葬送的福利年(金 ): 台灣年金改革的挑戰與解答 /",
+      "location": "雙溪中正書庫 雙溪中正書庫",
+      "callno": "548.93307 4425",
+      "date": "2026-02-26",
+      "link": "https://uco-scu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007224090905913&vid=886UCO_SCU:886SCU_INST&lang=zh-tw"
     }
   ]
 }
